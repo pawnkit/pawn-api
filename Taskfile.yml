@@ -1,0 +1,74 @@
+version: 3
+
+tasks:
+  build:
+    desc: Build all packages
+    cmds:
+      - go build ./...
+
+  test:
+    desc: Run tests
+    cmds:
+      - go test ./...
+
+  test-race:
+    desc: Run tests with the race detector, shuffled
+    cmds:
+      - CGO_ENABLED=1 go test -race -shuffle=on ./...
+
+  vet:
+    desc: Run go vet
+    cmds:
+      - go vet ./...
+
+  lint:
+    desc: Run golangci-lint
+    cmds:
+      - golangci-lint run ./...
+
+  security:
+    desc: Scan dependencies for known vulnerabilities
+    cmds:
+      - go tool govulncheck ./...
+
+  fmt-check:
+    desc: Fail if any file is not formatted
+    cmds:
+      - test -z "$(gofmt -l .)"
+
+  tidy:
+    desc: Tidy go.mod/go.sum
+    cmds:
+      - go mod tidy
+
+  bench:
+    desc: Run benchmarks with allocation reporting
+    cmds:
+      - go test ./pawnapi/... -run=^$ -bench=. -benchmem
+
+  validate:
+    desc: Validate data/source/*.json (schema, duplicates, broken references)
+    cmds:
+      - go run ./cmd/pawnapi validate
+
+  generate:
+    desc: Regenerate embedded + interchange JSON from data/source/*.json
+    cmds:
+      - go run ./cmd/pawnapi generate
+
+  generate-check:
+    desc: Fail if generated files are stale relative to data/source/*.json
+    cmds:
+      - go run ./cmd/pawnapi generate --check
+
+  check:
+    desc: Run everything CI should run
+    cmds:
+      - task: fmt-check
+      - task: build
+      - task: vet
+      - task: lint
+      - task: test-race
+      - task: validate
+      - task: generate-check
+      - task: security

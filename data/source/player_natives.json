@@ -1,0 +1,1368 @@
+[
+  {
+    "id": "native:SendClientMessage",
+    "kind": "native",
+    "name": "SendClientMessage",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "colour"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Accepts printf-style trailing arguments after format (OPEN_MP_TAGS variadic), not represented as fixed parameters."
+    ],
+    "documentationSummary": "Sends a message to a specific player with a chosen colour in the chat.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessage",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerName",
+    "kind": "native",
+    "name": "GetPlayerName",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "name",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len"
+        }
+      ],
+      "returnSemantics": "The length of the player name copied into name."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player's name.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerName",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerName",
+    "kind": "native",
+    "name": "SetPlayerName",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "name",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnSemantics": "1 on success, 0 if not connected or name in use, -1 if the name is invalid."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "name must be 1-24 characters using only the allowed SA-MP nickname character set."
+    ],
+    "documentationSummary": "Sets the name of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerName",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerPos",
+    "kind": "native",
+    "name": "SetPlayerPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Removes the player from any vehicle they are in."
+    ],
+    "documentationSummary": "Sets a player's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerPos",
+    "kind": "native",
+    "name": "GetPlayerPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets the position of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerHealth",
+    "kind": "native",
+    "name": "SetPlayerHealth",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "health",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Health <= 0 kills the player."
+    ],
+    "documentationSummary": "Sets the health of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerHealth",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerHealth",
+    "kind": "native",
+    "name": "GetPlayerHealth",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "health",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Retrieves the health of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerHealth",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerArmour",
+    "kind": "native",
+    "name": "SetPlayerArmour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "armour",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's armour level.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerArmour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerArmour",
+    "kind": "native",
+    "name": "GetPlayerArmour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "armour",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Stores the armour of a player into a variable.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerArmour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GivePlayerMoney",
+    "kind": "native",
+    "name": "GivePlayerMoney",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "money"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "money may be negative to deduct funds."
+    ],
+    "documentationSummary": "Gives money to or takes money from a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GivePlayerMoney",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerMoney",
+    "kind": "native",
+    "name": "GetPlayerMoney",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The amount of money the player has."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Retrieves the amount of money a player has.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerMoney",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerInterior",
+    "kind": "native",
+    "name": "SetPlayerInterior",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "interiorid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's interior.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerInterior",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerInterior",
+    "kind": "native",
+    "name": "GetPlayerInterior",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The interior id the player is currently in."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Always returns 0 for NPCs."
+    ],
+    "documentationSummary": "Retrieves the player's current interior.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerInterior",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerVirtualWorld",
+    "kind": "native",
+    "name": "SetPlayerVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "virtualWorld"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the virtual world of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerVirtualWorld",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerVirtualWorld",
+    "kind": "native",
+    "name": "GetPlayerVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The virtual world id the player is currently in."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Retrieves the current virtual world the player is in.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerVirtualWorld",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerConnected",
+    "kind": "native",
+    "name": "IsPlayerConnected",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 if connected, 0 otherwise."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks if a player is connected.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerConnected",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerScore",
+    "kind": "native",
+    "name": "SetPlayerScore",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "score"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's score, shown in the scoreboard.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerScore",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerScore",
+    "kind": "native",
+    "name": "GetPlayerScore",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The player's score."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's score as set with SetPlayerScore.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerScore",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerTeam",
+    "kind": "native",
+    "name": "SetPlayerTeam",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "teamid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Use NO_TEAM (255) to remove the player from all teams."
+    ],
+    "documentationSummary": "Sets the team of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerTeam",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerTeam",
+    "kind": "native",
+    "name": "GetPlayerTeam",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The team id, or NO_TEAM (255) if not on a team."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets the ID of the team the player is on.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerTeam",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GivePlayerWeapon",
+    "kind": "native",
+    "name": "GivePlayerWeapon",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "weaponid",
+          "tag": "WEAPON"
+        },
+        {
+          "name": "ammo"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gives a player a weapon with a specified amount of ammo.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GivePlayerWeapon",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerSkin",
+    "kind": "native",
+    "name": "SetPlayerSkin",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "skinid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Changing a player's skin while they are in a vehicle can cause visual glitches."
+    ],
+    "documentationSummary": "Sets the skin (character model) of a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerSkin",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerSkin",
+    "kind": "native",
+    "name": "GetPlayerSkin",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The player's current skin id."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the class of the player's skin.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSkin",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TogglePlayerControllable",
+    "kind": "native",
+    "name": "TogglePlayerControllable",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "controllable",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Toggles whether a player can control their character.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerControllable",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerFacingAngle",
+    "kind": "native",
+    "name": "SetPlayerFacingAngle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "angle",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's facing angle (z rotation).",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerFacingAngle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerFacingAngle",
+    "kind": "native",
+    "name": "GetPlayerFacingAngle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "angle",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets the angle a player is facing.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerFacingAngle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerVelocity",
+    "kind": "native",
+    "name": "SetPlayerVelocity",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's velocity on the x, y and z axes.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerVelocity",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerVelocity",
+    "kind": "native",
+    "name": "GetPlayerVelocity",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets the velocity (speed) of a player on the x, y and z axes.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerVelocity",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PutPlayerInVehicle",
+    "kind": "native",
+    "name": "PutPlayerInVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "vehicleid"
+        },
+        {
+          "name": "seatid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid or vehicleid does not exist."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "seatid 0 is the driver seat; occupied seats silently fail."
+    ],
+    "documentationSummary": "Puts a player in a vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PutPlayerInVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:RemovePlayerFromVehicle",
+    "kind": "native",
+    "name": "RemovePlayerFromVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "force",
+          "tag": "bool",
+          "default": false
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not in a vehicle."
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "The force parameter is an open.mp addition; SA-MP 0.3.7 always behaves as force=false."
+    ],
+    "documentationSummary": "Removes/ejects a player from their vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/RemovePlayerFromVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "medium"
+  },
+  {
+    "id": "native:GetPlayerVehicleID",
+    "kind": "native",
+    "name": "GetPlayerVehicleID",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The vehicle id, or 0 if the player is not in a vehicle."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Not the model id of the vehicle; see native:GetVehicleModel."
+    ],
+    "documentationSummary": "Gets the ID of the vehicle the player is currently in.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerVehicleID",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerInVehicle",
+    "kind": "native",
+    "name": "IsPlayerInVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "vehicleid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 if the player is in the given vehicle, 0 otherwise."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks if a player is in a specific vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerInAnyVehicle",
+    "kind": "native",
+    "name": "IsPlayerInAnyVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 if the player is in a vehicle, 0 otherwise."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks if a player is inside any vehicle, as driver or passenger.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInAnyVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerColor",
+    "kind": "native",
+    "name": "SetPlayerColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "colour"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the colour of a player's nametag and marker.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerColor",
+    "kind": "native",
+    "name": "GetPlayerColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnSemantics": "The player's ARGB colour."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Only meaningful after SetPlayerColor or an automatically-assigned default colour."
+    ],
+    "documentationSummary": "Gets the colour of the player's name and radar marker.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

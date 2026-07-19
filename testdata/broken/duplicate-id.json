@@ -1,0 +1,30 @@
+[
+  {
+    "id": "native:Foo",
+    "kind": "native",
+    "name": "Foo",
+    "signature": { "parameters": [{ "name": "x" }], "returnTag": "bool" },
+    "availability": [{ "profile": "openmp", "since": "1.0.0" }],
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "fixture.inc",
+      "commit": "0000000000000000000000000000000000000f",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:Foo",
+    "kind": "native",
+    "name": "FooAgain",
+    "signature": { "parameters": [{ "name": "y" }], "returnTag": "bool" },
+    "availability": [{ "profile": "openmp", "since": "1.0.0" }],
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "fixture.inc",
+      "commit": "0000000000000000000000000000000000000f",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

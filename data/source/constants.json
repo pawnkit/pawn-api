@@ -1,0 +1,119 @@
+[
+  {
+    "id": "constant:MAX_PLAYERS",
+    "kind": "constant",
+    "name": "MAX_PLAYERS",
+    "value": 1000,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Maximum number of player slots the server allocates. Redefine before including <open.mp> to change it.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:INVALID_PLAYER_ID",
+    "kind": "constant",
+    "name": "INVALID_PLAYER_ID",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sentinel used where no player applies (e.g. a killerid with no killer).",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:INVALID_VEHICLE_ID",
+    "kind": "constant",
+    "name": "INVALID_VEHICLE_ID",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sentinel returned by CreateVehicle and friends on failure, and used where no vehicle applies.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:MAX_VEHICLES",
+    "kind": "constant",
+    "name": "MAX_VEHICLES",
+    "value": 2000,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Maximum number of vehicle slots the server allocates. Redefine before including <open.mp> to change it.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:NO_TEAM",
+    "kind": "constant",
+    "name": "NO_TEAM",
+    "value": 255,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Default team value meaning \"not on any team\"; also usable with SetPlayerTeam to remove a player from all teams.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

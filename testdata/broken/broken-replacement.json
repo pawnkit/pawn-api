@@ -1,0 +1,21 @@
+[
+  {
+    "id": "native:OldFoo",
+    "kind": "native",
+    "name": "OldFoo",
+    "signature": { "parameters": [{ "name": "x" }], "returnTag": "bool" },
+    "availability": [{ "profile": "openmp", "since": "1.0.0" }],
+    "deprecated": {
+      "since": "1.1.0",
+      "replacement": "native:DoesNotExist",
+      "reason": "renamed"
+    },
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "fixture.inc",
+      "commit": "0000000000000000000000000000000000000f",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

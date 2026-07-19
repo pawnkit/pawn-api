@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tag:Float",
+    "kind": "tag",
+    "name": "Float",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "IEEE-754 single-precision floating point tag used throughout the Pawn standard library and open.mp API.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "float.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:bool",
+    "kind": "tag",
+    "name": "bool",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Boolean tag; false is 0, true is any non-zero cell value.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:WEAPON",
+    "kind": "tag",
+    "name": "WEAPON",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Enum tag identifying a weapon model id (e.g. WEAPON_FIST, WEAPON_DEAGLE).",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

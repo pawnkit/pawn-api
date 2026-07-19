@@ -1,0 +1,113 @@
+[
+  {
+    "id": "native:SpawnPlayer",
+    "kind": "native",
+    "name": "SpawnPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "(Re)spawns a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SpawnPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetSpawnInfo",
+    "kind": "native",
+    "name": "SetSpawnInfo",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "team"
+        },
+        {
+          "name": "skin"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "rotation",
+          "tag": "Float"
+        },
+        {
+          "name": "weapon1",
+          "tag": "WEAPON"
+        },
+        {
+          "name": "weapon1_ammo"
+        },
+        {
+          "name": "weapon2",
+          "tag": "WEAPON"
+        },
+        {
+          "name": "weapon2_ammo"
+        },
+        {
+          "name": "weapon3",
+          "tag": "WEAPON"
+        },
+        {
+          "name": "weapon3_ammo"
+        }
+      ],
+      "returnTag": "bool",
+      "returnSemantics": "1 on success, 0 if playerid is not connected."
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Changes the spawn information of a specific player: weapons, team, skin, and spawn position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetSpawnInfo",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "native:Bar",
+    "kind": "native",
+    "name": "Bar",
+    "signature": { "parameters": [{ "name": "x" }], "returnTag": "bool" },
+    "availability": [{ "profile": "openmp", "since": "2.0.0", "until": "1.0.0" }],
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "fixture.inc",
+      "commit": "0000000000000000000000000000000000000f",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]

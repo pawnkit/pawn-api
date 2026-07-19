@@ -1,0 +1,614 @@
+[
+  {
+    "id": "callback:OnPlayerConnect",
+    "kind": "callback",
+    "name": "OnPlayerConnect",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "Fires once per connecting player, before OnPlayerRequestClass.",
+    "documentationSummary": "Called when a player connects to the server.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerConnect",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerDisconnect",
+    "kind": "callback",
+    "name": "OnPlayerDisconnect",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "reason"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "playerid is no longer valid for most natives once this callback returns.",
+    "documentationSummary": "Called when a player disconnects from the server.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerDisconnect",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerSpawn",
+    "kind": "callback",
+    "name": "OnPlayerSpawn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player spawns, i.e. after SpawnPlayer.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerSpawn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerDeath",
+    "kind": "callback",
+    "name": "OnPlayerDeath",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "killerid"
+        },
+        {
+          "name": "reason",
+          "tag": "WEAPON"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "killerid is INVALID_PLAYER_ID for suicides/environmental deaths.",
+    "documentationSummary": "Called when a player dies, by suicide or by another player.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerDeath",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerText",
+    "kind": "callback",
+    "name": "OnPlayerText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "text",
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "Returning 0 in this callback suppresses the chat message.",
+    "documentationSummary": "Called when a player sends a chat message.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerText",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerCommandText",
+    "kind": "callback",
+    "name": "OnPlayerCommandText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "cmdtext",
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "Return 1 to indicate the command was handled; 0 shows the client's \"unknown command\" message.",
+    "documentationSummary": "Called when a player enters a command into the client chat window (text starting with '/').",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerCommandText",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerEnterVehicle",
+    "kind": "callback",
+    "name": "OnPlayerEnterVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "vehicleid"
+        },
+        {
+          "name": "ispassenger",
+          "tag": "bool",
+          "default": false
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player starts to enter a vehicle, before the entry animation completes.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerExitVehicle",
+    "kind": "callback",
+    "name": "OnPlayerExitVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "vehicleid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "Not called if the player falls off a bike/bicycle or is removed by RemovePlayerFromVehicle.",
+    "documentationSummary": "Called when a player exits a vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerExitVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnVehicleSpawn",
+    "kind": "callback",
+    "name": "OnVehicleSpawn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "vehicleid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a vehicle respawns.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleSpawn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnVehicleDeath",
+    "kind": "callback",
+    "name": "OnVehicleDeath",
+    "signature": {
+      "parameters": [
+        {
+          "name": "vehicleid"
+        },
+        {
+          "name": "killerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a vehicle is destroyed, by exploding or becoming submerged.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleDeath",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnGameModeInit",
+    "kind": "callback",
+    "name": "OnGameModeInit",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "Runs once at gamemode load, before any player connects.",
+    "documentationSummary": "Called when the gamemode is initialized, right after OnGameModeInit's script loads.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnGameModeInit",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnGameModeExit",
+    "kind": "callback",
+    "name": "OnGameModeExit",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a gamemode ends, either through GameModeExit or server shutdown.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnGameModeExit",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnFilterScriptInit",
+    "kind": "callback",
+    "name": "OnFilterScriptInit",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a filterscript is loaded.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnFilterScriptInit",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnFilterScriptExit",
+    "kind": "callback",
+    "name": "OnFilterScriptExit",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a filterscript is unloaded.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnFilterScriptExit",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerStateChange",
+    "kind": "callback",
+    "name": "OnPlayerStateChange",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "newstate",
+          "tag": "PLAYER_STATE"
+        },
+        {
+          "name": "oldstate",
+          "tag": "PLAYER_STATE"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player changes state, e.g. from vehicle driver to on-foot.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerStateChange",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerRequestClass",
+    "kind": "callback",
+    "name": "OnPlayerRequestClass",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "classid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player changes class at class selection.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerRequestClass",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerRequestSpawn",
+    "kind": "callback",
+    "name": "OnPlayerRequestSpawn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "callbackContext": "Return 0 to prevent the player from spawning.",
+    "documentationSummary": "Called when a player attempts to spawn via class selection.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerRequestSpawn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnIncomingConnection",
+    "kind": "callback",
+    "name": "OnIncomingConnection",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "ip_address",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "port"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when an IP address attempts a connection to the server, before OnPlayerConnect.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnIncomingConnection",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "medium"
+  }
+]
