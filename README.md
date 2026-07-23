@@ -69,21 +69,21 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 516 | `SetTimerEx`, `TextDrawCreate`, `GetPVarString` |
-| `callback` | 49 | `OnPlayerConnect`, `OnPlayerClickTextDraw`, `OnScriptLoadPlayer` |
+| `native` | 936 | `SetTimerEx`, `TextDrawCreate`, `DB_Open` |
+| `callback` | 91 | `OnPlayerConnect`, `OnVehicleSpawn`, `OnNPCSpawn` |
 | `function` | 3 | `SetTeamCount`, `EnableTirePopping` |
 | `constant` | 67 | `INVALID_TEXT_DRAW`, `HTTP_GET`, `HTTP_ERROR_BAD_HOST` |
-| `define` | 1 | `INVALID_TIMER` |
-| `tag` | 21 | `Float`, `PlayerText`, `TEXT_DRAW_FONT`, `HTTP_METHOD` |
+| `define` | 2 | `INVALID_TIMER` |
+| `tag` | 47 | `Float`, `PLAYER_STATE`, `VEHICLE_MODEL_INFO`, `NPC_MOVE_MODE` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
 
 ## Limits
 
-- Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 566 of the 1,061 declarations extracted from
-  `omp_*.inc` have matching entries. The dataset also contains 91 core
-  constants and tags represented differently in the includes.
+- The reviewed dataset covers every public omp-stdlib subsystem.
+- At the pinned omp-stdlib commit, 1,055 of the 1,061 declarations extracted
+  from `omp_*.inc` have matching entries. The other six are typed constants
+  represented as `define` declarations by the importer.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.
 - SA-MP availability is reviewed against a pinned 0.3.7 include source.

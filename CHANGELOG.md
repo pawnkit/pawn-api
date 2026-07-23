@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.18.0 - 2026-07-23
+
+### Added
+
+- Added 489 reviewed player, vehicle, network, database, and NPC entries.
+- Completed coverage of the public declarations in the pinned omp-stdlib source.
+
 ## 0.17.0 - 2026-07-23
 
 ### Added
