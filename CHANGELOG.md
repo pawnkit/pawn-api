@@ -3,6 +3,12 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.1.1 - 2026-07-23
+
+### Fixed
+
+- Replaced the parser pseudo-version with `pawn-parser v1.1.9`.
+
 ## [Unreleased]
 
 ### Added
