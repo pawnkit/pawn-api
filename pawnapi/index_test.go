@@ -312,3 +312,26 @@ func TestLoad_PlayerObjectAPI(t *testing.T) {
 		t.Fatalf("OnPlayerObjectMoved = %+v", moved)
 	}
 }
+
+func TestLoad_ObjectQueriesAttachmentsDLAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	attached, ok := index.ByID("native:SetPlayerAttachedObject")
+	if !ok || len(attached.Availability) != 2 || attached.Signature == nil || attached.Signature.Parameters[12].Default == nil || attached.Signature.Parameters[12].Default.String() != "1" {
+		t.Fatalf("SetPlayerAttachedObject = %+v", attached)
+	}
+	dl, ok := index.ByID("native:AddCharModel")
+	if !ok || len(dl.Availability) != 1 || dl.Availability[0].Profile != ProfileOpenMP || len(dl.Constraints) == 0 {
+		t.Fatalf("AddCharModel = %+v", dl)
+	}
+	target, ok := index.ByID("native:GetObjectTarget")
+	if !ok || target.Deprecated == nil || target.Deprecated.Replacement != "native:GetObjectMovingTargetPos" {
+		t.Fatalf("GetObjectTarget = %+v", target)
+	}
+	callback, ok := index.ByID("callback:OnPlayerEditAttachedObject")
+	if !ok || len(callback.Availability) != 2 {
+		t.Fatalf("OnPlayerEditAttachedObject = %+v", callback)
+	}
+}

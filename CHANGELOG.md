@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.10.0 - 2026-07-23
+
+### Added
+
+- Added 28 reviewed object query, attachment, and custom-model entries.
+- Recorded SA-MP 0.3.DL functions outside the `samp-037` profile.
+
 ## 0.9.0 - 2026-07-23
 
 ### Added

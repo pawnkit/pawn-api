@@ -7,7 +7,7 @@ Tools use this data to answer questions such as whether `SetPlayerPos` exists fo
 ## Status
 
 This is a pre-1.0 dataset, not a complete copy of omp-stdlib. It currently has
-259 reviewed entries: 170 natives, 32 callbacks, 47 constants, and ten tags.
+287 reviewed entries: 196 natives, 33 callbacks, 48 constants, and ten tags.
 
 ## Install
 
@@ -68,9 +68,9 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 170 | `SetPlayerPos`, `CreatePlayerObject`, `GetPlayerObjectMaterial` |
-| `callback` | 32 | `OnPlayerConnect`, `OnObjectMoved`, `OnPlayerObjectMoved` |
-| `constant` | 47 | `INVALID_OBJECT_ID`, `OBJECT_MATERIAL_SIZE_256x128`, `EDIT_RESPONSE_FINAL` |
+| `native` | 196 | `SetPlayerPos`, `SetPlayerAttachedObject`, `AddCharModel` |
+| `callback` | 33 | `OnPlayerConnect`, `OnPlayerObjectMoved`, `OnPlayerEditAttachedObject` |
+| `constant` | 48 | `INVALID_OBJECT_ID`, `EDIT_RESPONSE_FINAL`, `MAX_PLAYER_ATTACHED_OBJECTS` |
 | `tag` | 10 | `Float`, `Menu`, `SELECT_OBJECT`, `OBJECT_MATERIAL_SIZE` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
@@ -78,8 +78,8 @@ Each entry records its upstream repository, file, commit, licence, and confidenc
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 206 of the 1,061 declarations extracted from
-  `omp_*.inc` have matching entries. The dataset also contains 53 core
+- At the pinned omp-stdlib commit, 233 of the 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. The dataset also contains 54 core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.
