@@ -415,6 +415,78 @@
     "confidence": "high"
   },
   {
+    "id": "callback:OnPlayerClickPlayerTextDraw",
+    "kind": "callback",
+    "name": "OnPlayerClickPlayerTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "playertextid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player clicks a player text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickPlayerTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerClickTextDraw",
+    "kind": "callback",
+    "name": "OnPlayerClickTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "clickedid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player clicks a global text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "callback:OnPlayerCommandText",
     "kind": "callback",
     "name": "OnPlayerCommandText",
@@ -2353,6 +2425,58 @@
     "confidence": "high"
   },
   {
+    "id": "constant:INVALID_PLAYER_TEXT_DRAW",
+    "kind": "constant",
+    "name": "INVALID_PLAYER_TEXT_DRAW",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Invalid player text-draw identifier.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:INVALID_TEXT_DRAW",
+    "kind": "constant",
+    "name": "INVALID_TEXT_DRAW",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Invalid global text-draw identifier.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "constant:INVALID_VEHICLE_ID",
     "kind": "constant",
     "name": "INVALID_VEHICLE_ID",
@@ -2490,6 +2614,58 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:MAX_PLAYER_TEXT_DRAWS",
+    "kind": "constant",
+    "name": "MAX_PLAYER_TEXT_DRAWS",
+    "value": 256,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Maximum number of text draws per player.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:MAX_TEXT_DRAWS",
+    "kind": "constant",
+    "name": "MAX_TEXT_DRAWS",
+    "value": 2048,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Maximum number of global text draws.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -4915,6 +5091,39 @@
     "confidence": "high"
   },
   {
+    "id": "native:CancelSelectTextDraw",
+    "kind": "native",
+    "name": "CancelSelectTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Ends text-draw selection for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CancelSelectTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:ChatTextReplacementToggled",
     "kind": "native",
     "name": "ChatTextReplacementToggled",
@@ -5615,6 +5824,59 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:CreatePlayerTextDraw",
+    "kind": "native",
+    "name": "CreatePlayerTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "PlayerText"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates a text draw for one player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -14154,6 +14416,39 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsPlayerTextDrawVisible",
+    "kind": "native",
+    "name": "IsPlayerTextDrawVisible",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player's text draw is visible.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerTextDrawVisible",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsRepeatingTimer",
     "kind": "native",
     "name": "IsRepeatingTimer",
@@ -14177,6 +14472,39 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsTextDrawVisibleForPlayer",
+    "kind": "native",
+    "name": "IsTextDrawVisibleForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a global text draw is visible to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsTextDrawVisibleForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -14566,6 +14894,39 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsValidPlayerTextDraw",
+    "kind": "native",
+    "name": "IsValidPlayerTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player's text draw exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsValidServerRule",
     "kind": "native",
     "name": "IsValidServerRule",
@@ -14593,6 +14954,36 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsValidTextDraw",
+    "kind": "native",
+    "name": "IsValidTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a global text draw exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -15246,6 +15637,1913 @@
     "confidence": "high"
   },
   {
+    "id": "native:PlayerTextDrawAlignment",
+    "kind": "native",
+    "name": "PlayerTextDrawAlignment",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "alignment",
+          "tag": "TEXT_DRAW_ALIGN"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's alignment.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawAlignment",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawBackgroundColor",
+    "kind": "native",
+    "name": "PlayerTextDrawBackgroundColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "backgroundColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawBackgroundColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBackgroundColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawBackgroundColour",
+    "kind": "native",
+    "name": "PlayerTextDrawBackgroundColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "backgroundColour"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBackgroundColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawBoxColor",
+    "kind": "native",
+    "name": "PlayerTextDrawBoxColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "boxColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawBoxColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's box colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBoxColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawBoxColour",
+    "kind": "native",
+    "name": "PlayerTextDrawBoxColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "boxColour"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's box colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBoxColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawColor",
+    "kind": "native",
+    "name": "PlayerTextDrawColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "textColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's text colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawColour",
+    "kind": "native",
+    "name": "PlayerTextDrawColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "textColour"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's text colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawDestroy",
+    "kind": "native",
+    "name": "PlayerTextDrawDestroy",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Deletes a player's text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawDestroy",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawFont",
+    "kind": "native",
+    "name": "PlayerTextDrawFont",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "font",
+          "tag": "TEXT_DRAW_FONT"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's font.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawFont",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetAlignment",
+    "kind": "native",
+    "name": "PlayerTextDrawGetAlignment",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "TEXT_DRAW_ALIGN"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's alignment.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetAlignment",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetBackgroundCol",
+    "kind": "native",
+    "name": "PlayerTextDrawGetBackgroundCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawGetBackgroundColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBackgroundCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetBackgroundColor",
+    "kind": "native",
+    "name": "PlayerTextDrawGetBackgroundColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawGetBackgroundColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's background color.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBackgroundColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetBackgroundColour",
+    "kind": "native",
+    "name": "PlayerTextDrawGetBackgroundColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBackgroundColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetBoxColor",
+    "kind": "native",
+    "name": "PlayerTextDrawGetBoxColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawGetBoxColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's box color.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBoxColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetBoxColour",
+    "kind": "native",
+    "name": "PlayerTextDrawGetBoxColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's box colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBoxColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetColor",
+    "kind": "native",
+    "name": "PlayerTextDrawGetColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawGetColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's color.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetColour",
+    "kind": "native",
+    "name": "PlayerTextDrawGetColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetFont",
+    "kind": "native",
+    "name": "PlayerTextDrawGetFont",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "TEXT_DRAW_FONT"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's font.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetFont",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetLetterSize",
+    "kind": "native",
+    "name": "PlayerTextDrawGetLetterSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "width",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "height",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's letter size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetLetterSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetOutline",
+    "kind": "native",
+    "name": "PlayerTextDrawGetOutline",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's outline.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetOutline",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetPos",
+    "kind": "native",
+    "name": "PlayerTextDrawGetPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetPreviewModel",
+    "kind": "native",
+    "name": "PlayerTextDrawGetPreviewModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's preview model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetPreviewRot",
+    "kind": "native",
+    "name": "PlayerTextDrawGetPreviewRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "zoom",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw preview rotation and zoom.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetPreviewVehCol",
+    "kind": "native",
+    "name": "PlayerTextDrawGetPreviewVehCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "colour1",
+          "reference": true
+        },
+        {
+          "name": "colour2",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawGetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's preview veh colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewVehCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetPreviewVehicleColors",
+    "kind": "native",
+    "name": "PlayerTextDrawGetPreviewVehicleColors",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "colour1",
+          "reference": true
+        },
+        {
+          "name": "colour2",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawGetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's preview vehicle colors.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetPreviewVehicleColours",
+    "kind": "native",
+    "name": "PlayerTextDrawGetPreviewVehicleColours",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "colour1",
+          "reference": true
+        },
+        {
+          "name": "colour2",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetShadow",
+    "kind": "native",
+    "name": "PlayerTextDrawGetShadow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's shadow.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetShadow",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetString",
+    "kind": "native",
+    "name": "PlayerTextDrawGetString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "string",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "stringSize",
+          "default": "sizeof (string)"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's string.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawGetTextSize",
+    "kind": "native",
+    "name": "PlayerTextDrawGetTextSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "width",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "height",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's text draw's text size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetTextSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawHide",
+    "kind": "native",
+    "name": "PlayerTextDrawHide",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides a player's text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawHide",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawIsBox",
+    "kind": "native",
+    "name": "PlayerTextDrawIsBox",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player's text draw has a box.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawIsBox",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawIsProportional",
+    "kind": "native",
+    "name": "PlayerTextDrawIsProportional",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player's text draw uses proportional text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawIsProportional",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawIsSelectable",
+    "kind": "native",
+    "name": "PlayerTextDrawIsSelectable",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player's text draw can be selected.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawIsSelectable",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawLetterSize",
+    "kind": "native",
+    "name": "PlayerTextDrawLetterSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "width",
+          "tag": "Float"
+        },
+        {
+          "name": "height",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's letter size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawLetterSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetOutline",
+    "kind": "native",
+    "name": "PlayerTextDrawSetOutline",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "outlineSize"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's outline size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetOutline",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetPos",
+    "kind": "native",
+    "name": "PlayerTextDrawSetPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetPreviewModel",
+    "kind": "native",
+    "name": "PlayerTextDrawSetPreviewModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "model"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's preview model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetPreviewRot",
+    "kind": "native",
+    "name": "PlayerTextDrawSetPreviewRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "rotX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotZ",
+          "tag": "Float"
+        },
+        {
+          "name": "zoom",
+          "tag": "Float",
+          "default": "1.0"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's preview rotation and zoom.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetPreviewVehCol",
+    "kind": "native",
+    "name": "PlayerTextDrawSetPreviewVehCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "colour1"
+        },
+        {
+          "name": "colour2"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawSetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewVehCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetPreviewVehicleColors",
+    "kind": "native",
+    "name": "PlayerTextDrawSetPreviewVehicleColors",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "colour1"
+        },
+        {
+          "name": "colour2"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:PlayerTextDrawSetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetPreviewVehicleColours",
+    "kind": "native",
+    "name": "PlayerTextDrawSetPreviewVehicleColours",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "colour1"
+        },
+        {
+          "name": "colour2"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetProportional",
+    "kind": "native",
+    "name": "PlayerTextDrawSetProportional",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "proportional",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets whether a player's text draw uses proportional text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetProportional",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetSelectable",
+    "kind": "native",
+    "name": "PlayerTextDrawSetSelectable",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "selectable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets whether a player's text draw can be selected.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetSelectable",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetShadow",
+    "kind": "native",
+    "name": "PlayerTextDrawSetShadow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "shadowSize"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's shadow size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetShadow",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawSetString",
+    "kind": "native",
+    "name": "PlayerTextDrawSetString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawShow",
+    "kind": "native",
+    "name": "PlayerTextDrawShow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows a player's text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawShow",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawTextSize",
+    "kind": "native",
+    "name": "PlayerTextDrawTextSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "width",
+          "tag": "Float"
+        },
+        {
+          "name": "height",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player's text draw's text area.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawTextSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PlayerTextDrawUseBox",
+    "kind": "native",
+    "name": "PlayerTextDrawUseBox",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText"
+        },
+        {
+          "name": "boxEnabled",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets whether a player's text draw has a box.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawUseBox",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:Print",
     "kind": "native",
     "name": "Print",
@@ -15713,6 +18011,42 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SelectTextDraw",
+    "kind": "native",
+    "name": "SelectTextDraw",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "hoverColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Starts text-draw selection for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SelectTextDraw",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -19472,6 +21806,1904 @@
     "confidence": "high"
   },
   {
+    "id": "native:TextDrawAlignment",
+    "kind": "native",
+    "name": "TextDrawAlignment",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "alignment",
+          "tag": "TEXT_DRAW_ALIGN"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's alignment.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawAlignment",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawBackgroundColor",
+    "kind": "native",
+    "name": "TextDrawBackgroundColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "backgroundColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawBackgroundColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBackgroundColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawBackgroundColour",
+    "kind": "native",
+    "name": "TextDrawBackgroundColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "backgroundColour"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBackgroundColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawBoxColor",
+    "kind": "native",
+    "name": "TextDrawBoxColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "boxColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawBoxColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's box colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBoxColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawBoxColour",
+    "kind": "native",
+    "name": "TextDrawBoxColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "boxColour"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's box colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBoxColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawColor",
+    "kind": "native",
+    "name": "TextDrawColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "textColor"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's text colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawColour",
+    "kind": "native",
+    "name": "TextDrawColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "textColour"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's text colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawCreate",
+    "kind": "native",
+    "name": "TextDrawCreate",
+    "signature": {
+      "parameters": [
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "Text"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates a global text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawCreate",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawDestroy",
+    "kind": "native",
+    "name": "TextDrawDestroy",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Deletes a global text draw.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawDestroy",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawFont",
+    "kind": "native",
+    "name": "TextDrawFont",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "font",
+          "tag": "TEXT_DRAW_FONT"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's font.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawFont",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetAlignment",
+    "kind": "native",
+    "name": "TextDrawGetAlignment",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "TEXT_DRAW_ALIGN"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's alignment.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawAlignment",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetBackgroundColor",
+    "kind": "native",
+    "name": "TextDrawGetBackgroundColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawGetBackgroundColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's background color.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBackgroundColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetBackgroundColour",
+    "kind": "native",
+    "name": "TextDrawGetBackgroundColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's background colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBackgroundColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetBoxColor",
+    "kind": "native",
+    "name": "TextDrawGetBoxColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawGetBoxColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's box color.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBoxColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetBoxColour",
+    "kind": "native",
+    "name": "TextDrawGetBoxColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's box colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBoxColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetColor",
+    "kind": "native",
+    "name": "TextDrawGetColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawGetColour",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's color.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetColor",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetColour",
+    "kind": "native",
+    "name": "TextDrawGetColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetColour",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetFont",
+    "kind": "native",
+    "name": "TextDrawGetFont",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "TEXT_DRAW_FONT"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's font.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetFont",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetLetterSize",
+    "kind": "native",
+    "name": "TextDrawGetLetterSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "width",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "height",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's letter size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetLetterSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetOutline",
+    "kind": "native",
+    "name": "TextDrawGetOutline",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's outline.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetOutline",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetPos",
+    "kind": "native",
+    "name": "TextDrawGetPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetPreviewModel",
+    "kind": "native",
+    "name": "TextDrawGetPreviewModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's preview model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetPreviewRot",
+    "kind": "native",
+    "name": "TextDrawGetPreviewRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "zoom",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw preview rotation and zoom.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetPreviewVehCol",
+    "kind": "native",
+    "name": "TextDrawGetPreviewVehCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "colour1",
+          "reference": true
+        },
+        {
+          "name": "colour2",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawGetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's preview veh colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewVehCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetPreviewVehicleColors",
+    "kind": "native",
+    "name": "TextDrawGetPreviewVehicleColors",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "colour1",
+          "reference": true
+        },
+        {
+          "name": "colour2",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawGetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's preview vehicle colors.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetPreviewVehicleColours",
+    "kind": "native",
+    "name": "TextDrawGetPreviewVehicleColours",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "colour1",
+          "reference": true
+        },
+        {
+          "name": "colour2",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetShadow",
+    "kind": "native",
+    "name": "TextDrawGetShadow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's shadow.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetShadow",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetString",
+    "kind": "native",
+    "name": "TextDrawGetString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "string",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "stringSize",
+          "default": "sizeof (string)"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's string.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawGetTextSize",
+    "kind": "native",
+    "name": "TextDrawGetTextSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "width",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "height",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global text draw's text size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetTextSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawHideForAll",
+    "kind": "native",
+    "name": "TextDrawHideForAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides a global text draw from every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawHideForAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawHideForPlayer",
+    "kind": "native",
+    "name": "TextDrawHideForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides a global text draw from a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawHideForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawIsBox",
+    "kind": "native",
+    "name": "TextDrawIsBox",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a global text draw has a box.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawIsBox",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawIsProportional",
+    "kind": "native",
+    "name": "TextDrawIsProportional",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a global text draw uses proportional text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawIsProportional",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawIsSelectable",
+    "kind": "native",
+    "name": "TextDrawIsSelectable",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a global text draw can be selected.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawIsSelectable",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawLetterSize",
+    "kind": "native",
+    "name": "TextDrawLetterSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "width",
+          "tag": "Float"
+        },
+        {
+          "name": "height",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's letter size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawLetterSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetOutline",
+    "kind": "native",
+    "name": "TextDrawSetOutline",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "outlineSize"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's outline size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetOutline",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetPos",
+    "kind": "native",
+    "name": "TextDrawSetPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetPreviewModel",
+    "kind": "native",
+    "name": "TextDrawSetPreviewModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "model"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's preview model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetPreviewRot",
+    "kind": "native",
+    "name": "TextDrawSetPreviewRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        },
+        {
+          "name": "zoom",
+          "tag": "Float",
+          "default": "1.0"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's preview rotation and zoom.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetPreviewVehCol",
+    "kind": "native",
+    "name": "TextDrawSetPreviewVehCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "colour1"
+        },
+        {
+          "name": "colour2"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawSetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewVehCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetPreviewVehicleColors",
+    "kind": "native",
+    "name": "TextDrawSetPreviewVehicleColors",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "colour1"
+        },
+        {
+          "name": "colour2"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:TextDrawSetPreviewVehicleColours",
+      "reason": "Use the canonical spelling."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetPreviewVehicleColours",
+    "kind": "native",
+    "name": "TextDrawSetPreviewVehicleColours",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "colour1"
+        },
+        {
+          "name": "colour2"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's preview vehicle colours.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewVehicleColours",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetProportional",
+    "kind": "native",
+    "name": "TextDrawSetProportional",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "proportional",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets whether a global text draw uses proportional text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetProportional",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetSelectable",
+    "kind": "native",
+    "name": "TextDrawSetSelectable",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "selectable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets whether a global text draw can be selected.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetSelectable",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetShadow",
+    "kind": "native",
+    "name": "TextDrawSetShadow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "shadowSize"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's shadow size.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetShadow",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetString",
+    "kind": "native",
+    "name": "TextDrawSetString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawSetStringForPlayer",
+    "kind": "native",
+    "name": "TextDrawSetStringForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's text for one player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetStringForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawShowForAll",
+    "kind": "native",
+    "name": "TextDrawShowForAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows a global text draw to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawShowForAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawShowForPlayer",
+    "kind": "native",
+    "name": "TextDrawShowForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "Text"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows a global text draw to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawShowForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawTextSize",
+    "kind": "native",
+    "name": "TextDrawTextSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "width",
+          "tag": "Float"
+        },
+        {
+          "name": "height",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global text draw's text area.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawTextSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:TextDrawUseBox",
+    "kind": "native",
+    "name": "TextDrawUseBox",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text"
+        },
+        {
+          "name": "enableBox",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets whether a global text draw has a box.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawUseBox",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:ToggleChatTextReplacement",
     "kind": "native",
     "name": "ToggleChatTextReplacement",
@@ -20228,6 +24460,31 @@
     "confidence": "high"
   },
   {
+    "id": "tag:PlayerText",
+    "kind": "tag",
+    "name": "PlayerText",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags player text-draw identifiers.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "tag:PlayerText3D",
     "kind": "tag",
     "name": "PlayerText3D",
@@ -20268,6 +24525,73 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:TEXT_DRAW_ALIGN",
+    "kind": "tag",
+    "name": "TEXT_DRAW_ALIGN",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags text-draw alignments.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawAlignment",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:TEXT_DRAW_FONT",
+    "kind": "tag",
+    "name": "TEXT_DRAW_FONT",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags text-draw fonts.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawFont",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:Text",
+    "kind": "tag",
+    "name": "Text",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags global text-draw identifiers.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textdraw.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },

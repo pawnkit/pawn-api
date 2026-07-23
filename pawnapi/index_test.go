@@ -477,3 +477,30 @@ func TestLoad_CoreAndVariableAPI(t *testing.T) {
 		t.Fatalf("GetRunningTimers = %+v", legacy)
 	}
 }
+
+func TestLoad_TextDrawAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	create, ok := index.ByID("native:TextDrawCreate")
+	if !ok || len(create.Availability) != 2 || create.Signature == nil || create.Signature.ReturnTag != "Text" {
+		t.Fatalf("TextDrawCreate = %+v", create)
+	}
+	rotation, ok := index.ByID("native:PlayerTextDrawSetPreviewRot")
+	if !ok || rotation.Signature == nil || rotation.Signature.Parameters[5].Default == nil || rotation.Signature.Parameters[5].Default.String() != "1.0" {
+		t.Fatalf("PlayerTextDrawSetPreviewRot = %+v", rotation)
+	}
+	query, ok := index.ByID("native:TextDrawGetString")
+	if !ok || len(query.Availability) != 1 || query.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("TextDrawGetString = %+v", query)
+	}
+	legacy, ok := index.ByID("native:TextDrawSetPreviewVehCol")
+	if !ok || legacy.Deprecated == nil || legacy.Deprecated.Replacement != "native:TextDrawSetPreviewVehicleColours" {
+		t.Fatalf("TextDrawSetPreviewVehCol = %+v", legacy)
+	}
+	invalid, ok := index.ByID("constant:INVALID_TEXT_DRAW")
+	if !ok || invalid.Value == nil || invalid.Value.String() != "65535" {
+		t.Fatalf("INVALID_TEXT_DRAW = %+v", invalid)
+	}
+}

@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.17.0 - 2026-07-23
+
+### Added
+
+- Added 116 reviewed global and per-player text-draw entries.
+- Recorded query APIs, typed identifiers, limits, and compatibility aliases.
+
 ## 0.16.0 - 2026-07-23
 
 ### Added
