@@ -263,3 +263,29 @@ func TestLoad_ObjectCoreAPI(t *testing.T) {
 		t.Fatalf("SetObjectsDefaultCameraCol = %+v", deprecated)
 	}
 }
+
+func TestLoad_ObjectMaterialEditingAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	materialText, ok := index.ByID("native:SetObjectMaterialText")
+	if !ok || materialText.Signature == nil || !materialText.Signature.Parameters[len(materialText.Signature.Parameters)-1].Variadic {
+		t.Fatalf("SetObjectMaterialText = %+v", materialText)
+	}
+	if materialText.Signature.Parameters[2].Default == nil || materialText.Signature.Parameters[2].Default.String() != "0" {
+		t.Fatalf("SetObjectMaterialText material index = %+v", materialText.Signature.Parameters[2])
+	}
+	begin, ok := index.ByID("native:BeginObjectEditing")
+	if !ok || len(begin.Availability) != 1 || begin.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("BeginObjectEditing = %+v", begin)
+	}
+	edit, ok := index.ByID("native:EditObject")
+	if !ok || len(edit.Availability) != 2 {
+		t.Fatalf("EditObject = %+v", edit)
+	}
+	response, ok := index.ByID("constant:EDIT_RESPONSE_UPDATE")
+	if !ok || response.Value == nil || response.Value.String() != "2" {
+		t.Fatalf("EDIT_RESPONSE_UPDATE = %+v", response)
+	}
+}

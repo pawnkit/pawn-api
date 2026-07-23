@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "native:SetObjectMaterial",
+    "kind": "native",
+    "name": "SetObjectMaterial",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "materialIndex"
+        },
+        {
+          "name": "modelid"
+        },
+        {
+          "name": "textureLibrary",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "textureName",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "materialColour",
+          "default": 0
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Replaces a global object's material.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectMaterial"
+  },
+  {
+    "id": "native:SetObjectMaterialText",
+    "kind": "native",
+    "name": "SetObjectMaterialText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "materialIndex",
+          "default": 0
+        },
+        {
+          "name": "materialSize",
+          "tag": "OBJECT_MATERIAL_SIZE",
+          "default": "OBJECT_MATERIAL_SIZE_256x128"
+        },
+        {
+          "name": "fontFace",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ],
+          "default": "Arial"
+        },
+        {
+          "name": "fontSize",
+          "default": 24
+        },
+        {
+          "name": "bold",
+          "tag": "bool",
+          "default": true
+        },
+        {
+          "name": "fontColour",
+          "default": 4294967295
+        },
+        {
+          "name": "backgroundColour",
+          "default": 0
+        },
+        {
+          "name": "textAlignment",
+          "tag": "OBJECT_MATERIAL_TEXT_ALIGN",
+          "default": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT"
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Replaces a global object's material with text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectMaterialText",
+    "constraints": [
+      "Formatting arguments are available in open.mp."
+    ]
+  },
+  {
+    "id": "native:BeginObjectEditing",
+    "kind": "native",
+    "name": "BeginObjectEditing",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Lets a player edit a global object's position and rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/BeginObjectEditing"
+  },
+  {
+    "id": "native:EditObject",
+    "kind": "native",
+    "name": "EditObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Lets a player edit a global object's position and rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EditObject"
+  },
+  {
+    "id": "native:BeginObjectSelecting",
+    "kind": "native",
+    "name": "BeginObjectSelecting",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Lets a player select an object with the cursor.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/BeginObjectSelecting"
+  },
+  {
+    "id": "native:SelectObject",
+    "kind": "native",
+    "name": "SelectObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Lets a player select an object with the cursor.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SelectObject"
+  },
+  {
+    "id": "native:EndObjectEditing",
+    "kind": "native",
+    "name": "EndObjectEditing",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Ends object editing or selection for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EndObjectEditing"
+  },
+  {
+    "id": "native:CancelEdit",
+    "kind": "native",
+    "name": "CancelEdit",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Ends object editing or selection for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CancelEdit"
+  },
+  {
+    "id": "callback:OnPlayerSelectObject",
+    "kind": "callback",
+    "name": "OnPlayerSelectObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "type",
+          "tag": "SELECT_OBJECT"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "modelid"
+        },
+        {
+          "name": "fX",
+          "tag": "Float"
+        },
+        {
+          "name": "fY",
+          "tag": "Float"
+        },
+        {
+          "name": "fZ",
+          "tag": "Float"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Called when a player selects an object.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerSelectObject"
+  },
+  {
+    "id": "callback:OnPlayerEditObject",
+    "kind": "callback",
+    "name": "OnPlayerEditObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "playerobject"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "response",
+          "tag": "EDIT_RESPONSE"
+        },
+        {
+          "name": "fX",
+          "tag": "Float"
+        },
+        {
+          "name": "fY",
+          "tag": "Float"
+        },
+        {
+          "name": "fZ",
+          "tag": "Float"
+        },
+        {
+          "name": "fRotX",
+          "tag": "Float"
+        },
+        {
+          "name": "fRotY",
+          "tag": "Float"
+        },
+        {
+          "name": "fRotZ",
+          "tag": "Float"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Called while a player edits an object and when editing ends.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEditObject"
+  },
+  {
+    "id": "callback:OnObjectMoved",
+    "kind": "callback",
+    "name": "OnObjectMoved",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Called when a global object finishes moving.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnObjectMoved"
+  },
+  {
+    "id": "tag:SELECT_OBJECT",
+    "kind": "tag",
+    "name": "SELECT_OBJECT",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tags object selection types.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
+  },
+  {
+    "id": "tag:OBJECT_MATERIAL_SIZE",
+    "kind": "tag",
+    "name": "OBJECT_MATERIAL_SIZE",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tags object material text sizes.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "tag:OBJECT_MATERIAL_TEXT_ALIGN",
+    "kind": "tag",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tags object material text alignments.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "tag:EDIT_RESPONSE",
+    "kind": "tag",
+    "name": "EDIT_RESPONSE",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tags object editing responses.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
+  },
+  {
+    "id": "constant:MAX_OBJECT_MATERIAL_SLOTS",
+    "kind": "constant",
+    "name": "MAX_OBJECT_MATERIAL_SLOTS",
+    "value": 16,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Maximum material slots per object.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
+  },
+  {
+    "id": "constant:UNKNOWN_SELECT_OBJECT",
+    "kind": "constant",
+    "name": "UNKNOWN_SELECT_OBJECT",
+    "value": -1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Unknown object selection type.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
+  },
+  {
+    "id": "constant:SELECT_OBJECT_GLOBAL_OBJECT",
+    "kind": "constant",
+    "name": "SELECT_OBJECT_GLOBAL_OBJECT",
+    "value": 1,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "A selected global object.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
+  },
+  {
+    "id": "constant:SELECT_OBJECT_PLAYER_OBJECT",
+    "kind": "constant",
+    "name": "SELECT_OBJECT_PLAYER_OBJECT",
+    "value": 2,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "A selected player object.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
+  },
+  {
+    "id": "constant:UNKNOWN_OBJECT_MATERIAL_SIZE",
+    "kind": "constant",
+    "name": "UNKNOWN_OBJECT_MATERIAL_SIZE",
+    "value": -1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Unknown object material text size.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_32x32",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_32x32",
+    "value": 10,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 32x32.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_64x32",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_64x32",
+    "value": 20,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 64x32.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_64x64",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_64x64",
+    "value": 30,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 64x64.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_128x32",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_128x32",
+    "value": 40,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 128x32.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_128x64",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_128x64",
+    "value": 50,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 128x64.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_128x128",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_128x128",
+    "value": 60,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 128x128.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_256x32",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_256x32",
+    "value": 70,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 256x32.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_256x64",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_256x64",
+    "value": 80,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 256x64.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_256x128",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_256x128",
+    "value": 90,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 256x128.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_256x256",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_256x256",
+    "value": 100,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 256x256.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_512x64",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_512x64",
+    "value": 110,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 512x64.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_512x128",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_512x128",
+    "value": 120,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 512x128.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_512x256",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_512x256",
+    "value": 130,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 512x256.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_SIZE_512x512",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_SIZE_512x512",
+    "value": 140,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Object material text size 512x512.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
+  },
+  {
+    "id": "constant:UNKNOWN_OBJECT_MATERIAL_TEXT_ALIGN",
+    "kind": "constant",
+    "name": "UNKNOWN_OBJECT_MATERIAL_TEXT_ALIGN",
+    "value": -1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Unknown object material text alignment.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_TEXT_ALIGN_LEFT",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT",
+    "value": 0,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Left-aligned object material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_TEXT_ALIGN_CENTRE",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN_CENTRE",
+    "value": 1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Centered object material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_TEXT_ALIGN_CENTER",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN_CENTER",
+    "value": 1,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Centered object material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_TEXT_ALIGN_CENT",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN_CENT",
+    "value": 1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Centered object material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_TEXT_ALIGN_RIGHT",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN_RIGHT",
+    "value": 2,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Right-aligned object material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:OBJECT_MATERIAL_TEXT_ALIGN_RIGT",
+    "kind": "constant",
+    "name": "OBJECT_MATERIAL_TEXT_ALIGN_RIGT",
+    "value": 2,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Right-aligned object material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
+  },
+  {
+    "id": "constant:UNKNOWN_EDIT_RESPONSE",
+    "kind": "constant",
+    "name": "UNKNOWN_EDIT_RESPONSE",
+    "value": -1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Unknown object editing response.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
+  },
+  {
+    "id": "constant:EDIT_RESPONSE_CANCEL",
+    "kind": "constant",
+    "name": "EDIT_RESPONSE_CANCEL",
+    "value": 0,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "The player cancelled object editing.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
+  },
+  {
+    "id": "constant:EDIT_RESPONSE_FINAL",
+    "kind": "constant",
+    "name": "EDIT_RESPONSE_FINAL",
+    "value": 1,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "The player saved the object edit.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
+  },
+  {
+    "id": "constant:EDIT_RESPONSE_UPDATE",
+    "kind": "constant",
+    "name": "EDIT_RESPONSE_UPDATE",
+    "value": 2,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "The player moved the object while editing.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
+  }
+]

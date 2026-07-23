@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.8.0 - 2026-07-23
+
+### Added
+
+- Added 45 reviewed object material and editing entries.
+- Recorded typed constants, open.mp editing names, and material text defaults.
+
 ## 0.7.0 - 2026-07-23
 
 ### Added
