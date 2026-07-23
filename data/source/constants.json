@@ -18,7 +18,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:INVALID_PLAYER_ID",
@@ -43,7 +44,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:INVALID_VEHICLE_ID",
@@ -68,7 +70,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:MAX_VEHICLES",
@@ -89,7 +92,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:NO_TEAM",
@@ -114,6 +118,7 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   }
 ]

@@ -28,6 +28,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called after a script loads for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnScriptLoadPlayer"
   },
@@ -60,6 +61,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called before a script unloads for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnScriptUnloadPlayer"
   },
@@ -82,6 +84,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Invalid timer identifier."
   },
   {
@@ -111,6 +114,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Controls vehicle tyre damage.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnableTirePopping",
     "deprecated": {
@@ -144,6 +148,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the dropped money amount after death.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetDeathDropAmount",
     "deprecated": {
@@ -186,6 +191,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Prints formatted text to the server log.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/printf"
   },
@@ -220,6 +226,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the arc cosine in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/acos"
   },
@@ -250,6 +257,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the arc cosine in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/acos"
   },
@@ -295,6 +303,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a server rule.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddServerRule"
   },
@@ -329,6 +338,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Allows administrator teleportation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AllowAdminTeleport"
   },
@@ -363,6 +373,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Allows weapons inside interiors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AllowInteriorWeapons"
   },
@@ -396,6 +407,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Allows a character in player nicknames.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AllowNickNameCharacter"
   },
@@ -420,6 +432,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether all animations are enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AreAllAnimationsEnabled"
   },
@@ -444,6 +457,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether weapons are allowed inside interiors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AreInteriorWeaponsAllowed"
   },
@@ -478,6 +492,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the arc sine in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/asin"
   },
@@ -508,6 +523,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the arc sine in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/asin"
   },
@@ -542,6 +558,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the arc tangent in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/atan"
   },
@@ -572,6 +589,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the arc tangent in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/atan"
   },
@@ -610,6 +628,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the angle of a vector in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/atan2"
   },
@@ -644,6 +663,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the angle of a vector in degrees.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/atan2"
   },
@@ -693,6 +713,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Calls a function in the current script.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CallLocalFunction"
   },
@@ -742,6 +763,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Calls a function in another loaded script.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CallRemoteFunction"
   },
@@ -766,6 +788,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether chat text replacement is enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ChatTextReplacementToggled"
   },
@@ -809,6 +832,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Connects an NPC.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ConnectNPC"
   },
@@ -831,6 +855,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the number of running timers.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CountRunningTimers"
   },
@@ -880,6 +905,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates an explosion.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreateExplosion"
   },
@@ -920,6 +946,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Deletes a player variable.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DeletePVar"
   },
@@ -957,6 +984,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Deletes a server variable.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DeleteSVar"
   },
@@ -985,6 +1013,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables interior entrance markers.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisableInteriorEnterExits"
   },
@@ -1013,6 +1042,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables line-of-sight checks for name tags.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisableNameTagLOS"
   },
@@ -1043,6 +1073,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables all animations.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnableAllAnimations"
   },
@@ -1077,6 +1108,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables stunt bonuses for every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnableStuntBonusForAll"
   },
@@ -1111,6 +1143,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables zone-name overlays.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnableZoneNames"
   },
@@ -1162,6 +1195,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Formats text into an array.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/format"
   },
@@ -1209,6 +1243,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Formats text into an array.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/format"
   },
@@ -1237,6 +1272,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops the current game mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GameModeExit"
   },
@@ -1285,6 +1321,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows game text to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GameTextForAll"
   },
@@ -1329,6 +1366,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows formatted game text to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GameTextForAll",
     "deprecated": {
@@ -1386,6 +1424,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an animation's library and name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetAnimationName"
   },
@@ -1423,6 +1462,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as a boolean.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsBool"
   },
@@ -1456,6 +1496,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as a float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsFloat"
   },
@@ -1492,6 +1533,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as an integer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsInt"
   },
@@ -1538,6 +1580,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsString"
   },
@@ -1566,6 +1609,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the server gravity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetGravity"
   },
@@ -1592,6 +1636,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the server's player limit.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMaxPlayers"
   },
@@ -1616,6 +1661,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the game-mode restart delay.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetModeRestartTime"
   },
@@ -1656,6 +1702,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player variable as a float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarFloat"
   },
@@ -1695,6 +1742,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player variable as an integer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarInt"
   },
@@ -1740,6 +1788,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player variable's name by index.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarNameAtIndex"
   },
@@ -1789,6 +1838,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player variable as text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarString"
   },
@@ -1821,6 +1871,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the highest allocated player-variable slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarsUpperIndex"
   },
@@ -1861,6 +1912,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player variable's type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarType"
   },
@@ -1883,6 +1935,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the number of running timers.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetRunningTimers",
     "deprecated": {
@@ -1914,6 +1967,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the server tick rate.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerTickRate"
   },
@@ -1951,6 +2005,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as a boolean.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerVarAsBool",
     "deprecated": {
@@ -1989,6 +2044,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as a float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsFloat",
     "deprecated": {
@@ -2030,6 +2086,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as an integer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerVarAsInt",
     "deprecated": {
@@ -2081,6 +2138,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a console variable as text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerVarAsString",
     "deprecated": {
@@ -2123,6 +2181,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a server variable as a float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarFloat"
   },
@@ -2159,6 +2218,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a server variable as an integer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarInt"
   },
@@ -2201,6 +2261,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a server variable's name by index.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarNameAtIndex"
   },
@@ -2247,6 +2308,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a server variable as text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarString"
   },
@@ -2273,6 +2335,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the highest allocated server-variable slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarsUpperIndex"
   },
@@ -2310,6 +2373,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a server variable's type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarType"
   },
@@ -2336,6 +2400,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the server's millisecond tick count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetTickCount"
   },
@@ -2364,6 +2429,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a timer's interval.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetTimerInterval"
   },
@@ -2392,6 +2458,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a timer's remaining time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetTimerRemaining"
   },
@@ -2435,6 +2502,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a weapon's name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetWeaponName"
   },
@@ -2465,6 +2533,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a weapon's inventory slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetWeaponSlot"
   },
@@ -2487,6 +2556,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the current weather.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetWeather"
   },
@@ -2509,6 +2579,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the current world hour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetWorldTime"
   },
@@ -2538,6 +2609,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides game text from every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HideGameTextForAll"
   },
@@ -2562,6 +2634,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether administrator teleportation is allowed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsAdminTeleportAllowed"
   },
@@ -2591,6 +2664,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a character is allowed in nicknames.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsNickNameCharacterAllowed"
   },
@@ -2620,6 +2694,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a timer repeats.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsRepeatingTimer"
   },
@@ -2653,6 +2728,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a nickname is valid.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidNickName"
   },
@@ -2686,6 +2762,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a server rule exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidServerRule"
   },
@@ -2715,6 +2792,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a timer exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidTimer"
   },
@@ -2748,6 +2826,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops a timer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/KillTimer"
   },
@@ -2782,6 +2861,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Limits the global chat radius.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/LimitGlobalChatRadius"
   },
@@ -2816,6 +2896,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Limits the player-marker radius.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/LimitPlayerMarkerRadius"
   },
@@ -2848,6 +2929,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Prints text to the server log.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/print"
   },
@@ -2885,6 +2967,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Prints formatted text to the server log.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/printf"
   },
@@ -2918,6 +3001,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Removes a server rule.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/RemoveServerRule"
   },
@@ -2963,6 +3047,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a client message to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessageToAll"
   },
@@ -3004,6 +3089,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a formatted client message to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessageToAllf",
     "deprecated": {
@@ -3048,6 +3134,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a death notice to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendDeathMessage"
   },
@@ -3093,6 +3180,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a player's message to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendPlayerMessageToAll"
   },
@@ -3134,6 +3222,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a formatted player message to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendPlayerMessageToAll",
     "deprecated": {
@@ -3181,6 +3270,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the game-mode name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetGameModeText"
   },
@@ -3215,6 +3305,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the server gravity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetGravity"
   },
@@ -3245,6 +3336,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the game-mode restart delay.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetModeRestartTime"
   },
@@ -3279,6 +3371,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the name-tag draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetNameTagDrawDistance"
   },
@@ -3323,6 +3416,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player variable to a float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPVarFloat"
   },
@@ -3366,6 +3460,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player variable to an integer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPVarInt"
   },
@@ -3417,6 +3512,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player variable to text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPVarString"
   },
@@ -3462,6 +3558,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a server rule.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetServerRule"
   },
@@ -3503,6 +3600,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a server variable to a float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetSVarFloat"
   },
@@ -3543,6 +3641,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a server variable to an integer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetSVarInt"
   },
@@ -3591,6 +3690,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a server variable to text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetSVarString"
   },
@@ -3634,6 +3734,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Starts a timer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetTimer"
   },
@@ -3690,6 +3791,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Starts a timer with arguments.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetTimerEx"
   },
@@ -3723,6 +3825,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the server weather.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetWeather"
   },
@@ -3756,6 +3859,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the world hour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetWorldTime"
   },
@@ -3805,6 +3909,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hashes text with SHA-256 and a salt.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SHA256_PassHash"
   },
@@ -3858,6 +3963,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hashes a password with SHA-256 and a salt.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SHA256_PassHash",
     "deprecated": {
@@ -3896,6 +4002,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Controls player name-tag visibility.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ShowNameTags"
   },
@@ -3930,6 +4037,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the player-marker mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPlayerMarkers"
   },
@@ -3960,6 +4068,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Toggles chat text replacement.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ToggleChatTextReplacement"
   },
@@ -3988,6 +4097,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Uses player pedestrian animations.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/UsePlayerPedAnims"
   },
@@ -4030,6 +4140,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a three-dimensional vector's length.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/VectorSize"
   },
@@ -4051,6 +4162,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags player marker display modes."
   },
   {
@@ -4071,6 +4183,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags variable value types."
   },
   {
@@ -4091,6 +4204,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags weapon inventory slots."
   }
 ]

@@ -3,6 +3,16 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.19.0 - 2026-07-23
+
+### Added
+
+- Added review status to API entries and generated metadata.
+
+### Changed
+
+- Exported confidence through the shared schema projection.
+
 ## 0.18.0 - 2026-07-23
 
 ### Added

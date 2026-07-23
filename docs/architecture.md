@@ -28,7 +28,10 @@ Do not edit generated files by hand.
 
 ## Why there are two views
 
-`pawnapi.Entry` includes aliases, confidence, constraints, callback context, and documentation summaries. Schema version 1 cannot represent all of those fields and rejects unknown properties.
+`pawnapi.Entry` includes aliases, constraints, callback context, and
+documentation summaries. Schema version 1 cannot represent all of those
+fields and rejects unknown properties. Confidence and review status are shared
+by both views.
 
 `Entry.ToSchema` creates a strict schema-compatible projection for non-Go consumers. `pawnapi.Load` gives Go callers the full model. Both files come from the same source entries, so their shared fields cannot drift independently.
 

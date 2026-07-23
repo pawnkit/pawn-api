@@ -22,6 +22,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Value used when no valid object exists.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -52,6 +53,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the default camera-collision behavior for newly created objects.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectsDefaultCameraCollision"
   },
@@ -86,6 +88,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the default camera-collision behavior for newly created objects.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectsDefaultCameraCol",
     "deprecated": {
@@ -122,6 +125,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the type of an object visible to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectType"
   },
@@ -183,6 +187,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreateObject"
   },
@@ -243,6 +248,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches a global object to a vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToVehicle"
   },
@@ -308,6 +314,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches one global object to another.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToObject"
   },
@@ -368,6 +375,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches a global object to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToPlayer"
   },
@@ -413,6 +421,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global object's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectPos"
   },
@@ -461,6 +470,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectPos"
   },
@@ -506,6 +516,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global object's rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectRot"
   },
@@ -554,6 +565,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectRot"
   },
@@ -586,6 +598,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global object's model ID.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectModel"
   },
@@ -615,6 +628,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables camera collision for a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCollision"
   },
@@ -648,6 +662,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables camera collision for a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCol",
     "deprecated": {
@@ -686,6 +701,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global object exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidObject"
   },
@@ -719,6 +735,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyObject"
   },
@@ -783,6 +800,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Moves a global object towards a position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/MoveObject"
   },
@@ -816,6 +834,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops a moving global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StopObject"
   },
@@ -849,6 +868,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global object is moving.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsObjectMoving"
   }

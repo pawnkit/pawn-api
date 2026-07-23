@@ -22,6 +22,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Invalid global 3D text label identifier.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -48,6 +49,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Invalid player 3D text label identifier.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -97,6 +99,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches a global 3D text label to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Attach3DTextLabelToPlayer"
   },
@@ -146,6 +149,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches a global 3D text label to a vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Attach3DTextLabelToVehicle"
   },
@@ -215,6 +219,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a global 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Create3DTextLabel",
     "constraints": [
@@ -295,6 +300,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a 3D text label for one player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayer3DTextLabel",
     "constraints": [
@@ -332,6 +338,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Deletes a global 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Delete3DTextLabel"
   },
@@ -369,6 +376,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Deletes a player's 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DeletePlayer3DTextLabel"
   },
@@ -407,6 +415,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the player or vehicle attached to a global 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelAttachedData"
   },
@@ -436,6 +445,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global 3D text label's colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelColor",
     "deprecated": {
@@ -470,6 +480,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global 3D text label's colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelColour"
   },
@@ -500,6 +511,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global 3D text label's draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelDrawDistance"
   },
@@ -530,6 +542,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global 3D text label tests line of sight.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelLOS"
   },
@@ -575,6 +588,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global 3D text label's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelPos"
   },
@@ -615,6 +629,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Copies a global 3D text label's text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelText"
   },
@@ -644,6 +659,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global 3D text label's virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelVirtualWorld"
   },
@@ -685,6 +701,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns what a player's 3D text label is attached to.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelAttached",
     "deprecated": {
@@ -731,6 +748,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the player or vehicle attached to a player's 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelAttachedData"
   },
@@ -763,6 +781,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelColor",
     "deprecated": {
@@ -800,6 +819,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelColour"
   },
@@ -833,6 +853,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDist",
     "deprecated": {
@@ -871,6 +892,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDistance"
   },
@@ -904,6 +926,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's 3D text label tests line of sight.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelLOS"
   },
@@ -952,6 +975,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelPos"
   },
@@ -995,6 +1019,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Copies a player's 3D text label text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelText"
   },
@@ -1027,6 +1052,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelVirtualWorld",
     "deprecated": {
@@ -1064,6 +1090,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's 3D text label virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelVirtualWorld"
   },
@@ -1097,6 +1124,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global 3D text label is streamed in for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Is3DTextLabelStreamedIn"
   },
@@ -1127,6 +1155,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global 3D text label exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValid3DTextLabel"
   },
@@ -1160,6 +1189,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's 3D text label exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayer3DTextLabel"
   },
@@ -1194,6 +1224,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global 3D text label's draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Set3DTextLabelDrawDistance"
   },
@@ -1228,6 +1259,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a global 3D text label tests line of sight.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Set3DTextLabelLOS"
   },
@@ -1261,6 +1293,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Moves a global 3D text label to a virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Set3DTextLabelVirtualWorld"
   },
@@ -1298,6 +1331,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's 3D text label draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDistance",
     "deprecated": {
@@ -1340,6 +1374,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's 3D text label draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDistance"
   },
@@ -1377,6 +1412,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a player's 3D text label tests line of sight.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelLOS"
   },
@@ -1426,6 +1462,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Updates a global 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Update3DTextLabelText",
     "constraints": [
@@ -1481,6 +1518,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Updates a player's 3D text label.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/UpdatePlayer3DTextLabelText",
     "constraints": [
@@ -1509,6 +1547,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags player 3D text label identifiers.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -1534,6 +1573,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags global 3D text label identifiers.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   }

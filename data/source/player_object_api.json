@@ -60,6 +60,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates an object for one player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerObject"
   },
@@ -123,6 +124,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches a player object to a vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToVehicle"
   },
@@ -187,6 +189,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches one player object to another.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToObject"
   },
@@ -250,6 +253,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches a player object to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToPlayer"
   },
@@ -298,6 +302,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player object's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectPos"
   },
@@ -349,6 +354,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectPos"
   },
@@ -397,6 +403,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player object's rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectRot"
   },
@@ -448,6 +455,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectRot"
   },
@@ -483,6 +491,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player object's model ID.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectModel"
   },
@@ -515,6 +524,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables camera collision for a player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectNoCameraCollision"
   },
@@ -551,6 +561,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables camera collision for a player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectNoCameraCol",
     "deprecated": {
@@ -592,6 +603,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player object exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerObject"
   },
@@ -628,6 +640,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPlayerObject"
   },
@@ -695,6 +708,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Moves a player object towards a position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/MovePlayerObject"
   },
@@ -731,6 +745,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops a moving player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StopPlayerObject"
   },
@@ -767,6 +782,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player object is moving.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerObjectMoving"
   },
@@ -827,6 +843,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Replaces a player object's material.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMaterial"
   },
@@ -914,6 +931,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Replaces a player object's material with text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMaterialText",
     "constraints": [
@@ -949,6 +967,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player edit a player object's position and rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/BeginPlayerObjectEditing"
   },
@@ -985,6 +1004,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player edit a player object's position and rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EditPlayerObject",
     "deprecated": {
@@ -1022,6 +1042,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player object's draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectDrawDistance"
   },
@@ -1058,6 +1079,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player object's movement speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMoveSpeed"
   },
@@ -1090,6 +1112,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player object's movement speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMoveSpeed"
   },
@@ -1140,6 +1163,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's movement target.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetPos",
     "deprecated": {
@@ -1191,6 +1215,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets the entities attached to a player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectAttachedData"
   },
@@ -1259,6 +1284,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's attachment offset.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectAttachedOffset"
   },
@@ -1291,6 +1317,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether an attached player object inherits rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectSyncRotation"
   },
@@ -1325,6 +1352,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns how a player-object material slot is used.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerObjectMaterialSlotUsed"
   },
@@ -1389,6 +1417,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's material.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMaterial"
   },
@@ -1476,6 +1505,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's material text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMaterialText"
   },
@@ -1508,6 +1538,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether camera collision is disabled for a player object.",
     "deprecated": {
       "since": "1.0.0",
@@ -1539,6 +1570,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the player object a player is surfing.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSurfingPlayerObjectID"
   },
@@ -1586,6 +1618,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's movement target position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetPos"
   },
@@ -1633,6 +1666,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player object's movement target rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetRot"
   },
@@ -1661,6 +1695,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the player object targeted by a player's camera.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayerObject"
   },
@@ -1689,6 +1724,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the player object targeted by a player's camera.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayerObject",
     "deprecated": {
@@ -1729,6 +1765,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player object finishes moving.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerObjectMoved"
   }

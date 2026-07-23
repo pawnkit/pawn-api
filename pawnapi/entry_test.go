@@ -26,7 +26,8 @@ func validEntry() Entry {
 			Commit:     "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
 			License:    "MPL-2.0",
 		},
-		Confidence: ConfidenceHigh,
+		Confidence:   ConfidenceHigh,
+		ReviewStatus: ReviewReviewed,
 	}
 }
 
@@ -94,6 +95,7 @@ func TestEntryValidate_ConstantMissingValue(t *testing.T) {
 		Availability: []Availability{{Profile: "openmp", Since: "1.0.0"}},
 		Source:       validEntry().Source,
 		Confidence:   ConfidenceHigh,
+		ReviewStatus: ReviewReviewed,
 	}
 	if err := e.Validate(); !errors.Is(err, ErrMissingValue) {
 		t.Fatalf("got %v, want ErrMissingValue", err)
@@ -110,6 +112,7 @@ func TestEntryValidate_ConstantWithValue(t *testing.T) {
 		Availability: []Availability{{Profile: "openmp", Since: "1.0.0"}},
 		Source:       validEntry().Source,
 		Confidence:   ConfidenceHigh,
+		ReviewStatus: ReviewReviewed,
 	}
 	if err := e.Validate(); err != nil {
 		t.Fatalf("expected valid constant, got: %v", err)
@@ -194,6 +197,22 @@ func TestEntryValidate_InvalidConfidence(t *testing.T) {
 	e.Confidence = "very-sure"
 	if err := e.Validate(); !errors.Is(err, ErrInvalidConfidence) {
 		t.Fatalf("got %v, want ErrInvalidConfidence", err)
+	}
+}
+
+func TestEntryValidate_MissingReviewStatus(t *testing.T) {
+	e := validEntry()
+	e.ReviewStatus = ""
+	if err := e.Validate(); !errors.Is(err, ErrMissingReview) {
+		t.Fatalf("got %v, want ErrMissingReview", err)
+	}
+}
+
+func TestEntryValidate_InvalidReviewStatus(t *testing.T) {
+	e := validEntry()
+	e.ReviewStatus = "maybe"
+	if err := e.Validate(); !errors.Is(err, ErrInvalidReview) {
+		t.Fatalf("got %v, want ErrInvalidReview", err)
 	}
 }
 

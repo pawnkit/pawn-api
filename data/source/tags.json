@@ -21,7 +21,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "tag:bool",
@@ -45,7 +46,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "tag:WEAPON",
@@ -69,6 +71,7 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   }
 ]

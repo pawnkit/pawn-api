@@ -28,6 +28,8 @@ var (
 
 	ErrMissingConfidence = errors.New("pawnapi: missing confidence")
 	ErrInvalidConfidence = errors.New("pawnapi: invalid confidence")
+	ErrMissingReview     = errors.New("pawnapi: missing review status")
+	ErrInvalidReview     = errors.New("pawnapi: invalid review status")
 
 	ErrDuplicateID            = errors.New("pawnapi: duplicate entry id")
 	ErrDuplicateName          = errors.New("pawnapi: duplicate (kind, name) pair")

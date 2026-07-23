@@ -37,6 +37,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when client check response.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnClientCheckResponse"
   },
@@ -75,6 +76,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when enter exit mod shop.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnEnterExitModShop"
   },
@@ -109,6 +111,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc change node.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCChangeNode"
   },
@@ -137,6 +140,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc create.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCCreate"
   },
@@ -172,6 +176,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc death.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCDeath"
   },
@@ -200,6 +205,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc destroy.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCDestroy"
   },
@@ -228,6 +234,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc finish move.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCFinishMove"
   },
@@ -259,6 +266,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc finish move path.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCFinishMovePath"
   },
@@ -293,6 +301,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc finish move path point.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCFinishMovePathPoint"
   },
@@ -324,6 +333,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc finish node.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCFinishNode"
   },
@@ -358,6 +368,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc finish node point.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCFinishNodePoint"
   },
@@ -400,6 +411,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc give damage.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCGiveDamage"
   },
@@ -431,6 +443,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc playback end.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCPlaybackEnd"
   },
@@ -462,6 +475,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc playback start.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCPlaybackStart"
   },
@@ -490,6 +504,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc respawn.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCRespawn"
   },
@@ -522,6 +537,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc spawn.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCSpawn"
   },
@@ -564,6 +580,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc take damage.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCTakeDamage"
   },
@@ -615,6 +632,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc weapon shot.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCWeaponShot"
   },
@@ -649,6 +667,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when npc weapon state change.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnNPCWeaponStateChange"
   },
@@ -684,6 +703,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when player finished downloading.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerFinishedDownloading"
   },
@@ -723,6 +743,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when player request download.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerRequestDownload"
   },
@@ -758,6 +779,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when rcon command.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnRconCommand"
   },
@@ -802,6 +824,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when rcon login attempt.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnRconLoginAttempt"
   },
@@ -837,6 +860,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when trailer update.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnTrailerUpdate"
   },
@@ -899,6 +923,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when unoccupied vehicle update.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnUnoccupiedVehicleUpdate"
   },
@@ -934,6 +959,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle damage status update.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleDamageStatusUpdate"
   },
@@ -972,6 +998,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle mod.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleMod"
   },
@@ -1010,6 +1037,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle paintjob.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehiclePaintjob"
   },
@@ -1051,6 +1079,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle respray.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleRespray"
   },
@@ -1089,6 +1118,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle siren state change.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleSirenStateChange"
   },
@@ -1124,6 +1154,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle stream in.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleStreamIn"
   },
@@ -1159,6 +1190,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when vehicle stream out.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleStreamOut"
   },
@@ -1181,6 +1213,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Defines npc max nodes values."
   },
   {
@@ -1234,6 +1267,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds static vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddStaticVehicle"
   },
@@ -1296,6 +1330,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds static vehicle ex.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddStaticVehicleEx"
   },
@@ -1332,6 +1367,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attach trailer to vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachTrailerToVehicle"
   },
@@ -1365,6 +1401,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Bans .",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Ban"
   },
@@ -1405,6 +1442,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Bans ex.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/BanEx"
   },
@@ -1445,6 +1483,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Blocks ip address.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/BlockIpAddress"
   },
@@ -1477,6 +1516,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Car col index to colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CarColIndexToColour"
   },
@@ -1516,6 +1556,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes vehicle color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ChangeVehicleColor"
   },
@@ -1551,6 +1592,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ChangeVehicleColours"
   },
@@ -1587,6 +1629,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes vehicle paintjob.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ChangeVehiclePaintjob"
   },
@@ -1611,6 +1654,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Clears ban list.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ClearBanList"
   },
@@ -1639,6 +1683,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Count vehicle occupants.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CountVehicleOccupants"
   },
@@ -1673,6 +1718,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db close.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_close"
   },
@@ -1703,6 +1749,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation close.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_Close"
   },
@@ -1729,6 +1776,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db debug openfiles.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_debug_openfiles"
   },
@@ -1755,6 +1803,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db debug openresults.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_debug_openresults"
   },
@@ -1797,6 +1846,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation execute query.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_ExecuteQuery"
   },
@@ -1844,6 +1894,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db field name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_field_name"
   },
@@ -1878,6 +1929,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db free result.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_free_result"
   },
@@ -1908,6 +1960,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation free result set.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_FreeResultSet"
   },
@@ -1955,6 +2008,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get field.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_field"
   },
@@ -2006,6 +2060,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get field assoc.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_field_assoc"
   },
@@ -2047,6 +2102,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get field assoc float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_field_assoc_float"
   },
@@ -2087,6 +2143,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get field assoc int.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_field_assoc_int"
   },
@@ -2125,6 +2182,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get field float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_field_float"
   },
@@ -2162,6 +2220,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get field int.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_field_int"
   },
@@ -2195,6 +2254,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get mem handle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_mem_handle"
   },
@@ -2228,6 +2288,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db get result mem handle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_get_result_mem_handle"
   },
@@ -2250,6 +2311,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get database connection count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetDatabaseConnectionCount"
   },
@@ -2272,6 +2334,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get database result set count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetDatabaseResultSetCount"
   },
@@ -2301,6 +2364,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldCount"
   },
@@ -2335,6 +2399,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field float.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldFloat"
   },
@@ -2372,6 +2437,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field float by name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldFloatByName"
   },
@@ -2405,6 +2471,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field int.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldInt"
   },
@@ -2441,6 +2508,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field int by name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldIntByName"
   },
@@ -2484,6 +2552,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldName"
   },
@@ -2527,6 +2596,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field string.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldString"
   },
@@ -2574,6 +2644,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get field string by name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetFieldStringByName"
   },
@@ -2603,6 +2674,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get legacy db result.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetLegacyDBResult"
   },
@@ -2632,6 +2704,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get mem handle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetMemHandle"
   },
@@ -2661,6 +2734,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation get row count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_GetRowCount"
   },
@@ -2695,6 +2769,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db next row.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_next_row"
   },
@@ -2728,6 +2803,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db num fields.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_num_fields"
   },
@@ -2761,6 +2837,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db num rows.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_num_rows"
   },
@@ -2798,6 +2875,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db open.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_open"
   },
@@ -2836,6 +2914,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation open.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_Open"
   },
@@ -2877,6 +2956,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Db query.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/db_query"
   },
@@ -2907,6 +2987,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Runs database operation select next row.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DB_SelectNextRow"
   },
@@ -2940,6 +3021,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Detach trailer from vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DetachTrailerFromVehicle"
   },
@@ -2968,6 +3050,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables vehicle friendly fire.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnableVehicleFriendlyFire"
   },
@@ -3008,6 +3091,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns network stats.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetNetworkStats"
   },
@@ -3037,6 +3121,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player connect mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerConnectMode"
   },
@@ -3065,6 +3150,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player hydra reactor angle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerHydraReactorAngle"
   },
@@ -3107,6 +3193,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player ip.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerIp"
   },
@@ -3136,6 +3223,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player landing gear state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerLandingGearState"
   },
@@ -3179,6 +3267,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player network stats.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerNetworkStats"
   },
@@ -3211,6 +3300,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player ping.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPing"
   },
@@ -3239,6 +3329,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player raw ip.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerRawIp"
   },
@@ -3268,6 +3359,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player siren state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSirenState"
   },
@@ -3297,6 +3389,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player train speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerTrainSpeed"
   },
@@ -3339,6 +3432,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player version.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerVersion"
   },
@@ -3386,6 +3480,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns random car col pair.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetRandomCarColPair"
   },
@@ -3433,6 +3528,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns random vehicle color pair.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetRandomVehicleColorPair"
   },
@@ -3480,6 +3576,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns random vehicle colour pair.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetRandomVehicleColourPair"
   },
@@ -3508,6 +3605,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle cab.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleCab"
   },
@@ -3545,6 +3643,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleColor"
   },
@@ -3582,6 +3681,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleColours"
   },
@@ -3618,6 +3718,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle component in slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleComponentInSlot"
   },
@@ -3651,6 +3752,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle component type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleComponentType"
   },
@@ -3704,6 +3806,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle damage status.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleDamageStatus"
   },
@@ -3749,6 +3852,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle distance from point.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleDistanceFromPoint"
   },
@@ -3777,6 +3881,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle driver.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleDriver"
   },
@@ -3805,6 +3910,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle hydra reactor angle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleHydraReactorAngle"
   },
@@ -3833,6 +3939,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle interior.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleInterior"
   },
@@ -3862,6 +3969,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle landing gear state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleLandingGearState"
   },
@@ -3890,6 +3998,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle last driver.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleLastDriver"
   },
@@ -3964,6 +4073,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle matrix.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleMatrix"
   },
@@ -3992,6 +4102,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle max passengers.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleMaxPassengers"
   },
@@ -4020,6 +4131,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle model count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleModelCount"
   },
@@ -4072,6 +4184,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle model info.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleModelInfo"
   },
@@ -4094,6 +4207,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle models used.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleModelsUsed"
   },
@@ -4133,6 +4247,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle number plate.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleNumberPlate"
   },
@@ -4164,6 +4279,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle occupant.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleOccupant"
   },
@@ -4192,6 +4308,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle occupied tick.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleOccupiedTick"
   },
@@ -4220,6 +4337,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle paintjob.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehiclePaintjob"
   },
@@ -4273,6 +4391,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle params car doors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleParamsCarDoors"
   },
@@ -4326,6 +4445,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle params car windows.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleParamsCarWindows"
   },
@@ -4394,6 +4514,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle params ex.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleParamsEx"
   },
@@ -4426,6 +4547,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle params siren state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleParamsSirenState"
   },
@@ -4454,6 +4576,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle respawn delay.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleRespawnDelay"
   },
@@ -4482,6 +4605,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle respawn tick.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleRespawnTick"
   },
@@ -4526,6 +4650,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleRotation"
   },
@@ -4579,6 +4704,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle rotation quat.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleRotationQuat"
   },
@@ -4614,6 +4740,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicles.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicles"
   },
@@ -4642,6 +4769,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle seats.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleSeats"
   },
@@ -4671,6 +4799,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle siren state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleSirenState"
   },
@@ -4730,6 +4859,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle spawn info.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleSpawnInfo"
   },
@@ -4758,6 +4888,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle tower.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleTower"
   },
@@ -4790,6 +4921,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle trailer.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleTrailer"
   },
@@ -4819,6 +4951,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle train speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleTrainSpeed"
   },
@@ -4851,6 +4984,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns vehicle virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetVehicleVirtualWorld"
   },
@@ -4893,6 +5027,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gpci.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/gpci"
   },
@@ -4931,6 +5066,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gpci.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GPCI"
   },
@@ -4960,6 +5096,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether vehicle been occupied.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HasVehicleBeenOccupied"
   },
@@ -4993,6 +5130,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether banned.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsBanned"
   },
@@ -5026,6 +5164,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player admin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerAdmin"
   },
@@ -5055,6 +5194,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player in mod shop.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInModShop"
   },
@@ -5088,6 +5228,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether trailer attached to vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsTrailerAttachedToVehicle"
   },
@@ -5117,6 +5258,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether vehicle dead.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsVehicleDead"
   },
@@ -5146,6 +5288,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether vehicle occupied.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsVehicleOccupied"
   },
@@ -5175,6 +5318,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether vehicle siren enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsVehicleSirenEnabled"
   },
@@ -5211,6 +5355,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether vehicle streamed in.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsVehicleStreamedIn"
   },
@@ -5244,6 +5389,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Kick.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/Kick"
   },
@@ -5280,6 +5426,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Links vehicle to interior.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/LinkVehicleToInterior"
   },
@@ -5308,6 +5455,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Manual vehicle engine and lights.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ManualVehicleEngineAndLights"
   },
@@ -5340,6 +5488,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats bytes received.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_BytesReceived"
   },
@@ -5372,6 +5521,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats bytes sent.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_BytesSent"
   },
@@ -5405,6 +5555,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats connection status.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_ConnectionStatus"
   },
@@ -5437,6 +5588,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats get connected time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_GetConnectedTime"
   },
@@ -5479,6 +5631,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats get ip port.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_GetIpPort"
   },
@@ -5511,6 +5664,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats messages received.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_MessagesReceived"
   },
@@ -5543,6 +5697,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats messages recv per second.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_MessagesRecvPerSecond"
   },
@@ -5575,6 +5730,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats messages sent.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_MessagesSent"
   },
@@ -5608,6 +5764,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Net stats packet loss percent.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NetStats_PacketLossPercent"
   },
@@ -5654,6 +5811,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc add point to path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_AddPointToPath"
   },
@@ -5728,6 +5886,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc aim at.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_AimAt"
   },
@@ -5808,6 +5967,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc aim at player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_AimAtPlayer"
   },
@@ -5873,6 +6033,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc apply animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ApplyAnimation"
   },
@@ -5907,6 +6068,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc change node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ChangeNode"
   },
@@ -5935,6 +6097,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc clear animations.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ClearAnimations"
   },
@@ -5964,6 +6127,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc clear path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ClearPath"
   },
@@ -5993,6 +6157,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc close node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_CloseNode"
   },
@@ -6025,6 +6190,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc create.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Create"
   },
@@ -6047,6 +6213,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc create path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_CreatePath"
   },
@@ -6075,6 +6242,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc destroy.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Destroy"
   },
@@ -6099,6 +6267,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc destroy all path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_DestroyAllPath"
   },
@@ -6128,6 +6297,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc destroy path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_DestroyPath"
   },
@@ -6162,6 +6332,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc enable infinite ammo.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_EnableInfiniteAmmo"
   },
@@ -6196,6 +6367,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc enable reloading.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_EnableReloading"
   },
@@ -6236,6 +6408,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc enter vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_EnterVehicle"
   },
@@ -6265,6 +6438,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc exit vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ExitVehicle"
   },
@@ -6300,6 +6474,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get all.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetAll"
   },
@@ -6328,6 +6503,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get ammo.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetAmmo"
   },
@@ -6356,6 +6532,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get ammo in clip.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetAmmoInClip"
   },
@@ -6417,6 +6594,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetAnimation"
   },
@@ -6446,6 +6624,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get armour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetArmour"
   },
@@ -6474,6 +6653,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get current path point index.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetCurrentPathPointIndex"
   },
@@ -6502,6 +6682,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get custom skin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetCustomSkin"
   },
@@ -6530,6 +6711,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get entering vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetEnteringVehicle"
   },
@@ -6558,6 +6740,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get entering vehicle id.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetEnteringVehicleID"
   },
@@ -6586,6 +6769,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get entering vehicle seat.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetEnteringVehicleSeat"
   },
@@ -6619,6 +6803,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get facing angle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetFacingAngle"
   },
@@ -6648,6 +6833,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get fighting style.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetFightingStyle"
   },
@@ -6677,6 +6863,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get health.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetHealth"
   },
@@ -6705,6 +6892,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get interior.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetInterior"
   },
@@ -6745,6 +6933,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get keys.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetKeys"
   },
@@ -6786,6 +6975,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get node info.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetNodeInfo"
   },
@@ -6814,6 +7004,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get node point count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetNodePointCount"
   },
@@ -6858,6 +7049,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get node point position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetNodePointPosition"
   },
@@ -6886,6 +7078,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get node type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetNodeType"
   },
@@ -6908,6 +7101,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get path count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPathCount"
   },
@@ -6961,6 +7155,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get path point.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPathPoint"
   },
@@ -6989,6 +7184,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get path point count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPathPointCount"
   },
@@ -7017,6 +7213,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get player aiming at.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPlayerAimingAt"
   },
@@ -7045,6 +7242,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get player moving to.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPlayerMovingTo"
   },
@@ -7088,6 +7286,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get pos.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPos"
   },
@@ -7131,6 +7330,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get pos moving to.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetPosMovingTo"
   },
@@ -7153,6 +7353,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get record count.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetRecordCount"
   },
@@ -7196,6 +7397,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get rot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetRot"
   },
@@ -7224,6 +7426,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get skin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetSkin"
   },
@@ -7253,6 +7456,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get special action.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetSpecialAction"
   },
@@ -7281,6 +7485,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get surfing object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetSurfingObject"
   },
@@ -7324,6 +7529,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get surfing offsets.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetSurfingOffsets"
   },
@@ -7352,6 +7558,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get surfing player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetSurfingPlayerObject"
   },
@@ -7380,6 +7587,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get surfing vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetSurfingVehicle"
   },
@@ -7408,6 +7616,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicle"
   },
@@ -7437,6 +7646,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle gear state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicleGearState"
   },
@@ -7466,6 +7676,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle health.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicleHealth"
   },
@@ -7494,6 +7705,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle hydra thrusters.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicleHydraThrusters"
   },
@@ -7522,6 +7734,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle id.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicleID"
   },
@@ -7550,6 +7763,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle seat.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicleSeat"
   },
@@ -7579,6 +7793,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get vehicle train speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVehicleTrainSpeed"
   },
@@ -7622,6 +7837,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get velocity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVelocity"
   },
@@ -7650,6 +7866,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetVirtualWorld"
   },
@@ -7679,6 +7896,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeapon"
   },
@@ -7712,6 +7930,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon accuracy.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponAccuracy"
   },
@@ -7744,6 +7963,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon actual clip size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponActualClipSize"
   },
@@ -7776,6 +7996,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon actual reload time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponActualReloadTime"
   },
@@ -7808,6 +8029,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon clip size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponClipSize"
   },
@@ -7840,6 +8062,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon reload time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponReloadTime"
   },
@@ -7872,6 +8095,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon shoot time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponShootTime"
   },
@@ -7904,6 +8128,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon skill level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponSkillLevel"
   },
@@ -7933,6 +8158,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc get weapon state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_GetWeaponState"
   },
@@ -7978,6 +8204,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc has path point in range.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_HasPathPointInRange"
   },
@@ -8007,6 +8234,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is aiming.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsAiming"
   },
@@ -8039,6 +8267,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is aiming at player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsAimingAtPlayer"
   },
@@ -8068,6 +8297,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is any streamed in.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsAnyStreamedIn"
   },
@@ -8097,6 +8327,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is dead.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsDead"
   },
@@ -8126,6 +8357,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is entering vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsEnteringVehicle"
   },
@@ -8155,6 +8387,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is infinite ammo enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsInfiniteAmmoEnabled"
   },
@@ -8184,6 +8417,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is invulnerable.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsInvulnerable"
   },
@@ -8213,6 +8447,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is melee attacking.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsMeleeAttacking"
   },
@@ -8242,6 +8477,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is moving.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsMoving"
   },
@@ -8274,6 +8510,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is moving to player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsMovingToPlayer"
   },
@@ -8303,6 +8540,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is node open.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsNodeOpen"
   },
@@ -8332,6 +8570,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is playback paused.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsPlaybackPaused"
   },
@@ -8361,6 +8600,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is playing node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsPlayingNode"
   },
@@ -8390,6 +8630,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is playing node paused.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsPlayingNodePaused"
   },
@@ -8419,6 +8660,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is playing playback.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsPlayingPlayback"
   },
@@ -8448,6 +8690,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is reload enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsReloadEnabled"
   },
@@ -8477,6 +8720,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is reloading.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsReloading"
   },
@@ -8506,6 +8750,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is shooting.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsShooting"
   },
@@ -8535,6 +8780,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is spawned.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsSpawned"
   },
@@ -8567,6 +8813,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is streamed in.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsStreamedIn"
   },
@@ -8596,6 +8843,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is valid.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsValid"
   },
@@ -8625,6 +8873,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is valid path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsValidPath"
   },
@@ -8654,6 +8903,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is valid record.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsValidRecord"
   },
@@ -8683,6 +8933,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc is vehicle siren used.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_IsVehicleSirenUsed"
   },
@@ -8720,6 +8971,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc kill.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Kill"
   },
@@ -8752,6 +9004,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc load record.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_LoadRecord"
   },
@@ -8790,6 +9043,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc melee attack.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_MeleeAttack"
   },
@@ -8845,6 +9099,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc move.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Move"
   },
@@ -8892,6 +9147,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc move by path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_MoveByPath"
   },
@@ -8946,6 +9202,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc move to player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_MoveToPlayer"
   },
@@ -8975,6 +9232,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc open node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_OpenNode"
   },
@@ -9009,6 +9267,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc pause playback.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_PausePlayback"
   },
@@ -9038,6 +9297,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc pause playing node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_PausePlayingNode"
   },
@@ -9090,6 +9350,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc play node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_PlayNode"
   },
@@ -9125,6 +9386,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc put in vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_PutInVehicle"
   },
@@ -9154,6 +9416,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc remove from vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_RemoveFromVehicle"
   },
@@ -9186,6 +9449,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc remove point from path.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_RemovePointFromPath"
   },
@@ -9214,6 +9478,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc reset animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ResetAnimation"
   },
@@ -9242,6 +9507,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc reset surfing data.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ResetSurfingData"
   },
@@ -9270,6 +9536,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc respawn.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Respawn"
   },
@@ -9299,6 +9566,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc resume playing node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_ResumePlayingNode"
   },
@@ -9330,6 +9598,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set ammo.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetAmmo"
   },
@@ -9361,6 +9630,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set ammo in clip.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetAmmoInClip"
   },
@@ -9392,6 +9662,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set angle to player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetAngleToPlayer"
   },
@@ -9432,6 +9703,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set angle to pos.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetAngleToPos"
   },
@@ -9486,6 +9758,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetAnimation"
   },
@@ -9518,6 +9791,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set armour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetArmour"
   },
@@ -9550,6 +9824,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set facing angle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetFacingAngle"
   },
@@ -9582,6 +9857,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set fighting style.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetFightingStyle"
   },
@@ -9614,6 +9890,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set health.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetHealth"
   },
@@ -9645,6 +9922,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set interior.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetInterior"
   },
@@ -9678,6 +9956,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set invulnerable.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetInvulnerable"
   },
@@ -9715,6 +9994,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set keys.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetKeys"
   },
@@ -9747,6 +10027,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set node point.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetNodePoint"
   },
@@ -9787,6 +10068,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set pos.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetPos"
   },
@@ -9827,6 +10109,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set rot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetRot"
   },
@@ -9858,6 +10141,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set skin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetSkin"
   },
@@ -9890,6 +10174,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set special action.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetSpecialAction"
   },
@@ -9921,6 +10206,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set surfing object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetSurfingObject"
   },
@@ -9961,6 +10247,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set surfing offsets.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetSurfingOffsets"
   },
@@ -9992,6 +10279,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set surfing player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetSurfingPlayerObject"
   },
@@ -10023,6 +10311,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set surfing vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetSurfingVehicle"
   },
@@ -10055,6 +10344,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set vehicle gear state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetVehicleGearState"
   },
@@ -10087,6 +10377,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set vehicle health.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetVehicleHealth"
   },
@@ -10118,6 +10409,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set vehicle hydra thrusters.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetVehicleHydraThrusters"
   },
@@ -10150,6 +10442,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set vehicle train speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetVehicleTrainSpeed"
   },
@@ -10190,6 +10483,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set velocity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetVelocity"
   },
@@ -10221,6 +10515,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetVirtualWorld"
   },
@@ -10253,6 +10548,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeapon"
   },
@@ -10289,6 +10585,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon accuracy.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeaponAccuracy"
   },
@@ -10324,6 +10621,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon clip size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeaponClipSize"
   },
@@ -10359,6 +10657,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon reload time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeaponReloadTime"
   },
@@ -10394,6 +10693,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon shoot time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeaponShootTime"
   },
@@ -10430,6 +10730,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon skill level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeaponSkillLevel"
   },
@@ -10462,6 +10763,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc set weapon state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_SetWeaponState"
   },
@@ -10537,6 +10839,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc shoot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Shoot"
   },
@@ -10565,6 +10868,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc spawn.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_Spawn"
   },
@@ -10636,6 +10940,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc start playback.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StartPlayback"
   },
@@ -10703,6 +11008,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc start playback ex.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StartPlaybackEx"
   },
@@ -10732,6 +11038,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc stop aim.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StopAim"
   },
@@ -10761,6 +11068,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc stop melee attack.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StopMeleeAttack"
   },
@@ -10790,6 +11098,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc stop move.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StopMove"
   },
@@ -10819,6 +11128,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc stop playback.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StopPlayback"
   },
@@ -10848,6 +11158,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc stop playing node.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_StopPlayingNode"
   },
@@ -10872,6 +11183,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc unload all records.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_UnloadAllRecords"
   },
@@ -10901,6 +11213,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc unload record.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_UnloadRecord"
   },
@@ -10933,6 +11246,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc update node point.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_UpdateNodePoint"
   },
@@ -10967,6 +11281,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Npc use vehicle siren.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/NPC_UseVehicleSiren"
   },
@@ -11012,6 +11327,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends client check.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientCheck"
   },
@@ -11054,6 +11370,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends rcon command.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendRconCommand"
   },
@@ -11092,6 +11409,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends rcon commandf.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendRconCommandf"
   },
@@ -11125,6 +11443,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player admin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerAdmin"
   },
@@ -11170,6 +11489,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle angular velocity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleAngularVelocity"
   },
@@ -11219,6 +11539,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle params car doors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleParamsCarDoors"
   },
@@ -11268,6 +11589,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle params car windows.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleParamsCarWindows"
   },
@@ -11329,6 +11651,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle params ex.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleParamsEx"
   },
@@ -11373,6 +11696,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle params for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleParamsForPlayer"
   },
@@ -11406,6 +11730,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle params siren state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleParamsSirenState"
   },
@@ -11438,6 +11763,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle respawn delay.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleRespawnDelay"
   },
@@ -11500,6 +11826,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle spawn info.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleSpawnInfo"
   },
@@ -11533,6 +11860,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle to respawn.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleToRespawn"
   },
@@ -11569,6 +11897,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets vehicle virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleVirtualWorld"
   },
@@ -11602,6 +11931,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Toggles vehicle siren enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ToggleVehicleSirenEnabled"
   },
@@ -11639,6 +11969,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unblocks ip address.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/UnBlockIpAddress"
   },
@@ -11688,6 +12019,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Updates vehicle damage status.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/UpdateVehicleDamageStatus"
   },
@@ -11720,6 +12052,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Vehicle can have component.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/VehicleCanHaveComponent"
   },
@@ -11752,6 +12085,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Vehicle colour index to colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/VehicleColourIndexToColour"
   },
@@ -11773,6 +12107,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags carmodtype values."
   },
   {
@@ -11793,6 +12128,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags connection status values."
   },
   {
@@ -11813,6 +12149,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags download request values."
   },
   {
@@ -11833,6 +12170,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags landing gear state values."
   },
   {
@@ -11853,6 +12191,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags npc entity check values."
   },
   {
@@ -11873,6 +12212,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags npc move type values."
   },
   {
@@ -11893,6 +12233,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags sqlite open values."
   },
   {
@@ -11913,6 +12254,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags vehicle door status values."
   },
   {
@@ -11933,6 +12275,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags vehicle light status values."
   },
   {
@@ -11953,6 +12296,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags vehicle model info values."
   },
   {
@@ -11973,6 +12317,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags vehicle panel status values."
   },
   {
@@ -11993,6 +12338,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags vehicle tyre status values."
   }
 ]

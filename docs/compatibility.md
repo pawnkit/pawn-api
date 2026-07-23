@@ -36,9 +36,12 @@ The Go model contains fields that schema version 1 cannot represent. Schema obje
 | Callback context / thread notes | Yes (`Entry.CallbackContext`) | **No** |
 | Documentation summary (short prose) | Yes (`Entry.DocumentationSummary`) | **No** (`documentationUrl` only, a link) |
 | Source provenance | Yes | Yes |
-| Confidence | Yes (`Entry.Confidence`) | **No** |
+| Confidence | Yes (`Entry.Confidence`) | Yes |
+| Review status | Yes (`Entry.ReviewStatus`) | Yes |
 
-`Entry.ToSchema` creates `data/generated/pawn-api.json`; `pawnapi.Load` exposes the full model to Go callers. A future schema revision should add at least aliases, confidence, and documentation summaries so non-Go consumers can use them too.
+`Entry.ToSchema` creates `data/generated/pawn-api.json`; `pawnapi.Load` exposes
+the full model to Go callers. A future schema revision should add aliases and
+documentation summaries so non-Go consumers can use them too.
 
 ## Version policy
 

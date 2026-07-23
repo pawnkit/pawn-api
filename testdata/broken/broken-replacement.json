@@ -16,6 +16,7 @@
       "commit": "0000000000000000000000000000000000000f",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   }
 ]

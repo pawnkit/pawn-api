@@ -142,7 +142,7 @@ func entry(kind pawnapi.Kind, name string, signature *pawnapi.Signature, profile
 	return pawnapi.Entry{
 		ID: string(kind) + ":" + name, Kind: kind, Name: name, Signature: signature,
 		Availability: []pawnapi.Availability{{Profile: profile}}, Source: source,
-		OwningInclude: include, Confidence: pawnapi.ConfidenceHigh,
+		OwningInclude: include, Confidence: pawnapi.ConfidenceHigh, ReviewStatus: pawnapi.ReviewGenerated,
 	}
 }
 

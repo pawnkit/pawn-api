@@ -67,7 +67,7 @@ func TestMarshalSchemaDocument_ConformsAndProjects(t *testing.T) {
 		t.Fatalf("got %d schema entries, want %d", len(doc.Entries), len(entries))
 	}
 	for _, se := range doc.Entries {
-		if se.ID == "" || se.Kind == "" || se.Name == "" {
+		if se.ID == "" || se.Kind == "" || se.Name == "" || se.Confidence == "" || se.ReviewStatus == "" {
 			t.Fatalf("schema entry missing required field: %+v", se)
 		}
 	}

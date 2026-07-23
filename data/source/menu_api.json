@@ -28,6 +28,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player exits a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerExitedMenu"
   },
@@ -63,6 +64,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player selects a menu row.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerSelectedMenuRow"
   },
@@ -111,6 +113,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds an item to a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddMenuItem",
     "constraints": [
@@ -176,6 +179,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreateMenu",
     "constraints": [
@@ -213,6 +217,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyMenu"
   },
@@ -247,6 +252,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisableMenu"
   },
@@ -284,6 +290,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables a row in a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisableMenuRow"
   },
@@ -326,6 +333,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a menu column heading.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuColumnHeader"
   },
@@ -367,6 +375,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a menu's column widths.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuColumnWidth"
   },
@@ -396,6 +405,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the number of columns in a menu.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuColumns"
   },
@@ -441,6 +451,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the text of a menu item.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuItem"
   },
@@ -473,6 +484,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the number of items in a menu column.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuItems"
   },
@@ -513,6 +525,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a menu's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuPos"
   },
@@ -546,6 +559,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the menu shown to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerMenu"
   },
@@ -583,6 +597,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a menu from a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HideMenuForPlayer"
   },
@@ -613,6 +628,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a menu is disabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsMenuDisabled"
   },
@@ -646,6 +662,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a menu row is disabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsMenuRowDisabled"
   },
@@ -680,6 +697,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a menu ID is valid.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidMenu"
   },
@@ -729,6 +747,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a menu column heading.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetMenuColumnHeader",
     "constraints": [
@@ -769,6 +788,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a menu to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ShowMenuForPlayer"
   },
@@ -794,7 +814,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:MAX_MENUS",
@@ -822,7 +843,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:INVALID_MENU",
@@ -853,7 +875,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   }
 ]
 

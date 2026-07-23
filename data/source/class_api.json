@@ -25,6 +25,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets the number of teams used by class selection.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetTeamCount"
   },
@@ -100,6 +101,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a class to the class-selection screen.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddPlayerClass"
   },
@@ -178,6 +180,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a team class to the class-selection screen.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddPlayerClassEx"
   },
@@ -256,6 +259,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes an existing player class.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EditPlayerClass"
   },
@@ -289,6 +293,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player to the class-selection screen.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ForceClassSelection"
   },
@@ -311,6 +316,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the number of available player classes.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetAvailableClasses"
   },
@@ -406,6 +412,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets an available player class.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerClass"
   },
@@ -501,6 +508,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player's spawn settings.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetSpawnInfo"
   }

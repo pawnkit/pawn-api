@@ -25,6 +25,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global object's draw distance.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectDrawDistance"
   },
@@ -58,6 +59,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global object's movement speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectMoveSpeed"
   },
@@ -87,6 +89,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global object's movement speed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectMoveSpeed"
   },
@@ -131,6 +134,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's movement target position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectMovingTargetPos"
   },
@@ -178,6 +182,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's movement target.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectMovingTargetPos",
     "deprecated": {
@@ -227,6 +232,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's movement target rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectMovingTargetRot"
   },
@@ -271,6 +277,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets the entities attached to a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectAttachedData"
   },
@@ -336,6 +343,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's attachment offset.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectAttachedOffset"
   },
@@ -365,6 +373,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether an attached global object inherits rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectSyncRotation"
   },
@@ -396,6 +405,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns how a global-object material slot is used.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsObjectMaterialSlotUsed"
   },
@@ -457,6 +467,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's material.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectMaterial"
   },
@@ -541,6 +552,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global object's material text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectMaterialText"
   },
@@ -570,6 +582,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether camera collision is disabled for a global object.",
     "deprecated": {
       "since": "1.0.0",
@@ -678,6 +691,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets data for a player's attached-object slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerAttachedObject"
   },
@@ -773,6 +787,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets an object in a player's attached-object slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerAttachedObject"
   },
@@ -809,6 +824,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Removes an object from a player's attached-object slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/RemovePlayerAttachedObject"
   },
@@ -845,6 +861,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player's attached-object slot is used.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerAttachedObjectSlotUsed"
   },
@@ -881,6 +898,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player edit an attached object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EditAttachedObject"
   },
@@ -927,6 +945,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a custom character model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddCharModel",
     "constraints": [
@@ -979,6 +998,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a custom model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddSimpleModel",
     "constraints": [
@@ -1037,6 +1057,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a custom model available during set hours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddSimpleModelTimed",
     "constraints": [
@@ -1078,6 +1099,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Finds a model file by its CRC.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/FindModelFileNameFromCRC",
     "constraints": [
@@ -1119,6 +1141,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Finds a texture file by its CRC.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/FindTextureFileNameFromCRC",
     "constraints": [
@@ -1158,6 +1181,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Redirects a player's model download.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/RedirectDownload",
     "constraints": [
@@ -1210,6 +1234,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets the files used by a custom model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetCustomModelPath"
   },
@@ -1239,6 +1264,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a custom model exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidCustomModel"
   },
@@ -1320,6 +1346,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player finishes editing an attached object.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEditAttachedObject"
   },
@@ -1346,6 +1373,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Maximum attached-object slots per player.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   }

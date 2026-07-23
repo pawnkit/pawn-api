@@ -27,6 +27,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a global pickup streams in for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPickupStreamIn"
   },
@@ -58,6 +59,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a global pickup streams out for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPickupStreamOut"
   },
@@ -93,6 +95,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player collects a global pickup.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickUpPickup"
   },
@@ -124,6 +127,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player collects a player pickup.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickUpPlayerPickup"
   },
@@ -155,6 +159,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player pickup streams in.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickupStreamIn"
   },
@@ -186,6 +191,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player pickup streams out.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickupStreamOut"
   },
@@ -237,6 +243,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Adds a static pickup.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AddStaticPickup"
   },
@@ -288,6 +295,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a global pickup.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePickup"
   },
@@ -338,6 +346,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a pickup for one player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerPickup"
   },
@@ -371,6 +380,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a global pickup.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPickup"
   },
@@ -403,6 +413,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a player pickup.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPlayerPickup"
   },
@@ -431,6 +442,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global pickup's model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupModel"
   },
@@ -475,6 +487,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global pickup's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupPos"
   },
@@ -503,6 +516,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global pickup's type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupType"
   },
@@ -531,6 +545,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global pickup's virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupVirtualWorld"
   },
@@ -562,6 +577,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player pickup's model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupModel"
   },
@@ -609,6 +625,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player pickup's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupPos"
   },
@@ -640,6 +657,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player pickup's type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupType"
   },
@@ -671,6 +689,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player pickup's virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupVirtualWorld"
   },
@@ -703,6 +722,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a global pickup from a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HidePickupForPlayer"
   },
@@ -735,6 +755,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global pickup is hidden from a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPickupHiddenForPlayer"
   },
@@ -767,6 +788,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a pickup is streamed in for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPickupStreamedIn"
   },
@@ -799,6 +821,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player pickup is streamed in.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerPickupStreamedIn"
   },
@@ -828,6 +851,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global pickup exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPickup"
   },
@@ -860,6 +884,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player pickup exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerPickup"
   },
@@ -897,6 +922,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global pickup's model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupModel"
   },
@@ -943,6 +969,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global pickup's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupPos"
   },
@@ -980,6 +1007,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global pickup's type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupType"
   },
@@ -1012,6 +1040,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global pickup's virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupVirtualWorld"
   },
@@ -1052,6 +1081,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player pickup's model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupModel"
   },
@@ -1101,6 +1131,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player pickup's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupPos"
   },
@@ -1141,6 +1172,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player pickup's type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupType"
   },
@@ -1176,6 +1208,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player pickup's virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupVirtualWorld"
   },
@@ -1208,6 +1241,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a global pickup to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPickupForPlayer"
   },
@@ -1230,6 +1264,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Value used when no valid pickup exists.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   }

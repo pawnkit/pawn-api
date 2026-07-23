@@ -51,3 +51,24 @@ func (c Confidence) IsValid() bool {
 func (c Confidence) String() string {
 	return string(c)
 }
+
+// ReviewStatus records whether a person checked an entry.
+type ReviewStatus string
+
+const (
+	ReviewGenerated ReviewStatus = "generated"
+	ReviewReviewed  ReviewStatus = "reviewed"
+)
+
+func (s ReviewStatus) IsValid() bool {
+	switch s {
+	case ReviewGenerated, ReviewReviewed:
+		return true
+	default:
+		return false
+	}
+}
+
+func (s ReviewStatus) String() string {
+	return string(s)
+}

@@ -6,9 +6,8 @@ Tools use this data to answer questions such as whether `SetPlayerPos` exists fo
 
 ## Status
 
-This is a pre-1.0 dataset, not a complete copy of omp-stdlib. It currently has
-387 reviewed entries: 268 natives, 45 callbacks, one function, 61 constants,
-and 12 tags.
+This is a pre-1.0 dataset. It currently has 1,146 reviewed entries covering
+the public declarations in the pinned omp-stdlib source.
 
 ## Install
 
@@ -76,7 +75,9 @@ includes. It exits with status 1 when declarations are missing.
 | `define` | 2 | `INVALID_TIMER` |
 | `tag` | 47 | `Float`, `PLAYER_STATE`, `VEHICLE_MODEL_INFO`, `NPC_MOVE_MODE` |
 
-Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
+Each entry records its upstream repository, file, commit, licence, confidence,
+and review status. [docs/licence-report.md](docs/licence-report.md) explains
+how that provenance is collected.
 
 ## Limits
 
@@ -87,7 +88,8 @@ Each entry records its upstream repository, file, commit, licence, and confidenc
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.
 - SA-MP availability is reviewed against a pinned 0.3.7 include source.
-- Schema version 1 does not contain every field used by the Go model. The gap is listed in [docs/compatibility.md](docs/compatibility.md).
+- Schema version 1 does not contain every field used by the Go model. The gap
+  is listed in [docs/compatibility.md](docs/compatibility.md).
 
 Third-party library APIs are not bundled here. PawnKit reads them from the
 project's installed includes, so completion and diagnostics match the version

@@ -30,7 +30,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerDisconnect",
@@ -66,7 +67,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerSpawn",
@@ -98,7 +100,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerDeath",
@@ -138,7 +141,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerText",
@@ -177,7 +181,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerCommandText",
@@ -216,7 +221,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerEnterVehicle",
@@ -256,7 +262,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerExitVehicle",
@@ -292,7 +299,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnVehicleSpawn",
@@ -324,7 +332,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnVehicleDeath",
@@ -359,7 +368,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnGameModeInit",
@@ -386,7 +396,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnGameModeExit",
@@ -412,7 +423,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnFilterScriptInit",
@@ -438,7 +450,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnFilterScriptExit",
@@ -464,7 +477,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerStateChange",
@@ -504,7 +518,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerRequestClass",
@@ -539,7 +554,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnPlayerRequestSpawn",
@@ -572,7 +588,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "callback:OnIncomingConnection",
@@ -609,6 +626,7 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewStatus": "reviewed"
   }
 ]

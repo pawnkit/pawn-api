@@ -27,6 +27,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player clicks a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickGangZone"
   },
@@ -58,6 +59,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player clicks a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickPlayerGangZone"
   },
@@ -89,6 +91,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player enters a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterGangZone"
   },
@@ -120,6 +123,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player enters a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterPlayerGangZone"
   },
@@ -151,6 +155,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player leaves a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveGangZone"
   },
@@ -182,6 +187,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player leaves a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeavePlayerGangZone"
   },
@@ -208,6 +214,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Value used when no valid gang zone exists.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -252,6 +259,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a gang zone for one player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerGangZone"
   },
@@ -297,6 +305,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneCreate"
   },
@@ -330,6 +339,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneDestroy"
   },
@@ -366,6 +376,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Flashes a global gang zone for every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneFlashForAll"
   },
@@ -405,6 +416,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Flashes a global gang zone for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneFlashForPlayer"
   },
@@ -436,6 +448,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global gang zone's colour for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetColourForPlayer",
     "deprecated": {
@@ -472,6 +485,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global gang zone's colour for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetColourForPlayer"
   },
@@ -503,6 +517,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global gang zone's flash colour for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetFlashColourForPlayer",
     "deprecated": {
@@ -539,6 +554,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global gang zone's flash colour for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetFlashColourForPlayer"
   },
@@ -588,6 +604,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a global gang zone's bounds.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetPos"
   },
@@ -621,6 +638,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a global gang zone from every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneHideForAll"
   },
@@ -657,6 +675,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a global gang zone from a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneHideForPlayer"
   },
@@ -693,6 +712,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a global gang zone to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneShowForAll"
   },
@@ -732,6 +752,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a global gang zone to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneShowForPlayer"
   },
@@ -765,6 +786,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops a global gang zone flashing for every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneStopFlashForAll"
   },
@@ -801,6 +823,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops a global gang zone flashing for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneStopFlashForPlayer"
   },
@@ -833,6 +856,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global gang zone is flashing for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsGangZoneFlashingForPlayer"
   },
@@ -865,6 +889,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global gang zone is visible to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsGangZoneVisibleForPlayer"
   },
@@ -897,6 +922,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player gang zone is flashing.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerGangZoneFlashing"
   },
@@ -929,6 +955,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player gang zone is visible.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerGangZoneVisible"
   },
@@ -961,6 +988,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player is inside a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInGangZone"
   },
@@ -993,6 +1021,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player is inside a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInPlayerGangZone"
   },
@@ -1022,6 +1051,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a global gang zone exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidGangZone"
   },
@@ -1054,6 +1084,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Checks whether a player gang zone exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerGangZone"
   },
@@ -1086,6 +1117,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneDestroy"
   },
@@ -1121,6 +1153,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Flashes a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneFlash"
   },
@@ -1152,6 +1185,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player gang zone's colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetColour",
     "deprecated": {
@@ -1188,6 +1222,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player gang zone's colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetColour"
   },
@@ -1219,6 +1254,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player gang zone's flash colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetFlashColour",
     "deprecated": {
@@ -1255,6 +1291,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player gang zone's flash colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetFlashColour"
   },
@@ -1307,6 +1344,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Gets a player gang zone's bounds.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetPos"
   },
@@ -1339,6 +1377,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneHide"
   },
@@ -1374,6 +1413,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneShow"
   },
@@ -1406,6 +1446,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops a player gang zone flashing.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneStopFlash"
   },
@@ -1439,6 +1480,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables or disables entry and leave checks for a global gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/UseGangZoneCheck"
   },
@@ -1475,6 +1517,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables or disables entry and leave checks for a player gang zone.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/UsePlayerGangZoneCheck"
   }

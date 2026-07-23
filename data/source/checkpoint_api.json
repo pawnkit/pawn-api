@@ -28,6 +28,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player enters their checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterCheckpoint"
   },
@@ -60,6 +61,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player enters their race checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterRaceCheckpoint"
   },
@@ -92,6 +94,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player leaves their checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveCheckpoint"
   },
@@ -124,6 +127,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player leaves their race checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveRaceCheckpoint"
   },
@@ -157,6 +161,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a player's checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisablePlayerCheckpoint"
   },
@@ -190,6 +195,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a player's race checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisablePlayerRaceCheckpoint"
   },
@@ -243,6 +249,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's checkpoint position and radius.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCheckpoint"
   },
@@ -314,6 +321,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's race checkpoint data.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerRaceCheckpoint"
   },
@@ -343,6 +351,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player has an active checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerCheckpointActive"
   },
@@ -376,6 +385,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player is inside their checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInCheckpoint"
   },
@@ -409,6 +419,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player is inside their race checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInRaceCheckpoint"
   },
@@ -438,6 +449,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player has an active race checkpoint.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerRaceCheckpointActive"
   },
@@ -487,6 +499,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a checkpoint to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerCheckpoint"
   },
@@ -552,6 +565,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a race checkpoint to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerRaceCheckpoint"
   },
@@ -573,6 +587,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tag used for race checkpoint types."
   }
 ]

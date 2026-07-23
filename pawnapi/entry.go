@@ -38,9 +38,9 @@ type Entry struct {
 
 	Source Source `json:"source"`
 
-	// Confidence records how thoroughly this entry was checked.
-	Confidence Confidence `json:"confidence"`
-	Notes      string     `json:"notes,omitempty"`
+	Confidence   Confidence   `json:"confidence"`
+	ReviewStatus ReviewStatus `json:"reviewStatus"`
+	Notes        string       `json:"notes,omitempty"`
 }
 
 func kindPrefix(k Kind) string {
@@ -113,6 +113,12 @@ func (e Entry) Validate() error {
 	}
 	if !e.Confidence.IsValid() {
 		return fmt.Errorf("%w: %q", ErrInvalidConfidence, e.Confidence)
+	}
+	if e.ReviewStatus == "" {
+		return ErrMissingReview
+	}
+	if !e.ReviewStatus.IsValid() {
+		return fmt.Errorf("%w: %q", ErrInvalidReview, e.ReviewStatus)
 	}
 
 	return nil

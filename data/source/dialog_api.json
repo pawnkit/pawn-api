@@ -43,6 +43,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player responds to a dialog.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnDialogResponse"
   },
@@ -71,6 +72,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the ID of a player's current dialog.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialog",
     "deprecated": {
@@ -146,6 +148,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the data for a player's current dialog.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialogData"
   },
@@ -174,6 +177,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the ID of a player's current dialog.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialogID"
   },
@@ -203,6 +207,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a player's current dialog.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HidePlayerDialog"
   },
@@ -276,6 +281,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a dialog to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPlayerDialog",
     "constraints": [
@@ -300,6 +306,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tag used for dialog styles."
   },
   {
@@ -326,7 +333,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:DIALOG_STYLE_INPUT",
@@ -352,7 +360,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:DIALOG_STYLE_LIST",
@@ -378,7 +387,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:DIALOG_STYLE_PASSWORD",
@@ -404,7 +414,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:DIALOG_STYLE_TABLIST",
@@ -430,7 +441,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:DIALOG_STYLE_TABLIST_HEADERS",
@@ -456,7 +468,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:UNKNOWN_DIALOG_STYLE",
@@ -478,7 +491,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   },
   {
     "id": "constant:MAX_DIALOG",
@@ -499,7 +513,8 @@
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
-    "confidence": "high"
+    "confidence": "high",
+    "reviewStatus": "reviewed"
   }
 ]
 

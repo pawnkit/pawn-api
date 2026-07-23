@@ -32,6 +32,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player clicks a player text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickPlayerTextDraw"
   },
@@ -68,6 +69,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player clicks a global text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickTextDraw"
   },
@@ -94,6 +96,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Invalid player text-draw identifier.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -120,6 +123,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Invalid global text-draw identifier.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -146,6 +150,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Maximum number of text draws per player.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -172,6 +177,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Maximum number of global text draws.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -205,6 +211,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Ends text-draw selection for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CancelSelectTextDraw"
   },
@@ -258,6 +265,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a text draw for one player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerTextDraw"
   },
@@ -291,6 +299,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's text draw is visible.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerTextDrawVisible"
   },
@@ -324,6 +333,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global text draw is visible to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsTextDrawVisibleForPlayer"
   },
@@ -357,6 +367,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's text draw exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerTextDraw"
   },
@@ -387,6 +398,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global text draw exists.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidTextDraw"
   },
@@ -428,6 +440,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's alignment.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawAlignment"
   },
@@ -468,6 +481,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBackgroundColor",
     "deprecated": {
@@ -509,6 +523,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBackgroundColour"
   },
@@ -549,6 +564,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's box colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBoxColor",
     "deprecated": {
@@ -590,6 +606,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's box colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawBoxColour"
   },
@@ -630,6 +647,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's text colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawColor",
     "deprecated": {
@@ -671,6 +689,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's text colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawColour"
   },
@@ -708,6 +727,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Deletes a player's text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawDestroy"
   },
@@ -749,6 +769,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's font.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawFont"
   },
@@ -782,6 +803,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's alignment.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetAlignment"
   },
@@ -814,6 +836,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBackgroundCol",
     "deprecated": {
@@ -851,6 +874,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's background color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBackgroundColour",
     "deprecated": {
@@ -888,6 +912,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBackgroundColour"
   },
@@ -920,6 +945,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's box color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBoxColor",
     "deprecated": {
@@ -957,6 +983,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's box colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetBoxColour"
   },
@@ -989,6 +1016,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetColor",
     "deprecated": {
@@ -1026,6 +1054,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetColour"
   },
@@ -1059,6 +1088,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's font.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetFont"
   },
@@ -1102,6 +1132,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's letter size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetLetterSize"
   },
@@ -1134,6 +1165,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's outline.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetOutline"
   },
@@ -1177,6 +1209,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPos"
   },
@@ -1209,6 +1242,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's preview model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewModel"
   },
@@ -1262,6 +1296,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw preview rotation and zoom.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewRot"
   },
@@ -1303,6 +1338,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's preview veh colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewVehCol",
     "deprecated": {
@@ -1349,6 +1385,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's preview vehicle colors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewVehicleColours",
     "deprecated": {
@@ -1395,6 +1432,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetPreviewVehicleColours"
   },
@@ -1427,6 +1465,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's shadow.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetShadow"
   },
@@ -1470,6 +1509,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's string.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetString"
   },
@@ -1513,6 +1553,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's text draw's text size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawGetTextSize"
   },
@@ -1550,6 +1591,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a player's text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawHide"
   },
@@ -1583,6 +1625,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's text draw has a box.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawIsBox"
   },
@@ -1616,6 +1659,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's text draw uses proportional text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawIsProportional"
   },
@@ -1649,6 +1693,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player's text draw can be selected.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawIsSelectable"
   },
@@ -1694,6 +1739,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's letter size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawLetterSize"
   },
@@ -1734,6 +1780,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's outline size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetOutline"
   },
@@ -1775,6 +1822,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPos"
   },
@@ -1815,6 +1863,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's preview model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewModel"
   },
@@ -1869,6 +1918,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's preview rotation and zoom.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewRot"
   },
@@ -1912,6 +1962,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewVehCol",
     "deprecated": {
@@ -1956,6 +2007,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewVehicleColours",
     "deprecated": {
@@ -2000,6 +2052,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetPreviewVehicleColours"
   },
@@ -2041,6 +2094,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a player's text draw uses proportional text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetProportional"
   },
@@ -2082,6 +2136,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a player's text draw can be selected.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetSelectable"
   },
@@ -2122,6 +2177,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's shadow size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetShadow"
   },
@@ -2171,6 +2227,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawSetString"
   },
@@ -2208,6 +2265,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a player's text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawShow"
   },
@@ -2253,6 +2311,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a player's text draw's text area.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawTextSize"
   },
@@ -2294,6 +2353,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a player's text draw has a box.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerTextDrawUseBox"
   },
@@ -2330,6 +2390,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Starts text-draw selection for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SelectTextDraw"
   },
@@ -2368,6 +2429,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's alignment.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawAlignment"
   },
@@ -2405,6 +2467,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBackgroundColor",
     "deprecated": {
@@ -2443,6 +2506,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBackgroundColour"
   },
@@ -2480,6 +2544,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's box colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBoxColor",
     "deprecated": {
@@ -2518,6 +2583,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's box colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawBoxColour"
   },
@@ -2555,6 +2621,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's text colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawColor",
     "deprecated": {
@@ -2593,6 +2660,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's text colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawColour"
   },
@@ -2643,6 +2711,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a global text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawCreate"
   },
@@ -2677,6 +2746,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Deletes a global text draw.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawDestroy"
   },
@@ -2715,6 +2785,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's font.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawFont"
   },
@@ -2745,6 +2816,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's alignment.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawAlignment"
   },
@@ -2774,6 +2846,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's background color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBackgroundColor",
     "deprecated": {
@@ -2808,6 +2881,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's background colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBackgroundColour"
   },
@@ -2837,6 +2911,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's box color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBoxColor",
     "deprecated": {
@@ -2871,6 +2946,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's box colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetBoxColour"
   },
@@ -2900,6 +2976,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's color.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetColor",
     "deprecated": {
@@ -2934,6 +3011,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetColour"
   },
@@ -2964,6 +3042,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's font.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetFont"
   },
@@ -3004,6 +3083,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's letter size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetLetterSize"
   },
@@ -3033,6 +3113,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's outline.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetOutline"
   },
@@ -3073,6 +3154,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPos"
   },
@@ -3102,6 +3184,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's preview model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewModel"
   },
@@ -3152,6 +3235,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw preview rotation and zoom.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewRot"
   },
@@ -3190,6 +3274,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's preview veh colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewVehCol",
     "deprecated": {
@@ -3233,6 +3318,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's preview vehicle colors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewVehicleColours",
     "deprecated": {
@@ -3276,6 +3362,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetPreviewVehicleColours"
   },
@@ -3305,6 +3392,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's shadow.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetShadow"
   },
@@ -3345,6 +3433,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's string.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetString"
   },
@@ -3385,6 +3474,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a global text draw's text size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawGetTextSize"
   },
@@ -3419,6 +3509,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a global text draw from every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawHideForAll"
   },
@@ -3456,6 +3547,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides a global text draw from a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawHideForPlayer"
   },
@@ -3486,6 +3578,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global text draw has a box.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawIsBox"
   },
@@ -3516,6 +3609,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global text draw uses proportional text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawIsProportional"
   },
@@ -3546,6 +3640,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a global text draw can be selected.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawIsSelectable"
   },
@@ -3588,6 +3683,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's letter size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawLetterSize"
   },
@@ -3625,6 +3721,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's outline size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetOutline"
   },
@@ -3663,6 +3760,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPos"
   },
@@ -3700,6 +3798,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's preview model.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewModel"
   },
@@ -3751,6 +3850,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's preview rotation and zoom.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewRot"
   },
@@ -3791,6 +3891,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewVehCol",
     "deprecated": {
@@ -3832,6 +3933,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewVehicleColours",
     "deprecated": {
@@ -3873,6 +3975,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's preview vehicle colours.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetPreviewVehicleColours"
   },
@@ -3911,6 +4014,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a global text draw uses proportional text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetProportional"
   },
@@ -3949,6 +4053,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a global text draw can be selected.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetSelectable"
   },
@@ -3986,6 +4091,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's shadow size.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetShadow"
   },
@@ -4032,6 +4138,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetString"
   },
@@ -4077,6 +4184,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's text for one player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawSetStringForPlayer"
   },
@@ -4111,6 +4219,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a global text draw to every player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawShowForAll"
   },
@@ -4148,6 +4257,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows a global text draw to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawShowForPlayer"
   },
@@ -4190,6 +4300,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets a global text draw's text area.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawTextSize"
   },
@@ -4228,6 +4339,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets whether a global text draw has a box.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawUseBox"
   },
@@ -4253,6 +4365,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags player text-draw identifiers.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -4278,6 +4391,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags global text-draw identifiers.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -4299,6 +4413,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags text-draw alignments.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawAlignment"
   },
@@ -4320,6 +4435,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags text-draw fonts.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TextDrawFont"
   }

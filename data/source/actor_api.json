@@ -31,6 +31,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when an actor streams in for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnActorStreamIn"
   },
@@ -66,6 +67,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when an actor streams out for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnActorStreamOut"
   },
@@ -112,6 +114,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player damages an actor.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerGiveDamageActor"
   },
@@ -138,6 +141,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sentinel used when no valid actor ID is available."
   },
   {
@@ -207,6 +211,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Applies an animation to an actor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ApplyActorAnimation"
   },
@@ -240,6 +245,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops an actor's current animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ClearActorAnimations"
   },
@@ -288,6 +294,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates a static actor without using a player slot.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreateActor"
   },
@@ -321,6 +328,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Destroys an actor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyActor"
   },
@@ -402,6 +410,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an actor's current animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorAnimation"
   },
@@ -440,6 +449,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns the direction an actor faces.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorFacingAngle"
   },
@@ -478,6 +488,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an actor's health.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorHealth"
   },
@@ -526,6 +537,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an actor's position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorPos"
   },
@@ -554,6 +566,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an actor's skin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorSkin"
   },
@@ -611,6 +624,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an actor's initial skin, position, and angle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorSpawnInfo"
   },
@@ -643,6 +657,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns an actor's virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorVirtualWorld"
   },
@@ -677,6 +692,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Writes the active actor IDs to an array.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetActors"
   },
@@ -710,6 +726,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether an actor is invulnerable.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsActorInvulnerable"
   },
@@ -746,6 +763,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether an actor is streamed in for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsActorStreamedIn"
   },
@@ -779,6 +797,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether an actor ID is valid.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidActor"
   },
@@ -816,6 +835,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes the direction an actor faces.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorFacingAngle"
   },
@@ -853,6 +873,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes an actor's health.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorHealth"
   },
@@ -891,6 +912,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes whether an actor can take damage.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorInvulnerable"
   },
@@ -936,6 +958,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Moves an actor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorPos"
   },
@@ -968,6 +991,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Changes an actor's skin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorSkin"
   },
@@ -1004,6 +1028,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Moves an actor to a virtual world.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorVirtualWorld"
   }

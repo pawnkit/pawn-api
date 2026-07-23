@@ -40,6 +40,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player click map.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickMap"
   },
@@ -79,6 +80,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player click player.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickPlayer"
   },
@@ -125,6 +127,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player give damage.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerGiveDamage"
   },
@@ -163,6 +166,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player interior change.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerInteriorChange"
   },
@@ -203,6 +207,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player key state change.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerKeyStateChange"
   },
@@ -238,6 +243,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player stream in.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerStreamIn"
   },
@@ -273,6 +279,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player stream out.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerStreamOut"
   },
@@ -319,6 +326,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player take damage.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerTakeDamage"
   },
@@ -351,6 +359,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player update.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerUpdate"
   },
@@ -406,6 +415,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player weapon shot.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerWeaponShot"
   },
@@ -443,6 +453,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Allows player teleport.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AllowPlayerTeleport"
   },
@@ -476,6 +487,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Allows player weapons.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AllowPlayerWeapons"
   },
@@ -551,6 +563,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Applies animation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ApplyAnimation"
   },
@@ -580,6 +593,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player weapons allowed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ArePlayerWeaponsAllowed"
   },
@@ -616,6 +630,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches camera to object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachCameraToObject"
   },
@@ -652,6 +667,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Attaches camera to player object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/AttachCameraToPlayerObject"
   },
@@ -690,6 +706,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Clears animations.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ClearAnimations"
   },
@@ -719,6 +736,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Clears player world bounds.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ClearPlayerWorldBounds"
   },
@@ -771,6 +789,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Creates explosion for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CreateExplosionForPlayer"
   },
@@ -808,6 +827,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Disables remote vehicle collisions.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DisableRemoteVehicleCollisions"
   },
@@ -845,6 +865,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables player camera target.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnablePlayerCameraTarget"
   },
@@ -882,6 +903,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Enables stunt bonus for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EnableStuntBonusForPlayer"
   },
@@ -933,6 +955,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows game text to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GameTextForPlayer"
   },
@@ -980,6 +1003,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows formatted game text to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GameTextForPlayer",
     "deprecated": {
@@ -1013,6 +1037,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns default player colour.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetDefaultPlayerColour"
   },
@@ -1061,6 +1086,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns a player's active game text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetGameText"
   },
@@ -1090,6 +1116,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player aim z.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerZAim"
   },
@@ -1122,6 +1149,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player ammo.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerAmmo"
   },
@@ -1150,6 +1178,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player animation flags.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerAnimationFlags"
   },
@@ -1182,6 +1211,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player animation index.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerAnimationIndex"
   },
@@ -1210,6 +1240,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player anim flags.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerAnimFlags"
   },
@@ -1238,6 +1269,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player buildings removed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerBuildingsRemoved"
   },
@@ -1271,6 +1303,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera aspect ratio.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraAspectRatio"
   },
@@ -1319,6 +1352,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera front vector.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraFrontVector"
   },
@@ -1352,6 +1386,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraMode"
   },
@@ -1400,6 +1435,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera pos.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraPos"
   },
@@ -1432,6 +1468,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera target actor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetActor"
   },
@@ -1464,6 +1501,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera target object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetObject"
   },
@@ -1496,6 +1534,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera target player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayer"
   },
@@ -1528,6 +1567,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera target vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetVehicle"
   },
@@ -1561,6 +1601,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player camera zoom.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraZoom"
   },
@@ -1593,6 +1634,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player custom skin.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCustomSkin"
   },
@@ -1638,6 +1680,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player distance from point.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDistanceFromPoint"
   },
@@ -1670,6 +1713,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player drunk level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDrunkLevel"
   },
@@ -1703,6 +1747,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player fighting style.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerFightingStyle"
   },
@@ -1732,6 +1777,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player ghost mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerGhostMode"
   },
@@ -1761,6 +1807,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player gravity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerGravity"
   },
@@ -1807,6 +1854,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player keys.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerKeys"
   },
@@ -1870,6 +1918,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player last shot vectors.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerLastShotVectors"
   },
@@ -1901,6 +1950,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player marker for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerMarkerForPlayer"
   },
@@ -1950,6 +2000,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player rotation quat.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerRotationQuat"
   },
@@ -1985,6 +2036,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Copies the connected player IDs.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayers"
   },
@@ -2017,6 +2069,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player skill level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSkillLevel"
   },
@@ -2050,6 +2103,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player special action.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSpecialAction"
   },
@@ -2078,6 +2132,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player spectate id.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSpectateID"
   },
@@ -2106,6 +2161,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player spectate type.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSpectateType"
   },
@@ -2139,6 +2195,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerState"
   },
@@ -2171,6 +2228,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player surfing object id.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSurfingObjectID"
   },
@@ -2215,6 +2273,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player surfing offsets.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSurfingOffsets"
   },
@@ -2247,6 +2306,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player surfing vehicle id.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSurfingVehicleID"
   },
@@ -2279,6 +2339,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player target actor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerTargetActor"
   },
@@ -2311,6 +2372,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player target player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerTargetPlayer"
   },
@@ -2352,6 +2414,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerTime"
   },
@@ -2384,6 +2447,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player vehicle seat.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerVehicleSeat"
   },
@@ -2416,6 +2480,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player wanted level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerWantedLevel"
   },
@@ -2449,6 +2514,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player weapon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerWeapon"
   },
@@ -2495,6 +2561,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player weapon data.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerWeaponData"
   },
@@ -2528,6 +2595,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player weapon state.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerWeaponState"
   },
@@ -2556,6 +2624,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player weather.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerWeather"
   },
@@ -2605,6 +2674,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns player world bounds.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerWorldBounds"
   },
@@ -2634,6 +2704,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Returns playervertical aim.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerZAim"
   },
@@ -2666,6 +2737,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player has active game text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HasGameText"
   },
@@ -2698,6 +2770,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Hides game text for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HideGameTextForPlayer"
   },
@@ -2763,6 +2836,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Interpolates camera look at.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/InterpolateCameraLookAt"
   },
@@ -2828,6 +2902,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Interpolates camera pos.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/InterpolateCameraPos"
   },
@@ -2857,6 +2932,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player camera target enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerCameraTargetEnabled"
   },
@@ -2886,6 +2962,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player controllable.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerControllable"
   },
@@ -2915,6 +2992,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player cuffed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerCuffed"
   },
@@ -2944,6 +3022,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player in drive by mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInDriveByMode"
   },
@@ -2993,6 +3072,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player in range of point.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInRangeOfPoint"
   },
@@ -3026,6 +3106,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player npc.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerNPC"
   },
@@ -3055,6 +3136,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player spawned.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerSpawned"
   },
@@ -3091,6 +3173,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player streamed in.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerStreamedIn"
   },
@@ -3120,6 +3203,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player teleport allowed.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerTeleportAllowed"
   },
@@ -3149,6 +3233,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player using official client.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerUsingOfficialClient"
   },
@@ -3178,6 +3263,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether a player uses the open.mp client.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerUsingOmp"
   },
@@ -3207,6 +3293,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Reports whether player widescreen toggled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerWidescreenToggled"
   },
@@ -3272,6 +3359,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Plays audio stream for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayAudioStreamForPlayer"
   },
@@ -3311,6 +3399,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Plays crime report for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayCrimeReportForPlayer"
   },
@@ -3340,6 +3429,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Plays er has clock enabled.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerHasClockEnabled"
   },
@@ -3391,6 +3481,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Plays er play sound.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerPlaySound"
   },
@@ -3432,6 +3523,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Plays er spectate player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerSpectatePlayer"
   },
@@ -3473,6 +3565,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Plays er spectate vehicle.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerSpectateVehicle"
   },
@@ -3525,6 +3618,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Removes building for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/RemoveBuildingForPlayer"
   },
@@ -3561,6 +3655,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Removes player map icon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/RemovePlayerMapIcon"
   },
@@ -3594,6 +3689,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Removes player weapon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/RemovePlayerWeapon"
   },
@@ -3627,6 +3723,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Resets player money.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ResetPlayerMoney"
   },
@@ -3660,6 +3757,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Resets player weapons.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ResetPlayerWeapons"
   },
@@ -3704,6 +3802,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a formatted client message to a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessagef",
     "deprecated": {
@@ -3751,6 +3850,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends death message to player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendDeathMessageToPlayer"
   },
@@ -3799,6 +3899,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends player message to player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendPlayerMessageToPlayer"
   },
@@ -3843,6 +3944,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends a formatted player message to another player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SendPlayerMessageToPlayerf",
     "deprecated": {
@@ -3881,6 +3983,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets camera behind player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetCameraBehindPlayer"
   },
@@ -3921,6 +4024,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player ammo.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerAmmo"
   },
@@ -3958,6 +4062,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player armed weapon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerArmedWeapon"
   },
@@ -4008,6 +4113,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player camera look at.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerCameraLookAt"
   },
@@ -4053,6 +4159,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player camera pos.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerCameraPos"
   },
@@ -4108,6 +4215,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player chat bubble.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerChatBubble"
   },
@@ -4144,6 +4252,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player drunk level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerDrunkLevel"
   },
@@ -4181,6 +4290,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player fighting style.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerFightingStyle"
   },
@@ -4214,6 +4324,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player gravity.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerGravity"
   },
@@ -4273,6 +4384,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player map icon.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerMapIcon"
   },
@@ -4312,6 +4424,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player marker for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerMarkerForPlayer"
   },
@@ -4357,6 +4470,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player pos find z.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPosFindZ"
   },
@@ -4397,6 +4511,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player shop name.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerShopName"
   },
@@ -4437,6 +4552,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player skill level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerSkillLevel"
   },
@@ -4474,6 +4590,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player special action.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerSpecialAction"
   },
@@ -4513,6 +4630,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player time.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerTime"
   },
@@ -4549,6 +4667,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player wanted level.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerWantedLevel"
   },
@@ -4585,6 +4704,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player weather.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerWeather"
   },
@@ -4634,6 +4754,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sets player world bounds.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerWorldBounds"
   },
@@ -4674,6 +4795,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Shows player name tag for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPlayerNameTagForPlayer"
   },
@@ -4718,6 +4840,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Starts recording player data.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StartRecordingPlayerData"
   },
@@ -4751,6 +4874,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops audio stream for player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StopAudioStreamForPlayer"
   },
@@ -4784,6 +4908,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Stops recording player data.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StopRecordingPlayerData"
   },
@@ -4821,6 +4946,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Toggles player clock.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerClock"
   },
@@ -4854,6 +4980,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Toggles player ghost mode.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerGhostMode"
   },
@@ -4891,6 +5018,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Toggles player spectating.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerSpectating"
   },
@@ -4924,6 +5052,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Toggles player widescreen.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerWidescreen"
   },
@@ -4945,6 +5074,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags bullet hit type values.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerWeaponShot"
   },
@@ -4966,6 +5096,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags cam mode values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraMode"
   },
@@ -4987,6 +5118,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags cam move values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/InterpolateCameraPos"
   },
@@ -5008,6 +5140,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags click source values.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickPlayer"
   },
@@ -5029,6 +5162,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags fight style values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerFightingStyle"
   },
@@ -5050,6 +5184,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags force sync values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/ApplyAnimation"
   },
@@ -5071,6 +5206,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags key values.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerKeyStateChange"
   },
@@ -5092,6 +5228,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags mapicon values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerMapIcon"
   },
@@ -5113,6 +5250,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags player recording type values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StartRecordingPlayerData"
   },
@@ -5134,6 +5272,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags player state values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerState"
   },
@@ -5155,6 +5294,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags special action values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SPECIAL_ACTION"
   },
@@ -5176,6 +5316,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags spectate mode values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SPECTATE_MODE"
   },
@@ -5197,6 +5338,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags weaponskill values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/WEAPONSKILL"
   },
@@ -5218,6 +5360,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags weaponstate values.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/WEAPONSTATE"
   }

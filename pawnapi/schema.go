@@ -50,6 +50,8 @@ type SchemaEntry struct {
 	Deprecated       *SchemaDeprecated    `json:"deprecated,omitempty"`
 	Source           SchemaSource         `json:"source"`
 	DocumentationURL string               `json:"documentationUrl,omitempty"`
+	Confidence       Confidence           `json:"confidence"`
+	ReviewStatus     ReviewStatus         `json:"reviewStatus"`
 }
 
 // ToSchema returns the schema-compatible subset of e.
@@ -61,6 +63,8 @@ func (e Entry) ToSchema() SchemaEntry {
 		Value:            e.Value,
 		Tags:             e.Tags,
 		DocumentationURL: e.DocumentationURL,
+		Confidence:       e.Confidence,
+		ReviewStatus:     e.ReviewStatus,
 		Source: SchemaSource{
 			Repository: e.Source.Repository,
 			Path:       e.Source.Path,

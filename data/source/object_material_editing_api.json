@@ -53,6 +53,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Replaces a global object's material.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectMaterial"
   },
@@ -137,6 +138,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Replaces a global object's material with text.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectMaterialText",
     "constraints": [
@@ -172,6 +174,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player edit a global object's position and rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/BeginObjectEditing"
   },
@@ -208,6 +211,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player edit a global object's position and rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EditObject",
     "deprecated": {
@@ -242,6 +246,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player select an object with the cursor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/BeginObjectSelecting"
   },
@@ -275,6 +280,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Lets a player select an object with the cursor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SelectObject",
     "deprecated": {
@@ -309,6 +315,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Ends object editing or selection for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EndObjectEditing"
   },
@@ -342,6 +349,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Ends object editing or selection for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CancelEdit",
     "deprecated": {
@@ -401,6 +409,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a player selects an object.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerSelectObject"
   },
@@ -467,6 +476,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called while a player edits an object and when editing ends.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEditObject"
   },
@@ -499,6 +509,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Called when a global object finishes moving.",
     "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnObjectMoved"
   },
@@ -520,6 +531,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags object selection types.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
   },
@@ -541,6 +553,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags object material text sizes.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -562,6 +575,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags object material text alignments.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -583,6 +597,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags object editing responses.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
   },
@@ -605,6 +620,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Maximum material slots per object.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
   },
@@ -627,6 +643,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unknown object selection type.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
   },
@@ -653,6 +670,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "A selected global object.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
   },
@@ -679,6 +697,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "A selected player object.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/selectobjecttypes"
   },
@@ -701,6 +720,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unknown object material text size.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -727,6 +747,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 32x32.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -753,6 +774,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 64x32.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -779,6 +801,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 64x64.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -805,6 +828,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 128x32.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -831,6 +855,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 128x64.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -857,6 +882,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 128x128.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -883,6 +909,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 256x32.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -909,6 +936,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 256x64.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -935,6 +963,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 256x128.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -961,6 +990,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 256x256.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -987,6 +1017,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 512x64.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -1013,6 +1044,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 512x128.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -1039,6 +1071,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 512x256.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -1065,6 +1098,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Object material text size 512x512.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/materialtextsizes"
   },
@@ -1087,6 +1121,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unknown object material text alignment.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1113,6 +1148,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Left-aligned object material text.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1135,6 +1171,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Centered object material text.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1161,6 +1198,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Centered object material text.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1183,6 +1221,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Centered object material text.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1209,6 +1248,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Right-aligned object material text.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1231,6 +1271,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Right-aligned object material text.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/textalignments"
   },
@@ -1253,6 +1294,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unknown object editing response.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
   },
@@ -1279,6 +1321,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The player cancelled object editing.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
   },
@@ -1305,6 +1348,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The player saved the object edit.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
   },
@@ -1331,6 +1375,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The player moved the object while editing.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
   }

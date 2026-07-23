@@ -53,6 +53,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Sends an asynchronous HTTP request.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/HTTP",
     "constraints": [
@@ -77,6 +78,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags HTTP error response codes.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -98,6 +100,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Tags HTTP request methods.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
   },
@@ -120,6 +123,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unknown HTTP request method.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
   },
@@ -146,6 +150,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "HTTP GET request.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
   },
@@ -172,6 +177,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "HTTP POST request.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
   },
@@ -198,6 +204,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "HTTP HEAD request.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
   },
@@ -220,6 +227,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "Unknown HTTP client error.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -246,6 +254,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The HTTP host could not be resolved.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -272,6 +281,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "An HTTP socket could not be created.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -298,6 +308,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The HTTP client could not connect.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -324,6 +335,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The HTTP client could not send the request.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -350,6 +362,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The HTTP response was too large.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   },
@@ -376,6 +389,7 @@
       "license": "MPL-2.0"
     },
     "confidence": "high",
+    "reviewStatus": "reviewed",
     "documentationSummary": "The HTTP response was malformed.",
     "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
   }
