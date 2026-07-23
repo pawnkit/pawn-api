@@ -1182,6 +1182,32 @@
     "confidence": "high"
   },
   {
+    "id": "constant:INVALID_OBJECT_ID",
+    "kind": "constant",
+    "name": "INVALID_OBJECT_ID",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Value used when no valid object exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "constant:INVALID_PLAYER_ID",
     "kind": "constant",
     "name": "INVALID_PLAYER_ID",
@@ -1528,6 +1554,191 @@
     "confidence": "high"
   },
   {
+    "id": "native:AttachObjectToObject",
+    "kind": "native",
+    "name": "AttachObjectToObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        },
+        {
+          "name": "syncRotation",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Attaches one global object to another.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AttachObjectToPlayer",
+    "kind": "native",
+    "name": "AttachObjectToPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Attaches a global object to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AttachObjectToVehicle",
+    "kind": "native",
+    "name": "AttachObjectToVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Attaches a global object to a vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:ClearActorAnimations",
     "kind": "native",
     "name": "ClearActorAnimations",
@@ -1674,6 +1885,67 @@
     "confidence": "high"
   },
   {
+    "id": "native:CreateObject",
+    "kind": "native",
+    "name": "CreateObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "modelid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates a global object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreateObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:CreateVehicle",
     "kind": "native",
     "name": "CreateVehicle",
@@ -1801,6 +2073,39 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:DestroyObject",
+    "kind": "native",
+    "name": "DestroyObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Destroys a global object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -2557,6 +2862,165 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetObjectModel",
+    "kind": "native",
+    "name": "GetObjectModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global object's model ID.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetObjectPos",
+    "kind": "native",
+    "name": "GetObjectPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a global object's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetObjectRot",
+    "kind": "native",
+    "name": "GetObjectRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a global object's rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetObjectType",
+    "kind": "native",
+    "name": "GetObjectType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the type of an object visible to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetObjectType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -3869,6 +4333,39 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsObjectMoving",
+    "kind": "native",
+    "name": "IsObjectMoving",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a global object is moving.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsObjectMoving",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsPlayerCheckpointActive",
     "kind": "native",
     "name": "IsPlayerCheckpointActive",
@@ -4165,6 +4662,39 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsValidObject",
+    "kind": "native",
+    "name": "IsValidObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a global object exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsValidVehicle",
     "kind": "native",
     "name": "IsValidVehicle",
@@ -4193,6 +4723,70 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:MoveObject",
+    "kind": "native",
+    "name": "MoveObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "targetX",
+          "tag": "Float"
+        },
+        {
+          "name": "targetY",
+          "tag": "Float"
+        },
+        {
+          "name": "targetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "speed",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "default": -1000
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "default": -1000
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "default": -1000
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Moves a global object towards a position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/MoveObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -4669,6 +5263,227 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetObjectNoCameraCol",
+    "kind": "native",
+    "name": "SetObjectNoCameraCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Disables camera collision for a global object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetObjectNoCameraCollision",
+    "kind": "native",
+    "name": "SetObjectNoCameraCollision",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Disables camera collision for a global object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCollision",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetObjectPos",
+    "kind": "native",
+    "name": "SetObjectPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global object's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetObjectRot",
+    "kind": "native",
+    "name": "SetObjectRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global object's rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetObjectsDefaultCameraCol",
+    "kind": "native",
+    "name": "SetObjectsDefaultCameraCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "disable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SetObjectsDefaultCameraCollision",
+      "reason": "Use the full camera-collision name."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the default camera-collision behavior for newly created objects.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectsDefaultCameraCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetObjectsDefaultCameraCollision",
+    "kind": "native",
+    "name": "SetObjectsDefaultCameraCollision",
+    "signature": {
+      "parameters": [
+        {
+          "name": "disable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the default camera-collision behavior for newly created objects.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectsDefaultCameraCollision",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5705,6 +6520,39 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:StopObject",
+    "kind": "native",
+    "name": "StopObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Stops a moving global object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/StopObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },

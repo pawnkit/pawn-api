@@ -244,3 +244,22 @@ func TestLoad_MenuAPI(t *testing.T) {
 		t.Fatalf("INVALID_MENU = %+v", invalid)
 	}
 }
+
+func TestLoad_ObjectCoreAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	attach, ok := index.ByID("native:AttachObjectToObject")
+	if !ok || len(attach.Availability) != 2 || attach.Signature == nil || attach.Signature.Parameters[len(attach.Signature.Parameters)-1].Default == nil {
+		t.Fatalf("AttachObjectToObject = %+v", attach)
+	}
+	objectType, ok := index.ByID("native:GetObjectType")
+	if !ok || len(objectType.Availability) != 1 || objectType.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("GetObjectType = %+v", objectType)
+	}
+	deprecated, ok := index.ByID("native:SetObjectsDefaultCameraCol")
+	if !ok || deprecated.Deprecated == nil || deprecated.Deprecated.Replacement != "native:SetObjectsDefaultCameraCollision" {
+		t.Fatalf("SetObjectsDefaultCameraCol = %+v", deprecated)
+	}
+}

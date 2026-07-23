@@ -7,7 +7,7 @@ Tools use this data to answer questions such as whether `SetPlayerPos` exists fo
 ## Status
 
 This is a pre-1.0 dataset, not a complete copy of omp-stdlib. It currently has
-157 reviewed entries: 107 natives, 28 callbacks, 16 constants, and six tags.
+177 reviewed entries: 126 natives, 28 callbacks, 17 constants, and six tags.
 
 ## Install
 
@@ -68,9 +68,9 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 107 | `SetPlayerPos`, `ShowPlayerDialog`, `CreateMenu` |
+| `native` | 126 | `SetPlayerPos`, `CreateMenu`, `CreateObject` |
 | `callback` | 28 | `OnPlayerConnect`, `OnDialogResponse`, `OnPlayerExitedMenu` |
-| `constant` | 16 | `INVALID_PLAYER_ID`, `DIALOG_STYLE_LIST`, `INVALID_MENU` |
+| `constant` | 17 | `INVALID_PLAYER_ID`, `INVALID_MENU`, `INVALID_OBJECT_ID` |
 | `tag` | 6 | `Float`, `bool`, `WEAPON`, `DIALOG_STYLE`, `Menu` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
@@ -78,8 +78,8 @@ Each entry records its upstream repository, file, commit, licence, and confidenc
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 138 of the 1,061 declarations extracted from
-  `omp_*.inc` have matching entries. The dataset also contains 19 core
+- At the pinned omp-stdlib commit, 156 of the 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. The dataset also contains 21 core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.

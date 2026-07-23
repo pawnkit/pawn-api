@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.7.0 - 2026-07-23
+
+### Added
+
+- Added 20 reviewed global-object natives and constants.
+- Recorded legacy availability, open.mp aliases, and optional movement values.
+
 ## 0.6.0 - 2026-07-23
 
 ### Added
