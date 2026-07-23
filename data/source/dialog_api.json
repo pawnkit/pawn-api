@@ -1,0 +1,505 @@
+[
+  {
+    "id": "callback:OnDialogResponse",
+    "kind": "callback",
+    "name": "OnDialogResponse",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "dialogid"
+        },
+        {
+          "name": "response"
+        },
+        {
+          "name": "listitem"
+        },
+        {
+          "name": "inputtext",
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Called when a player responds to a dialog.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnDialogResponse"
+  },
+  {
+    "id": "native:GetPlayerDialog",
+    "kind": "native",
+    "name": "GetPlayerDialog",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the ID of a player's current dialog.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialog",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayerDialogID",
+      "reason": "Use the explicit ID-suffixed name."
+    }
+  },
+  {
+    "id": "native:GetPlayerDialogData",
+    "kind": "native",
+    "name": "GetPlayerDialogData",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "style",
+          "tag": "DIALOG_STYLE",
+          "reference": true
+        },
+        {
+          "name": "title",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "titleSize"
+        },
+        {
+          "name": "body",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "bodySize"
+        },
+        {
+          "name": "button1",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "button1Size"
+        },
+        {
+          "name": "button2",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "button2Size"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the data for a player's current dialog.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialogData"
+  },
+  {
+    "id": "native:GetPlayerDialogID",
+    "kind": "native",
+    "name": "GetPlayerDialogID",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the ID of a player's current dialog.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialogID"
+  },
+  {
+    "id": "native:HidePlayerDialog",
+    "kind": "native",
+    "name": "HidePlayerDialog",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Hides a player's current dialog.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/HidePlayerDialog"
+  },
+  {
+    "id": "native:ShowPlayerDialog",
+    "kind": "native",
+    "name": "ShowPlayerDialog",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "dialogid"
+        },
+        {
+          "name": "style",
+          "tag": "DIALOG_STYLE"
+        },
+        {
+          "name": "title",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "button1",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "button2",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Shows a dialog to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPlayerDialog",
+    "constraints": [
+      "Formatting arguments are available only under the openmp profile."
+    ]
+  },
+  {
+    "id": "tag:DIALOG_STYLE",
+    "kind": "tag",
+    "name": "DIALOG_STYLE",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tag used for dialog styles."
+  },
+  {
+    "id": "constant:DIALOG_STYLE_MSGBOX",
+    "kind": "constant",
+    "name": "DIALOG_STYLE_MSGBOX",
+    "value": 0,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Dialog style value 0.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:DIALOG_STYLE_INPUT",
+    "kind": "constant",
+    "name": "DIALOG_STYLE_INPUT",
+    "value": 1,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Dialog style value 1.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:DIALOG_STYLE_LIST",
+    "kind": "constant",
+    "name": "DIALOG_STYLE_LIST",
+    "value": 2,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Dialog style value 2.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:DIALOG_STYLE_PASSWORD",
+    "kind": "constant",
+    "name": "DIALOG_STYLE_PASSWORD",
+    "value": 3,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Dialog style value 3.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:DIALOG_STYLE_TABLIST",
+    "kind": "constant",
+    "name": "DIALOG_STYLE_TABLIST",
+    "value": 4,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Dialog style value 4.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:DIALOG_STYLE_TABLIST_HEADERS",
+    "kind": "constant",
+    "name": "DIALOG_STYLE_TABLIST_HEADERS",
+    "value": 5,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Dialog style value 5.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:UNKNOWN_DIALOG_STYLE",
+    "kind": "constant",
+    "name": "UNKNOWN_DIALOG_STYLE",
+    "value": -1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sentinel used when no dialog style is available.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:MAX_DIALOG",
+    "kind": "constant",
+    "name": "MAX_DIALOG",
+    "value": 32768,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Exclusive upper bound for dialog IDs.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_dialog.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]
+

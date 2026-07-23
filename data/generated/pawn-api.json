@@ -66,6 +66,47 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnActorStreamOut"
     },
     {
+      "id": "callback:OnDialogResponse",
+      "kind": "callback",
+      "name": "OnDialogResponse",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "dialogid"
+          },
+          {
+            "name": "response"
+          },
+          {
+            "name": "listitem"
+          },
+          {
+            "name": "inputtext"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnDialogResponse"
+    },
+    {
       "id": "callback:OnFilterScriptExit",
       "kind": "callback",
       "name": "OnFilterScriptExit",
@@ -766,6 +807,144 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleSpawn"
     },
     {
+      "id": "constant:DIALOG_STYLE_INPUT",
+      "kind": "constant",
+      "name": "DIALOG_STYLE_INPUT",
+      "value": 1,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
+    },
+    {
+      "id": "constant:DIALOG_STYLE_LIST",
+      "kind": "constant",
+      "name": "DIALOG_STYLE_LIST",
+      "value": 2,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
+    },
+    {
+      "id": "constant:DIALOG_STYLE_MSGBOX",
+      "kind": "constant",
+      "name": "DIALOG_STYLE_MSGBOX",
+      "value": 0,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
+    },
+    {
+      "id": "constant:DIALOG_STYLE_PASSWORD",
+      "kind": "constant",
+      "name": "DIALOG_STYLE_PASSWORD",
+      "value": 3,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
+    },
+    {
+      "id": "constant:DIALOG_STYLE_TABLIST",
+      "kind": "constant",
+      "name": "DIALOG_STYLE_TABLIST",
+      "value": 4,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
+    },
+    {
+      "id": "constant:DIALOG_STYLE_TABLIST_HEADERS",
+      "kind": "constant",
+      "name": "DIALOG_STYLE_TABLIST_HEADERS",
+      "value": 5,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
+    },
+    {
       "id": "constant:INVALID_ACTOR_ID",
       "kind": "constant",
       "name": "INVALID_ACTOR_ID",
@@ -832,6 +1011,24 @@
       }
     },
     {
+      "id": "constant:MAX_DIALOG",
+      "kind": "constant",
+      "name": "MAX_DIALOG",
+      "value": 32768,
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      }
+    },
+    {
       "id": "constant:MAX_PLAYERS",
       "kind": "constant",
       "name": "MAX_PLAYERS",
@@ -888,6 +1085,25 @@
         "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
         "license": "MPL-2.0"
       }
+    },
+    {
+      "id": "constant:UNKNOWN_DIALOG_STYLE",
+      "kind": "constant",
+      "name": "UNKNOWN_DIALOG_STYLE",
+      "value": -1,
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/dialogstyles"
     },
     {
       "id": "native:AddVehicleComponent",
@@ -1652,6 +1868,115 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerColor"
     },
     {
+      "id": "native:GetPlayerDialog",
+      "kind": "native",
+      "name": "GetPlayerDialog",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:GetPlayerDialogID",
+        "reason": "Use the explicit ID-suffixed name."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialog"
+    },
+    {
+      "id": "native:GetPlayerDialogData",
+      "kind": "native",
+      "name": "GetPlayerDialogData",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "style",
+            "tag": "DIALOG_STYLE"
+          },
+          {
+            "name": "title"
+          },
+          {
+            "name": "titleSize"
+          },
+          {
+            "name": "body"
+          },
+          {
+            "name": "bodySize"
+          },
+          {
+            "name": "button1"
+          },
+          {
+            "name": "button1Size"
+          },
+          {
+            "name": "button2"
+          },
+          {
+            "name": "button2Size"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialogData"
+    },
+    {
+      "id": "native:GetPlayerDialogID",
+      "kind": "native",
+      "name": "GetPlayerDialogID",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerDialogID"
+    },
+    {
       "id": "native:GetPlayerFacingAngle",
       "kind": "native",
       "name": "GetPlayerFacingAngle",
@@ -2352,6 +2677,32 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/GivePlayerWeapon"
+    },
+    {
+      "id": "native:HidePlayerDialog",
+      "kind": "native",
+      "name": "HidePlayerDialog",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/HidePlayerDialog"
     },
     {
       "id": "native:IsActorInvulnerable",
@@ -3837,6 +4188,59 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/SetVehicleZAngle"
     },
     {
+      "id": "native:ShowPlayerDialog",
+      "kind": "native",
+      "name": "ShowPlayerDialog",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "dialogid"
+          },
+          {
+            "name": "style",
+            "tag": "DIALOG_STYLE"
+          },
+          {
+            "name": "title"
+          },
+          {
+            "name": "body"
+          },
+          {
+            "name": "button1"
+          },
+          {
+            "name": "button2"
+          },
+          {
+            "name": "arguments",
+            "tag": "OPEN_MP_TAGS"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPlayerDialog"
+    },
+    {
       "id": "native:SpawnPlayer",
       "kind": "native",
       "name": "SpawnPlayer",
@@ -3914,6 +4318,23 @@
       "source": {
         "repository": "openmultiplayer/omp-stdlib",
         "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      }
+    },
+    {
+      "id": "tag:DIALOG_STYLE",
+      "kind": "tag",
+      "name": "DIALOG_STYLE",
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_dialog.inc",
         "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
         "license": "MPL-2.0"
       }

@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.5.0 - 2026-07-23
+
+### Added
+
+- Added 15 reviewed dialog natives, callbacks, constants, and tags.
+- Recorded the open.mp formatting extension and deprecated dialog alias.
+
 ## 0.4.0 - 2026-07-23
 
 ### Added

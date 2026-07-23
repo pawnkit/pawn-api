@@ -7,7 +7,7 @@ Tools use this data to answer questions such as whether `SetPlayerPos` exists fo
 ## Status
 
 This is a pre-1.0 dataset, not a complete copy of omp-stdlib. It currently has
-119 reviewed entries: 84 natives, 25 callbacks, six constants, and four tags.
+134 reviewed entries: 89 natives, 26 callbacks, 14 constants, and five tags.
 
 ## Install
 
@@ -68,17 +68,17 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 84 | `SetPlayerPos`, `CreateActor`, `SetPlayerRaceCheckpoint` |
-| `callback` | 25 | `OnPlayerConnect`, `OnActorStreamIn`, `OnPlayerEnterCheckpoint` |
-| `constant` | 6 | `MAX_PLAYERS`, `INVALID_PLAYER_ID`, `INVALID_ACTOR_ID` |
-| `tag` | 4 | `Float`, `bool`, `WEAPON`, `CP_TYPE` |
+| `native` | 89 | `SetPlayerPos`, `CreateActor`, `ShowPlayerDialog` |
+| `callback` | 26 | `OnPlayerConnect`, `OnActorStreamIn`, `OnDialogResponse` |
+| `constant` | 14 | `INVALID_PLAYER_ID`, `INVALID_ACTOR_ID`, `DIALOG_STYLE_LIST` |
+| `tag` | 5 | `Float`, `bool`, `WEAPON`, `CP_TYPE`, `DIALOG_STYLE` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
 
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 111 of the 1,061 declarations extracted from
+- At the pinned omp-stdlib commit, 118 of the 1,061 declarations extracted from
   `omp_*.inc` have matching entries. The dataset also contains eight core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import

@@ -214,3 +214,18 @@ func TestLoad_CheckpointAPI(t *testing.T) {
 		t.Fatalf("IsPlayerCheckpointActive = %+v", active)
 	}
 }
+
+func TestLoad_DialogAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	show, ok := index.ByID("native:ShowPlayerDialog")
+	if !ok || len(show.Availability) != 2 || show.Signature == nil || !show.Signature.Parameters[len(show.Signature.Parameters)-1].Variadic {
+		t.Fatalf("ShowPlayerDialog = %+v", show)
+	}
+	deprecated, ok := index.ByID("native:GetPlayerDialog")
+	if !ok || deprecated.Deprecated == nil || deprecated.Deprecated.Replacement != "native:GetPlayerDialogID" {
+		t.Fatalf("GetPlayerDialog = %+v", deprecated)
+	}
+}
