@@ -184,3 +184,18 @@ func TestLoad_EmbeddedDatasetIsValid(t *testing.T) {
 		t.Error("expected embedded dataset to contain callback:OnPlayerConnect")
 	}
 }
+
+func TestLoad_ActorAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	create, ok := index.ByID("native:CreateActor")
+	if !ok || len(create.Availability) != 2 || create.Signature == nil || len(create.Signature.Parameters) != 5 {
+		t.Fatalf("CreateActor = %+v", create)
+	}
+	animation, ok := index.ByID("native:GetActorAnimation")
+	if !ok || len(animation.Availability) != 1 || animation.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("GetActorAnimation = %+v", animation)
+	}
+}

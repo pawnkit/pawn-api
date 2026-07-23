@@ -6,7 +6,8 @@ Tools use this data to answer questions such as whether `SetPlayerPos` exists fo
 
 ## Status
 
-This is a pre-1.0 seed dataset, not a complete copy of omp-stdlib. It currently has 79 reviewed entries: 53 natives, 18 callbacks, five constants, and three tags.
+This is a pre-1.0 dataset, not a complete copy of omp-stdlib. It currently has
+104 reviewed entries: 74 natives, 21 callbacks, six constants, and three tags.
 
 ## Install
 
@@ -67,9 +68,9 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 53 | `SetPlayerPos`, `GetPlayerHealth`, `CreateVehicle`, `GivePlayerWeapon` |
-| `callback` | 18 | `OnPlayerConnect`, `OnGameModeInit`, `OnPlayerDeath`, `OnVehicleSpawn` |
-| `constant` | 5 | `MAX_PLAYERS`, `INVALID_PLAYER_ID`, `INVALID_VEHICLE_ID` |
+| `native` | 74 | `SetPlayerPos`, `CreateVehicle`, `CreateActor`, `GetActorAnimation` |
+| `callback` | 21 | `OnPlayerConnect`, `OnVehicleSpawn`, `OnActorStreamIn` |
+| `constant` | 6 | `MAX_PLAYERS`, `INVALID_PLAYER_ID`, `INVALID_ACTOR_ID` |
 | `tag` | 3 | `Float`, `bool`, `WEAPON` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
@@ -77,8 +78,8 @@ Each entry records its upstream repository, file, commit, licence, and confidenc
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 72 of the 1,061 declarations extracted from
-  `omp_*.inc` have matching entries. The dataset also contains seven core
+- At the pinned omp-stdlib commit, 96 of the 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. The dataset also contains eight core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.

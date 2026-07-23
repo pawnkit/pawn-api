@@ -33,9 +33,9 @@ only the facts needed for an entry and follow the process in
 
 ## Legacy SA-MP availability
 
-The initial dataset did not import a pinned SA-MP 0.3.7 include tree. Entries
-based on established compatibility knowledge use medium confidence unless a
-primary source confirms them.
+Actor availability was checked against `pawn-lang/samp-stdlib` at commit
+`8ffb055624308b25521665b60e78b5e6e6b3717f`. Other legacy entries use medium
+confidence unless their primary source is recorded.
 
 ## Vendored schema
 

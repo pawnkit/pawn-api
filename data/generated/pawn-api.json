@@ -2,6 +2,70 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "id": "callback:OnActorStreamIn",
+      "kind": "callback",
+      "name": "OnActorStreamIn",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "forplayerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnActorStreamIn"
+    },
+    {
+      "id": "callback:OnActorStreamOut",
+      "kind": "callback",
+      "name": "OnActorStreamOut",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "forplayerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnActorStreamOut"
+    },
+    {
       "id": "callback:OnFilterScriptExit",
       "kind": "callback",
       "name": "OnFilterScriptExit",
@@ -323,6 +387,49 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerExitVehicle"
     },
     {
+      "id": "callback:OnPlayerGiveDamageActor",
+      "kind": "callback",
+      "name": "OnPlayerGiveDamageActor",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "damaged_actorid"
+          },
+          {
+            "name": "amount",
+            "tag": "Float"
+          },
+          {
+            "name": "weaponid",
+            "tag": "WEAPON"
+          },
+          {
+            "name": "bodypart"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerGiveDamageActor"
+    },
+    {
       "id": "callback:OnPlayerRequestClass",
       "kind": "callback",
       "name": "OnPlayerRequestClass",
@@ -543,6 +650,28 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnVehicleSpawn"
     },
     {
+      "id": "constant:INVALID_ACTOR_ID",
+      "kind": "constant",
+      "name": "INVALID_ACTOR_ID",
+      "value": 65535,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      }
+    },
+    {
       "id": "constant:INVALID_PLAYER_ID",
       "kind": "constant",
       "name": "INVALID_PLAYER_ID",
@@ -678,6 +807,140 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/AddVehicleComponent"
     },
     {
+      "id": "native:ApplyActorAnimation",
+      "kind": "native",
+      "name": "ApplyActorAnimation",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "animationLibrary"
+          },
+          {
+            "name": "animationName"
+          },
+          {
+            "name": "delta",
+            "tag": "Float"
+          },
+          {
+            "name": "loop",
+            "tag": "bool"
+          },
+          {
+            "name": "lockX",
+            "tag": "bool"
+          },
+          {
+            "name": "lockY",
+            "tag": "bool"
+          },
+          {
+            "name": "freeze",
+            "tag": "bool"
+          },
+          {
+            "name": "time"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/ApplyActorAnimation"
+    },
+    {
+      "id": "native:ClearActorAnimations",
+      "kind": "native",
+      "name": "ClearActorAnimations",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/ClearActorAnimations"
+    },
+    {
+      "id": "native:CreateActor",
+      "kind": "native",
+      "name": "CreateActor",
+      "signature": {
+        "parameters": [
+          {
+            "name": "skin"
+          },
+          {
+            "name": "x",
+            "tag": "Float"
+          },
+          {
+            "name": "y",
+            "tag": "Float"
+          },
+          {
+            "name": "z",
+            "tag": "Float"
+          },
+          {
+            "name": "angle",
+            "tag": "Float"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/CreateActor"
+    },
+    {
       "id": "native:CreateVehicle",
       "kind": "native",
       "name": "CreateVehicle",
@@ -737,6 +1000,36 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/CreateVehicle"
     },
     {
+      "id": "native:DestroyActor",
+      "kind": "native",
+      "name": "DestroyActor",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyActor"
+    },
+    {
       "id": "native:DestroyVehicle",
       "kind": "native",
       "name": "DestroyVehicle",
@@ -765,6 +1058,313 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyVehicle"
+    },
+    {
+      "id": "native:GetActorAnimation",
+      "kind": "native",
+      "name": "GetActorAnimation",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "animationLibrary"
+          },
+          {
+            "name": "librarySize"
+          },
+          {
+            "name": "animationName"
+          },
+          {
+            "name": "nameSize"
+          },
+          {
+            "name": "delta",
+            "tag": "Float"
+          },
+          {
+            "name": "loop",
+            "tag": "bool",
+            "default": false
+          },
+          {
+            "name": "lockX",
+            "tag": "bool",
+            "default": false
+          },
+          {
+            "name": "lockY",
+            "tag": "bool",
+            "default": false
+          },
+          {
+            "name": "freeze",
+            "tag": "bool",
+            "default": false
+          },
+          {
+            "name": "time",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorAnimation"
+    },
+    {
+      "id": "native:GetActorFacingAngle",
+      "kind": "native",
+      "name": "GetActorFacingAngle",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "angle",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorFacingAngle"
+    },
+    {
+      "id": "native:GetActorHealth",
+      "kind": "native",
+      "name": "GetActorHealth",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "health",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorHealth"
+    },
+    {
+      "id": "native:GetActorPos",
+      "kind": "native",
+      "name": "GetActorPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "x",
+            "tag": "Float"
+          },
+          {
+            "name": "y",
+            "tag": "Float"
+          },
+          {
+            "name": "z",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorPos"
+    },
+    {
+      "id": "native:GetActorSkin",
+      "kind": "native",
+      "name": "GetActorSkin",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorSkin"
+    },
+    {
+      "id": "native:GetActorSpawnInfo",
+      "kind": "native",
+      "name": "GetActorSpawnInfo",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "skin"
+          },
+          {
+            "name": "spawnX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "spawnY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "spawnZ",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "spawnAngle",
+            "tag": "Float",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorSpawnInfo"
+    },
+    {
+      "id": "native:GetActorVirtualWorld",
+      "kind": "native",
+      "name": "GetActorVirtualWorld",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActorVirtualWorld"
+    },
+    {
+      "id": "native:GetActors",
+      "kind": "native",
+      "name": "GetActors",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actors"
+          },
+          {
+            "name": "size"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetActors"
     },
     {
       "id": "native:GetPlayerArmour",
@@ -1471,6 +2071,69 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/GivePlayerWeapon"
     },
     {
+      "id": "native:IsActorInvulnerable",
+      "kind": "native",
+      "name": "IsActorInvulnerable",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsActorInvulnerable"
+    },
+    {
+      "id": "native:IsActorStreamedIn",
+      "kind": "native",
+      "name": "IsActorStreamedIn",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsActorStreamedIn"
+    },
+    {
       "id": "native:IsPlayerConnected",
       "kind": "native",
       "name": "IsPlayerConnected",
@@ -1562,6 +2225,36 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInVehicle"
+    },
+    {
+      "id": "native:IsValidActor",
+      "kind": "native",
+      "name": "IsValidActor",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidActor"
     },
     {
       "id": "native:IsValidVehicle",
@@ -1758,6 +2451,213 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessage"
+    },
+    {
+      "id": "native:SetActorFacingAngle",
+      "kind": "native",
+      "name": "SetActorFacingAngle",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "angle",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorFacingAngle"
+    },
+    {
+      "id": "native:SetActorHealth",
+      "kind": "native",
+      "name": "SetActorHealth",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "health",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorHealth"
+    },
+    {
+      "id": "native:SetActorInvulnerable",
+      "kind": "native",
+      "name": "SetActorInvulnerable",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "invulnerable",
+            "tag": "bool",
+            "default": true
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorInvulnerable"
+    },
+    {
+      "id": "native:SetActorPos",
+      "kind": "native",
+      "name": "SetActorPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "x",
+            "tag": "Float"
+          },
+          {
+            "name": "y",
+            "tag": "Float"
+          },
+          {
+            "name": "z",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorPos"
+    },
+    {
+      "id": "native:SetActorSkin",
+      "kind": "native",
+      "name": "SetActorSkin",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "skin"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorSkin"
+    },
+    {
+      "id": "native:SetActorVirtualWorld",
+      "kind": "native",
+      "name": "SetActorVirtualWorld",
+      "signature": {
+        "parameters": [
+          {
+            "name": "actorid"
+          },
+          {
+            "name": "virtualWorld"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_actor.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetActorVirtualWorld"
     },
     {
       "id": "native:SetPlayerArmour",
