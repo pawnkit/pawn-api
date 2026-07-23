@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.12.0 - 2026-07-23
+
+### Added
+
+- Added 35 reviewed global and per-player pickup entries.
+- Recorded pickup visibility, streaming callbacks, and update defaults.
+
 ## 0.11.0 - 2026-07-23
 
 ### Added

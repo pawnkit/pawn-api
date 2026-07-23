@@ -354,3 +354,26 @@ func TestLoad_ClassAPI(t *testing.T) {
 		t.Fatalf("SetTeamCount = %+v", teamCount)
 	}
 }
+
+func TestLoad_PickupAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	create, ok := index.ByID("native:CreatePickup")
+	if !ok || len(create.Availability) != 2 || create.Signature == nil || create.Signature.Parameters[5].Default == nil || create.Signature.Parameters[5].Default.String() != "0" {
+		t.Fatalf("CreatePickup = %+v", create)
+	}
+	playerPickup, ok := index.ByID("native:CreatePlayerPickup")
+	if !ok || len(playerPickup.Availability) != 1 || playerPickup.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("CreatePlayerPickup = %+v", playerPickup)
+	}
+	callback, ok := index.ByID("callback:OnPlayerPickUpPickup")
+	if !ok || len(callback.Availability) != 2 {
+		t.Fatalf("OnPlayerPickUpPickup = %+v", callback)
+	}
+	invalid, ok := index.ByID("constant:INVALID_PICKUP")
+	if !ok || invalid.Value == nil || invalid.Value.String() != "-1" {
+		t.Fatalf("INVALID_PICKUP = %+v", invalid)
+	}
+}

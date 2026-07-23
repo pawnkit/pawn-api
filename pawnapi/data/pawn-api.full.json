@@ -291,6 +291,68 @@
     "confidence": "high"
   },
   {
+    "id": "callback:OnPickupStreamIn",
+    "kind": "callback",
+    "name": "OnPickupStreamIn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a global pickup streams in for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPickupStreamIn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPickupStreamOut",
+    "kind": "callback",
+    "name": "OnPickupStreamOut",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a global pickup streams out for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPickupStreamOut",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "callback:OnPlayerCommandText",
     "kind": "callback",
     "name": "OnPlayerCommandText",
@@ -897,6 +959,134 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerPickUpPickup",
+    "kind": "callback",
+    "name": "OnPlayerPickUpPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player collects a global pickup.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickUpPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerPickUpPlayerPickup",
+    "kind": "callback",
+    "name": "OnPlayerPickUpPlayerPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player collects a player pickup.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickUpPlayerPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerPickupStreamIn",
+    "kind": "callback",
+    "name": "OnPlayerPickupStreamIn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player pickup streams in.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickupStreamIn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerPickupStreamOut",
+    "kind": "callback",
+    "name": "OnPlayerPickupStreamOut",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player pickup streams out.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerPickupStreamOut",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -1548,6 +1738,28 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:INVALID_PICKUP",
+    "kind": "constant",
+    "name": "INVALID_PICKUP",
+    "value": -1,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Value used when no valid pickup exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -2830,6 +3042,57 @@
     "confidence": "high"
   },
   {
+    "id": "native:AddStaticPickup",
+    "kind": "native",
+    "name": "AddStaticPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "model"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "virtualWorld",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Adds a static pickup.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AddStaticPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:AddVehicleComponent",
     "kind": "native",
     "name": "AddVehicleComponent",
@@ -3650,6 +3913,57 @@
     "confidence": "high"
   },
   {
+    "id": "native:CreatePickup",
+    "kind": "native",
+    "name": "CreatePickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "model"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "virtualWorld",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates a global pickup.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:CreatePlayerObject",
     "kind": "native",
     "name": "CreatePlayerObject",
@@ -3708,6 +4022,56 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:CreatePlayerPickup",
+    "kind": "native",
+    "name": "CreatePlayerPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "model"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "virtualWorld",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates a pickup for one player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -3880,6 +4244,39 @@
     "confidence": "high"
   },
   {
+    "id": "native:DestroyPickup",
+    "kind": "native",
+    "name": "DestroyPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickup"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Destroys a global pickup.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:DestroyPlayerObject",
     "kind": "native",
     "name": "DestroyPlayerObject",
@@ -3910,6 +4307,38 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:DestroyPlayerPickup",
+    "kind": "native",
+    "name": "DestroyPlayerPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Destroys a player pickup.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPlayerPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5723,6 +6152,134 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetPickupModel",
+    "kind": "native",
+    "name": "GetPickupModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global pickup's model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPickupPos",
+    "kind": "native",
+    "name": "GetPickupPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a global pickup's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPickupType",
+    "kind": "native",
+    "name": "GetPickupType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global pickup's type.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPickupVirtualWorld",
+    "kind": "native",
+    "name": "GetPickupVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a global pickup's virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPickupVirtualWorld",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetPlayerArmour",
     "kind": "native",
     "name": "GetPlayerArmour",
@@ -7112,6 +7669,146 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetPlayerPickupModel",
+    "kind": "native",
+    "name": "GetPlayerPickupModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player pickup's model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerPickupPos",
+    "kind": "native",
+    "name": "GetPlayerPickupPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player pickup's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerPickupType",
+    "kind": "native",
+    "name": "GetPlayerPickupType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player pickup's type.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerPickupVirtualWorld",
+    "kind": "native",
+    "name": "GetPlayerPickupVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player pickup's virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPickupVirtualWorld",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetPlayerPos",
     "kind": "native",
     "name": "GetPlayerPos",
@@ -7899,6 +8596,38 @@
     "confidence": "high"
   },
   {
+    "id": "native:HidePickupForPlayer",
+    "kind": "native",
+    "name": "HidePickupForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides a global pickup from a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/HidePickupForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:HidePlayerDialog",
     "kind": "native",
     "name": "HidePlayerDialog",
@@ -8150,6 +8879,70 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPickupHiddenForPlayer",
+    "kind": "native",
+    "name": "IsPickupHiddenForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a global pickup is hidden from a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPickupHiddenForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPickupStreamedIn",
+    "kind": "native",
+    "name": "IsPickupStreamedIn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a pickup is streamed in for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPickupStreamedIn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -8497,6 +9290,38 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsPlayerPickupStreamedIn",
+    "kind": "native",
+    "name": "IsPlayerPickupStreamedIn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a player pickup is streamed in.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerPickupStreamedIn",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsPlayerRaceCheckpointActive",
     "kind": "native",
     "name": "IsPlayerRaceCheckpointActive",
@@ -8655,6 +9480,35 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsValidPickup",
+    "kind": "native",
+    "name": "IsValidPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a global pickup exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsValidPlayerObject",
     "kind": "native",
     "name": "IsValidPlayerObject",
@@ -8685,6 +9539,38 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsValidPlayerPickup",
+    "kind": "native",
+    "name": "IsValidPlayerPickup",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a player pickup exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerPickup",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -9848,6 +10734,158 @@
     "confidence": "high"
   },
   {
+    "id": "native:SetPickupModel",
+    "kind": "native",
+    "name": "SetPickupModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "model"
+        },
+        {
+          "name": "update",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global pickup's model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPickupPos",
+    "kind": "native",
+    "name": "SetPickupPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "update",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global pickup's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPickupType",
+    "kind": "native",
+    "name": "SetPickupType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "update",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global pickup's type.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPickupVirtualWorld",
+    "kind": "native",
+    "name": "SetPickupVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "virtualWorld"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a global pickup's virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPickupVirtualWorld",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:SetPlayerArmour",
     "kind": "native",
     "name": "SetPlayerArmour",
@@ -10581,6 +11619,170 @@
     "confidence": "high"
   },
   {
+    "id": "native:SetPlayerPickupModel",
+    "kind": "native",
+    "name": "SetPlayerPickupModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "model"
+        },
+        {
+          "name": "update",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player pickup's model.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerPickupPos",
+    "kind": "native",
+    "name": "SetPlayerPickupPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "update",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player pickup's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerPickupType",
+    "kind": "native",
+    "name": "SetPlayerPickupType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "update",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player pickup's type.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerPickupVirtualWorld",
+    "kind": "native",
+    "name": "SetPlayerPickupVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        },
+        {
+          "name": "virtualWorld"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player pickup's virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPickupVirtualWorld",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:SetPlayerPos",
     "kind": "native",
     "name": "SetPlayerPos",
@@ -11218,6 +12420,38 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ShowPickupForPlayer",
+    "kind": "native",
+    "name": "ShowPickupForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pickupid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows a global pickup to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPickupForPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_pickup.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
