@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.6.0 - 2026-07-23
+
+### Added
+
+- Added 23 reviewed menu natives, callbacks, constants, and tags.
+- Recorded open.mp formatting arguments and the SA-MP menu sentinel value.
+
 ## 0.5.0 - 2026-07-23
 
 ### Added

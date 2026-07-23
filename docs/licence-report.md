@@ -33,7 +33,7 @@ only the facts needed for an entry and follow the process in
 
 ## Legacy SA-MP availability
 
-Actor, checkpoint, and dialog availability was checked against `pawn-lang/samp-stdlib` at commit
+Actor, checkpoint, dialog, and menu availability was checked against `pawn-lang/samp-stdlib` at commit
 `8ffb055624308b25521665b60e78b5e6e6b3717f`. Other legacy entries use medium
 confidence unless their primary source is recorded.
 

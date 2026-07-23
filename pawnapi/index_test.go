@@ -229,3 +229,18 @@ func TestLoad_DialogAPI(t *testing.T) {
 		t.Fatalf("GetPlayerDialog = %+v", deprecated)
 	}
 }
+
+func TestLoad_MenuAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	create, ok := index.ByID("native:CreateMenu")
+	if !ok || len(create.Availability) != 2 || create.Signature == nil || !create.Signature.Parameters[len(create.Signature.Parameters)-1].Variadic {
+		t.Fatalf("CreateMenu = %+v", create)
+	}
+	invalid, ok := index.ByID("constant:INVALID_MENU")
+	if !ok || invalid.Value == nil || invalid.Value.String() != "-1" || len(invalid.Constraints) == 0 {
+		t.Fatalf("INVALID_MENU = %+v", invalid)
+	}
+}

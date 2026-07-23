@@ -1,0 +1,859 @@
+[
+  {
+    "id": "callback:OnPlayerExitedMenu",
+    "kind": "callback",
+    "name": "OnPlayerExitedMenu",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Called when a player exits a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerExitedMenu"
+  },
+  {
+    "id": "callback:OnPlayerSelectedMenuRow",
+    "kind": "callback",
+    "name": "OnPlayerSelectedMenuRow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "row"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Called when a player selects a menu row.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerSelectedMenuRow"
+  },
+  {
+    "id": "native:AddMenuItem",
+    "kind": "native",
+    "name": "AddMenuItem",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "column"
+        },
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Adds an item to a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AddMenuItem",
+    "constraints": [
+      "Formatting arguments are available only under the openmp profile."
+    ]
+  },
+  {
+    "id": "native:CreateMenu",
+    "kind": "native",
+    "name": "CreateMenu",
+    "signature": {
+      "parameters": [
+        {
+          "name": "title",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "columns"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "column1width",
+          "tag": "Float"
+        },
+        {
+          "name": "column2width",
+          "tag": "Float",
+          "default": 0
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "Menu"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Creates a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreateMenu",
+    "constraints": [
+      "Formatting arguments are available only under the openmp profile."
+    ]
+  },
+  {
+    "id": "native:DestroyMenu",
+    "kind": "native",
+    "name": "DestroyMenu",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Destroys a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyMenu"
+  },
+  {
+    "id": "native:DisableMenu",
+    "kind": "native",
+    "name": "DisableMenu",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Disables a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DisableMenu"
+  },
+  {
+    "id": "native:DisableMenuRow",
+    "kind": "native",
+    "name": "DisableMenuRow",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "row"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Disables a row in a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DisableMenuRow"
+  },
+  {
+    "id": "native:GetMenuColumnHeader",
+    "kind": "native",
+    "name": "GetMenuColumnHeader",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "column"
+        },
+        {
+          "name": "header",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a menu column heading.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuColumnHeader"
+  },
+  {
+    "id": "native:GetMenuColumnWidth",
+    "kind": "native",
+    "name": "GetMenuColumnWidth",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "column1Width",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "column2Width",
+          "tag": "Float",
+          "reference": true,
+          "default": 0
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a menu's column widths.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuColumnWidth"
+  },
+  {
+    "id": "native:GetMenuColumns",
+    "kind": "native",
+    "name": "GetMenuColumns",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the number of columns in a menu.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuColumns"
+  },
+  {
+    "id": "native:GetMenuItem",
+    "kind": "native",
+    "name": "GetMenuItem",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "column"
+        },
+        {
+          "name": "row"
+        },
+        {
+          "name": "cell",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the text of a menu item.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuItem"
+  },
+  {
+    "id": "native:GetMenuItems",
+    "kind": "native",
+    "name": "GetMenuItems",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "column"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the number of items in a menu column.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuItems"
+  },
+  {
+    "id": "native:GetMenuPos",
+    "kind": "native",
+    "name": "GetMenuPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a menu's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMenuPos"
+  },
+  {
+    "id": "native:GetPlayerMenu",
+    "kind": "native",
+    "name": "GetPlayerMenu",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "Menu"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the menu shown to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerMenu"
+  },
+  {
+    "id": "native:HideMenuForPlayer",
+    "kind": "native",
+    "name": "HideMenuForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Hides a menu from a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/HideMenuForPlayer"
+  },
+  {
+    "id": "native:IsMenuDisabled",
+    "kind": "native",
+    "name": "IsMenuDisabled",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a menu is disabled.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsMenuDisabled"
+  },
+  {
+    "id": "native:IsMenuRowDisabled",
+    "kind": "native",
+    "name": "IsMenuRowDisabled",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "row"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a menu row is disabled.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsMenuRowDisabled"
+  },
+  {
+    "id": "native:IsValidMenu",
+    "kind": "native",
+    "name": "IsValidMenu",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a menu ID is valid.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidMenu"
+  },
+  {
+    "id": "native:SetMenuColumnHeader",
+    "kind": "native",
+    "name": "SetMenuColumnHeader",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "column"
+        },
+        {
+          "name": "heading",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Sets a menu column heading.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetMenuColumnHeader",
+    "constraints": [
+      "Formatting arguments are available only under the openmp profile."
+    ]
+  },
+  {
+    "id": "native:ShowMenuForPlayer",
+    "kind": "native",
+    "name": "ShowMenuForPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "menuid",
+          "tag": "Menu"
+        },
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Shows a menu to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ShowMenuForPlayer"
+  },
+  {
+    "id": "tag:Menu",
+    "kind": "tag",
+    "name": "Menu",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tag used for menu IDs.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:MAX_MENUS",
+    "kind": "constant",
+    "name": "MAX_MENUS",
+    "value": 128,
+    "tags": [
+      "Menu"
+    ],
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Maximum number of menus the server can hold.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "constant:INVALID_MENU",
+    "kind": "constant",
+    "name": "INVALID_MENU",
+    "value": -1,
+    "tags": [
+      "Menu"
+    ],
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "SA-MP encodes this sentinel as 255; open.mp uses -1."
+    ],
+    "documentationSummary": "Sentinel used when no valid menu ID is available.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  }
+]
+
