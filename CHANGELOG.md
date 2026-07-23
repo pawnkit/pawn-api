@@ -3,6 +3,16 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.2.0 - 2026-07-23
+
+### Added
+
+- Added `pawnapi coverage` for comparing reviewed data with include declarations.
+
+### Documented
+
+- Recorded current omp-stdlib coverage and the boundary for third-party APIs.
+
 ## 0.1.1 - 2026-07-23
 
 ### Fixed

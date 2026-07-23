@@ -56,9 +56,12 @@ func main() {
 pawnapi validate
 pawnapi generate
 pawnapi generate --check
+pawnapi coverage pawnapi/data/pawn-api.full.json /path/to/omp-stdlib/omp_*.inc
 ```
 
 `generate --check` is intended for CI. It fails when the embedded and interchange files do not match the source data.
+`coverage` compares a dataset with declarations extracted from one or more
+includes. It exits with status 1 when declarations are missing.
 
 ## Current coverage
 
@@ -74,10 +77,17 @@ Each entry records its upstream repository, file, commit, licence, and confidenc
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
+- At the pinned omp-stdlib commit, 72 of the 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. The dataset also contains seven core
+  constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.
 - SA-MP 0.3.7 availability was not imported from a pinned legacy include source. Those entries carry the corresponding provenance and confidence.
 - Schema version 1 does not contain every field used by the Go model. The gap is listed in [docs/compatibility.md](docs/compatibility.md).
+
+Third-party library APIs are not bundled here. PawnKit reads them from the
+project's installed includes, so completion and diagnostics match the version
+the project actually uses.
 
 ## Links
 

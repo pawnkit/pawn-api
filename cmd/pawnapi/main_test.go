@@ -4,6 +4,8 @@ import (
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/pawnkit/pawn-api/pawnapi"
 )
 
 func repoRoot(t *testing.T) string {
@@ -114,5 +116,17 @@ func TestRun_SnapshotInclude(t *testing.T) {
 	}
 	if code := run([]string{"snapshot", input, output}); code != exitOK {
 		t.Fatalf("snapshot exit code = %d", code)
+	}
+}
+
+func TestCompareCoverage(t *testing.T) {
+	dataset := []pawnapi.Entry{{ID: "native:GetValue"}}
+	imported := map[string]coverageItem{
+		"native:GetValue": {ID: "native:GetValue", Path: "core.inc"},
+		"native:SetValue": {ID: "native:SetValue", Path: "core.inc"},
+	}
+	report := compareCoverage(dataset, imported)
+	if report.Covered != 1 || report.Total != 2 || len(report.Missing) != 1 || report.Missing[0].ID != "native:SetValue" {
+		t.Fatalf("report = %+v", report)
 	}
 }

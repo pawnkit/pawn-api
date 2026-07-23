@@ -3,6 +3,10 @@
 `pawn-api` owns machine-readable facts about SA-MP and open.mp APIs. Parsing,
 project resolution, and lint policy belong elsewhere.
 
+Third-party libraries stay in project include graphs. A shared third-party
+metadata format would need its own RFC because it introduces package identity,
+versioning, and trust decisions.
+
 ## Data files
 
 Contributors edit `data/source/*.json`. The generator produces two views of that source:
@@ -37,7 +41,7 @@ The exact field gap is listed in [compatibility.md](compatibility.md).
 | `pawnapi` | Public entry types, indexes, loading, and validation |
 | `internal/schema` | Vendored schema and schema validation |
 | `internal/generator` | Source loading and deterministic output |
-| `cmd/pawnapi` | Validation, generation, snapshots, and diffs |
+| `cmd/pawnapi` | Validation, generation, snapshots, coverage, and diffs |
 | `data/source` | Reviewed source entries |
 | `data/generated` | Checked-in interchange output |
 
@@ -54,4 +58,5 @@ The generated manifest uses `pawnkit-core/hash`, which is the shared cache-key a
 - Add a new entity kind to `pawnkit-spec` before adding it to `pawnapi.Kind`.
 - New profile names need data changes but no Go enum change.
 - `pawnapi snapshot` accepts full-model JSON or extracts declarations from a Pawn include.
+- `pawnapi coverage` reports declarations that are missing from a dataset.
 - `pawnapi diff` reports additions, removals, signature changes, and metadata changes.

@@ -39,6 +39,8 @@ func run(args []string) int {
 		return runGenerate(args[1:])
 	case "snapshot":
 		return runSnapshot(args[1:])
+	case "coverage":
+		return runCoverage(args[1:])
 	case "diff":
 		return runDiff(args[1:])
 	default:
@@ -55,6 +57,7 @@ Usage:
   pawnapi validate [--root <dir>] [--output human|json]
   pawnapi generate [--root <dir>] [--check]
   pawnapi snapshot [flags] <entries.json|include.inc> <snapshot.json>
+  pawnapi coverage [flags] <dataset.json> <include.inc>...
   pawnapi diff <old.json> <new.json>
   pawnapi version
   pawnapi help
@@ -65,6 +68,7 @@ Commands:
   generate   Regenerate the embedded Go dataset and the schema-conformant
              interchange JSON from data/source/*.json.
   snapshot   Validate and record a deterministic API snapshot.
+  coverage   Compare a dataset with declarations from Pawn includes.
   diff       Classify differences between two snapshots as source-compatible,
              potentially breaking, or breaking.
 `)
