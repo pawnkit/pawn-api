@@ -71,19 +71,29 @@ func Include(text []byte, opts Options) ([]pawnapi.Entry, error) {
 		parameters := function.Parameters()
 		for parameters.Next() {
 			parameter := parameters.Parameter()
+			parameterText := parameter.Text()
 			parameterName, ok := parameter.Name()
 			if !ok {
+				if strings.Contains(parameterText, "...") {
+					item := pawnapi.Parameter{Name: "arguments", Variadic: true}
+					if tag, hasTag := parameter.Field("tag"); hasTag {
+						item.Tag = strings.TrimSuffix(tag.Text(), ":")
+					}
+					signature.Parameters = append(signature.Parameters, item)
+				}
 				continue
 			}
 			item := pawnapi.Parameter{Name: strings.TrimPrefix(parameterName.Text(), "...")}
 			if tag, ok := parameter.Field("tag"); ok {
 				item.Tag = strings.TrimSuffix(tag.Text(), ":")
 			}
-			parameterText := parameter.Text()
 			item.Const = strings.Contains(parameterText, "const ")
 			item.Reference = strings.Contains(parameterText, "&")
 			item.Variadic = strings.Contains(parameterText, "...")
 			item.ArrayDimensions = dimensions(parameterText)
+			if value, ok := parameterDefault(parameterText); ok {
+				item.Default = &value
+			}
 			signature.Parameters = append(signature.Parameters, item)
 		}
 		entries = append(entries, entry(kind, name, signature, profile, source, opts.Path))
@@ -111,6 +121,21 @@ func Include(text []byte, opts Options) ([]pawnapi.Entry, error) {
 		return nil, fmt.Errorf("importer: %w", err)
 	}
 	return entries, nil
+}
+
+func parameterDefault(text string) (pawnapi.Literal, bool) {
+	_, value, ok := strings.Cut(text, "=")
+	if !ok {
+		return pawnapi.Literal{}, false
+	}
+	value = strings.TrimSpace(value)
+	if literal, ok := parseLiteral(value); ok {
+		return literal, true
+	}
+	if value == "" {
+		return pawnapi.Literal{}, false
+	}
+	return pawnapi.StringLiteral(value), true
 }
 
 func entry(kind pawnapi.Kind, name string, signature *pawnapi.Signature, profile string, source pawnapi.Source, include string) pawnapi.Entry {

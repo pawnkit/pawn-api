@@ -1547,6 +1547,70 @@
     "confidence": "high"
   },
   {
+    "id": "callback:OnScriptLoadPlayer",
+    "kind": "callback",
+    "name": "OnScriptLoadPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "isEntryScript",
+          "tag": "bool"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called after a script loads for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnScriptLoadPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnScriptUnloadPlayer",
+    "kind": "callback",
+    "name": "OnScriptUnloadPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "isEntryScript",
+          "tag": "bool"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called before a script unloads for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnScriptUnloadPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "callback:OnVehicleDeath",
     "kind": "callback",
     "name": "OnVehicleDeath",
@@ -3192,6 +3256,95 @@
     "confidence": "high"
   },
   {
+    "id": "define:INVALID_TIMER",
+    "kind": "define",
+    "name": "INVALID_TIMER",
+    "value": 0,
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Invalid timer identifier.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "function:EnableTirePopping",
+    "kind": "function",
+    "name": "EnableTirePopping",
+    "signature": {
+      "parameters": [
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "reason": "Handle tyre damage in OnVehicleDamageStatusUpdate."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Controls vehicle tyre damage.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EnableTirePopping",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "function:SetDeathDropAmount",
+    "kind": "function",
+    "name": "SetDeathDropAmount",
+    "signature": {
+      "parameters": [
+        {
+          "name": "amount"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:CreatePickup",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the dropped money amount after death.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetDeathDropAmount",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "function:SetTeamCount",
     "kind": "function",
     "name": "SetTeamCount",
@@ -3215,6 +3368,130 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ACos",
+    "kind": "native",
+    "name": "ACos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the arc cosine in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/acos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ASin",
+    "kind": "native",
+    "name": "ASin",
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the arc sine in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/asin",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ATan",
+    "kind": "native",
+    "name": "ATan",
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the arc tangent in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/atan",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ATan2",
+    "kind": "native",
+    "name": "ATan2",
+    "signature": {
+      "parameters": [
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the angle of a vector in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/atan2",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -3474,6 +3751,51 @@
     "confidence": "high"
   },
   {
+    "id": "native:AddServerRule",
+    "kind": "native",
+    "name": "AddServerRule",
+    "signature": {
+      "parameters": [
+        {
+          "name": "rule",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Adds a server rule.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AddServerRule",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:AddSimpleModel",
     "kind": "native",
     "name": "AddSimpleModel",
@@ -3672,6 +3994,107 @@
     "confidence": "high"
   },
   {
+    "id": "native:AllowAdminTeleport",
+    "kind": "native",
+    "name": "AllowAdminTeleport",
+    "signature": {
+      "parameters": [
+        {
+          "name": "allow",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Allows administrator teleportation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AllowAdminTeleport",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AllowInteriorWeapons",
+    "kind": "native",
+    "name": "AllowInteriorWeapons",
+    "signature": {
+      "parameters": [
+        {
+          "name": "allow",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Allows weapons inside interiors.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AllowInteriorWeapons",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AllowNickNameCharacter",
+    "kind": "native",
+    "name": "AllowNickNameCharacter",
+    "signature": {
+      "parameters": [
+        {
+          "name": "character"
+        },
+        {
+          "name": "allow",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Allows a character in player nicknames.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AllowNickNameCharacter",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:ApplyActorAnimation",
     "kind": "native",
     "name": "ApplyActorAnimation",
@@ -3736,6 +4159,54 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_actor.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AreAllAnimationsEnabled",
+    "kind": "native",
+    "name": "AreAllAnimationsEnabled",
+    "signature": {
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether all animations are enabled.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AreAllAnimationsEnabled",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AreInteriorWeaponsAllowed",
+    "kind": "native",
+    "name": "AreInteriorWeaponsAllowed",
+    "signature": {
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether weapons are allowed inside interiors.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AreInteriorWeaponsAllowed",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -4308,6 +4779,104 @@
     "confidence": "high"
   },
   {
+    "id": "native:CallLocalFunction",
+    "kind": "native",
+    "name": "CallLocalFunction",
+    "signature": {
+      "parameters": [
+        {
+          "name": "functionName",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "specifiers",
+          "default": "",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Calls a function in the current script.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CallLocalFunction",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:CallRemoteFunction",
+    "kind": "native",
+    "name": "CallRemoteFunction",
+    "signature": {
+      "parameters": [
+        {
+          "name": "functionName",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "specifiers",
+          "default": "",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Calls a function in another loaded script.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CallRemoteFunction",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:CancelEdit",
     "kind": "native",
     "name": "CancelEdit",
@@ -4346,6 +4915,30 @@
     "confidence": "high"
   },
   {
+    "id": "native:ChatTextReplacementToggled",
+    "kind": "native",
+    "name": "ChatTextReplacementToggled",
+    "signature": {
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether chat text replacement is enabled.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ChatTextReplacementToggled",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:ClearActorAnimations",
     "kind": "native",
     "name": "ClearActorAnimations",
@@ -4373,6 +4966,71 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_actor.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ConnectNPC",
+    "kind": "native",
+    "name": "ConnectNPC",
+    "signature": {
+      "parameters": [
+        {
+          "name": "name",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "script",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Connects an NPC.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ConnectNPC",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:CountRunningTimers",
+    "kind": "native",
+    "name": "CountRunningTimers",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the number of running timers.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CountRunningTimers",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -4493,6 +5151,55 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_actor.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:CreateExplosion",
+    "kind": "native",
+    "name": "CreateExplosion",
+    "signature": {
+      "parameters": [
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "radius",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates an explosion.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreateExplosion",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5014,6 +5721,46 @@
     "confidence": "high"
   },
   {
+    "id": "native:DeletePVar",
+    "kind": "native",
+    "name": "DeletePVar",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Deletes a player variable.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DeletePVar",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:DeletePlayer3DTextLabel",
     "kind": "native",
     "name": "DeletePlayer3DTextLabel",
@@ -5045,6 +5792,43 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:DeleteSVar",
+    "kind": "native",
+    "name": "DeleteSVar",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Deletes a server variable.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DeleteSVar",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5286,6 +6070,34 @@
     "confidence": "high"
   },
   {
+    "id": "native:DisableInteriorEnterExits",
+    "kind": "native",
+    "name": "DisableInteriorEnterExits",
+    "signature": {
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Disables interior entrance markers.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DisableInteriorEnterExits",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:DisableMenu",
     "kind": "native",
     "name": "DisableMenu",
@@ -5351,6 +6163,34 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:DisableNameTagLOS",
+    "kind": "native",
+    "name": "DisableNameTagLOS",
+    "signature": {
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Disables line-of-sight checks for name tags.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DisableNameTagLOS",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5619,6 +6459,104 @@
     "confidence": "high"
   },
   {
+    "id": "native:EnableAllAnimations",
+    "kind": "native",
+    "name": "EnableAllAnimations",
+    "signature": {
+      "parameters": [
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Enables all animations.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EnableAllAnimations",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:EnableStuntBonusForAll",
+    "kind": "native",
+    "name": "EnableStuntBonusForAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Enables stunt bonuses for every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EnableStuntBonusForAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:EnableZoneNames",
+    "kind": "native",
+    "name": "EnableZoneNames",
+    "signature": {
+      "parameters": [
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Enables zone-name overlays.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EnableZoneNames",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:EndObjectEditing",
     "kind": "native",
     "name": "EndObjectEditing",
@@ -5757,6 +6695,178 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:Format",
+    "kind": "native",
+    "name": "Format",
+    "signature": {
+      "parameters": [
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (output)"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "{Float, _}",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Formats text into an array.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/format",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GameModeExit",
+    "kind": "native",
+    "name": "GameModeExit",
+    "signature": {
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Stops the current game mode.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GameModeExit",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GameTextForAll",
+    "kind": "native",
+    "name": "GameTextForAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "time"
+        },
+        {
+          "name": "style"
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows game text to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GameTextForAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GameTextForAllf",
+    "kind": "native",
+    "name": "GameTextForAllf",
+    "signature": {
+      "parameters": [
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "time"
+        },
+        {
+          "name": "style"
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GameTextForAll",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows formatted game text to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GameTextForAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -6943,6 +8053,58 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetAnimationName",
+    "kind": "native",
+    "name": "GetAnimationName",
+    "signature": {
+      "parameters": [
+        {
+          "name": "index"
+        },
+        {
+          "name": "animationLibrary",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len1",
+          "default": "sizeof (animationLibrary)"
+        },
+        {
+          "name": "animationName",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len2",
+          "default": "sizeof (animationName)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns an animation's library and name.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetAnimationName",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetAvailableClasses",
     "kind": "native",
     "name": "GetAvailableClasses",
@@ -6959,6 +8121,158 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetConsoleVarAsBool",
+    "kind": "native",
+    "name": "GetConsoleVarAsBool",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as a boolean.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsBool",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetConsoleVarAsFloat",
+    "kind": "native",
+    "name": "GetConsoleVarAsFloat",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as a float.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsFloat",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetConsoleVarAsInt",
+    "kind": "native",
+    "name": "GetConsoleVarAsInt",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as an integer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsInt",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetConsoleVarAsString",
+    "kind": "native",
+    "name": "GetConsoleVarAsString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "buffer",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (buffer)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -7008,6 +8322,60 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetGravity",
+    "kind": "native",
+    "name": "GetGravity",
+    "signature": {
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the server gravity.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetGravity",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetMaxPlayers",
+    "kind": "native",
+    "name": "GetMaxPlayers",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the server's player limit.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetMaxPlayers",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -7237,6 +8605,30 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetModeRestartTime",
+    "kind": "native",
+    "name": "GetModeRestartTime",
+    "signature": {
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the game-mode restart delay.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetModeRestartTime",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -7877,6 +9269,251 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPVarFloat",
+    "kind": "native",
+    "name": "GetPVarFloat",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player variable as a float.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarFloat",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPVarInt",
+    "kind": "native",
+    "name": "GetPVarInt",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player variable as an integer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarInt",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPVarNameAtIndex",
+    "kind": "native",
+    "name": "GetPVarNameAtIndex",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "size",
+          "default": "sizeof (output)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player variable's name by index.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarNameAtIndex",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPVarString",
+    "kind": "native",
+    "name": "GetPVarString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (output)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player variable as text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPVarType",
+    "kind": "native",
+    "name": "GetPVarType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "VARTYPE"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player variable's type.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPVarsUpperIndex",
+    "kind": "native",
+    "name": "GetPVarsUpperIndex",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the highest allocated player-variable slot.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPVarsUpperIndex",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -10325,6 +11962,455 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetRunningTimers",
+    "kind": "native",
+    "name": "GetRunningTimers",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:CountRunningTimers",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the number of running timers.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetRunningTimers",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSVarFloat",
+    "kind": "native",
+    "name": "GetSVarFloat",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a server variable as a float.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarFloat",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSVarInt",
+    "kind": "native",
+    "name": "GetSVarInt",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a server variable as an integer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarInt",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSVarNameAtIndex",
+    "kind": "native",
+    "name": "GetSVarNameAtIndex",
+    "signature": {
+      "parameters": [
+        {
+          "name": "index"
+        },
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "size",
+          "default": "sizeof (output)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a server variable's name by index.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarNameAtIndex",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSVarString",
+    "kind": "native",
+    "name": "GetSVarString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (output)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a server variable as text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSVarType",
+    "kind": "native",
+    "name": "GetSVarType",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "VARTYPE"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a server variable's type.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarType",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSVarsUpperIndex",
+    "kind": "native",
+    "name": "GetSVarsUpperIndex",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the highest allocated server-variable slot.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSVarsUpperIndex",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetServerTickRate",
+    "kind": "native",
+    "name": "GetServerTickRate",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the server tick rate.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerTickRate",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetServerVarAsBool",
+    "kind": "native",
+    "name": "GetServerVarAsBool",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetConsoleVarAsBool",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as a boolean.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerVarAsBool",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetServerVarAsFloat",
+    "kind": "native",
+    "name": "GetServerVarAsFloat",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetConsoleVarAsFloat",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as a float.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetConsoleVarAsFloat",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetServerVarAsInt",
+    "kind": "native",
+    "name": "GetServerVarAsInt",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetConsoleVarAsInt",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as an integer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerVarAsInt",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetServerVarAsString",
+    "kind": "native",
+    "name": "GetServerVarAsString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "cvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "buffer",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (buffer)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetConsoleVarAsString",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a console variable as text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetServerVarAsString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetSpawnInfo",
     "kind": "native",
     "name": "GetSpawnInfo",
@@ -10414,6 +12500,88 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetTickCount",
+    "kind": "native",
+    "name": "GetTickCount",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the server's millisecond tick count.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetTickCount",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetTimerInterval",
+    "kind": "native",
+    "name": "GetTimerInterval",
+    "signature": {
+      "parameters": [
+        {
+          "name": "timerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a timer's interval.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetTimerInterval",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetTimerRemaining",
+    "kind": "native",
+    "name": "GetTimerRemaining",
+    "signature": {
+      "parameters": [
+        {
+          "name": "timerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a timer's remaining time.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetTimerRemaining",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -10629,6 +12797,123 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetWeaponName",
+    "kind": "native",
+    "name": "GetWeaponName",
+    "signature": {
+      "parameters": [
+        {
+          "name": "weaponid",
+          "tag": "WEAPON"
+        },
+        {
+          "name": "weapon",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (weapon)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a weapon's name.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetWeaponName",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetWeaponSlot",
+    "kind": "native",
+    "name": "GetWeaponSlot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "weaponid",
+          "tag": "WEAPON"
+        }
+      ],
+      "returnTag": "WEAPON_SLOT"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a weapon's inventory slot.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetWeaponSlot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetWeather",
+    "kind": "native",
+    "name": "GetWeather",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the current weather.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetWeather",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetWorldTime",
+    "kind": "native",
+    "name": "GetWorldTime",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the current world hour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetWorldTime",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GivePlayerMoney",
     "kind": "native",
     "name": "GivePlayerMoney",
@@ -10764,6 +13049,35 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_http.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:HideGameTextForAll",
+    "kind": "native",
+    "name": "HideGameTextForAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "style"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides game text from every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/HideGameTextForAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -10970,6 +13284,30 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsAdminTeleportAllowed",
+    "kind": "native",
+    "name": "IsAdminTeleportAllowed",
+    "signature": {
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether administrator teleportation is allowed.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsAdminTeleportAllowed",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsGangZoneFlashingForPlayer",
     "kind": "native",
     "name": "IsGangZoneFlashingForPlayer",
@@ -11091,6 +13429,35 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsNickNameCharacterAllowed",
+    "kind": "native",
+    "name": "IsNickNameCharacterAllowed",
+    "signature": {
+      "parameters": [
+        {
+          "name": "character"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a character is allowed in nicknames.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsNickNameCharacterAllowed",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -11787,6 +14154,35 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsRepeatingTimer",
+    "kind": "native",
+    "name": "IsRepeatingTimer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "timerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a timer repeats.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsRepeatingTimer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsValid3DTextLabel",
     "kind": "native",
     "name": "IsValid3DTextLabel",
@@ -11936,6 +14332,39 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsValidNickName",
+    "kind": "native",
+    "name": "IsValidNickName",
+    "signature": {
+      "parameters": [
+        {
+          "name": "name",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a nickname is valid.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidNickName",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -12137,6 +14566,68 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsValidServerRule",
+    "kind": "native",
+    "name": "IsValidServerRule",
+    "signature": {
+      "parameters": [
+        {
+          "name": "rule",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a server rule exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidServerRule",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsValidTimer",
+    "kind": "native",
+    "name": "IsValidTimer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "timerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a timer exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidTimer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsValidVehicle",
     "kind": "native",
     "name": "IsValidVehicle",
@@ -12165,6 +14656,107 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:KillTimer",
+    "kind": "native",
+    "name": "KillTimer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "timerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Stops a timer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/KillTimer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:LimitGlobalChatRadius",
+    "kind": "native",
+    "name": "LimitGlobalChatRadius",
+    "signature": {
+      "parameters": [
+        {
+          "name": "chatRadius",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Limits the global chat radius.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/LimitGlobalChatRadius",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:LimitPlayerMarkerRadius",
+    "kind": "native",
+    "name": "LimitPlayerMarkerRadius",
+    "signature": {
+      "parameters": [
+        {
+          "name": "markerRadius",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Limits the player-marker radius.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/LimitPlayerMarkerRadius",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -12654,6 +15246,75 @@
     "confidence": "high"
   },
   {
+    "id": "native:Print",
+    "kind": "native",
+    "name": "Print",
+    "signature": {
+      "parameters": [
+        {
+          "name": "string",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Prints text to the server log.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/print",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:PrintF",
+    "kind": "native",
+    "name": "PrintF",
+    "signature": {
+      "parameters": [
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Prints formatted text to the server log.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/printf",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:PutPlayerInVehicle",
     "kind": "native",
     "name": "PutPlayerInVehicle",
@@ -12810,6 +15471,39 @@
     "confidence": "medium"
   },
   {
+    "id": "native:RemoveServerRule",
+    "kind": "native",
+    "name": "RemoveServerRule",
+    "signature": {
+      "parameters": [
+        {
+          "name": "rule",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Removes a server rule.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/RemoveServerRule",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:RemoveVehicleComponent",
     "kind": "native",
     "name": "RemoveVehicleComponent",
@@ -12875,6 +15569,112 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_vehicle.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SHA256_Hash",
+    "kind": "native",
+    "name": "SHA256_Hash",
+    "signature": {
+      "parameters": [
+        {
+          "name": "content",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "salt",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "size",
+          "default": "sizeof (output)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hashes text with SHA-256 and a salt.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SHA256_PassHash",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SHA256_PassHash",
+    "kind": "native",
+    "name": "SHA256_PassHash",
+    "signature": {
+      "parameters": [
+        {
+          "name": "password",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "salt",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "size",
+          "default": "sizeof (output)"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "reason": "Use bcrypt for passwords or SHA256_Hash for other data."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hashes a password with SHA-256 and a salt.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SHA256_PassHash",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -12960,6 +15760,227 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SendClientMessageToAll",
+    "kind": "native",
+    "name": "SendClientMessageToAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "colour"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sends a client message to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessageToAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SendClientMessageToAllf",
+    "kind": "native",
+    "name": "SendClientMessageToAllf",
+    "signature": {
+      "parameters": [
+        {
+          "name": "colour"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SendClientMessageToAll",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sends a formatted client message to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SendClientMessageToAllf",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SendDeathMessage",
+    "kind": "native",
+    "name": "SendDeathMessage",
+    "signature": {
+      "parameters": [
+        {
+          "name": "killer"
+        },
+        {
+          "name": "killee"
+        },
+        {
+          "name": "weapon"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sends a death notice to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SendDeathMessage",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SendPlayerMessageToAll",
+    "kind": "native",
+    "name": "SendPlayerMessageToAll",
+    "signature": {
+      "parameters": [
+        {
+          "name": "senderid"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sends a player's message to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SendPlayerMessageToAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SendPlayerMessageToAllf",
+    "kind": "native",
+    "name": "SendPlayerMessageToAllf",
+    "signature": {
+      "parameters": [
+        {
+          "name": "senderid"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SendPlayerMessageToAll",
+      "reason": "Use the supported replacement."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sends a formatted player message to every player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SendPlayerMessageToAll",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -13292,6 +16313,82 @@
     "confidence": "high"
   },
   {
+    "id": "native:SetGameModeText",
+    "kind": "native",
+    "name": "SetGameModeText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the game-mode name.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetGameModeText",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetGravity",
+    "kind": "native",
+    "name": "SetGravity",
+    "signature": {
+      "parameters": [
+        {
+          "name": "gravity",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the server gravity.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetGravity",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:SetMenuColumnHeader",
     "kind": "native",
     "name": "SetMenuColumnHeader",
@@ -13338,6 +16435,70 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetModeRestartTime",
+    "kind": "native",
+    "name": "SetModeRestartTime",
+    "signature": {
+      "parameters": [
+        {
+          "name": "seconds",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the game-mode restart delay.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetModeRestartTime",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetNameTagDrawDistance",
+    "kind": "native",
+    "name": "SetNameTagDrawDistance",
+    "signature": {
+      "parameters": [
+        {
+          "name": "distance",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the name-tag draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetNameTagDrawDistance",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -13741,6 +16902,144 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPVarFloat",
+    "kind": "native",
+    "name": "SetPVarFloat",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player variable to a float.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPVarFloat",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPVarInt",
+    "kind": "native",
+    "name": "SetPVarInt",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "value"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player variable to an integer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPVarInt",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPVarString",
+    "kind": "native",
+    "name": "SetPVarString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "pvar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "value",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player variable to text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPVarString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -15226,6 +18525,180 @@
     "confidence": "high"
   },
   {
+    "id": "native:SetSVarFloat",
+    "kind": "native",
+    "name": "SetSVarFloat",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a server variable to a float.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetSVarFloat",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetSVarInt",
+    "kind": "native",
+    "name": "SetSVarInt",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "value"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a server variable to an integer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetSVarInt",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetSVarString",
+    "kind": "native",
+    "name": "SetSVarString",
+    "signature": {
+      "parameters": [
+        {
+          "name": "svar",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "value",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a server variable to text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetSVarString",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetServerRule",
+    "kind": "native",
+    "name": "SetServerRule",
+    "signature": {
+      "parameters": [
+        {
+          "name": "rule",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a server rule.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetServerRule",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:SetSpawnInfo",
     "kind": "native",
     "name": "SetSpawnInfo",
@@ -15297,6 +18770,105 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetTimer",
+    "kind": "native",
+    "name": "SetTimer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "functionName",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "interval"
+        },
+        {
+          "name": "repeating",
+          "tag": "bool"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Starts a timer.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetTimer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetTimerEx",
+    "kind": "native",
+    "name": "SetTimerEx",
+    "signature": {
+      "parameters": [
+        {
+          "name": "functionName",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "interval"
+        },
+        {
+          "name": "repeating",
+          "tag": "bool"
+        },
+        {
+          "name": "specifiers",
+          "default": "",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Starts a timer with arguments.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetTimerEx",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -15518,6 +19090,72 @@
     "confidence": "high"
   },
   {
+    "id": "native:SetWeather",
+    "kind": "native",
+    "name": "SetWeather",
+    "signature": {
+      "parameters": [
+        {
+          "name": "weatherid"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the server weather.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetWeather",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetWorldTime",
+    "kind": "native",
+    "name": "SetWorldTime",
+    "signature": {
+      "parameters": [
+        {
+          "name": "hour"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the world hour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetWorldTime",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:ShowMenuForPlayer",
     "kind": "native",
     "name": "ShowMenuForPlayer",
@@ -15549,6 +19187,40 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ShowNameTags",
+    "kind": "native",
+    "name": "ShowNameTags",
+    "signature": {
+      "parameters": [
+        {
+          "name": "show",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Controls player name-tag visibility.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ShowNameTags",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -15663,6 +19335,40 @@
     "confidence": "high"
   },
   {
+    "id": "native:ShowPlayerMarkers",
+    "kind": "native",
+    "name": "ShowPlayerMarkers",
+    "signature": {
+      "parameters": [
+        {
+          "name": "mode",
+          "tag": "PLAYER_MARKERS_MODE"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the player-marker mode.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ShowPlayerMarkers",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:SpawnPlayer",
     "kind": "native",
     "name": "SpawnPlayer",
@@ -15760,6 +19466,36 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ToggleChatTextReplacement",
+    "kind": "native",
+    "name": "ToggleChatTextReplacement",
+    "signature": {
+      "parameters": [
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Toggles chat text replacement.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ToggleChatTextReplacement",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -15981,6 +19717,304 @@
     "confidence": "high"
   },
   {
+    "id": "native:UsePlayerPedAnims",
+    "kind": "native",
+    "name": "UsePlayerPedAnims",
+    "signature": {
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Uses player pedestrian animations.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/UsePlayerPedAnims",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:VectorSize",
+    "kind": "native",
+    "name": "VectorSize",
+    "signature": {
+      "parameters": [
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a three-dimensional vector's length.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/VectorSize",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:__printf",
+    "kind": "native",
+    "name": "__printf",
+    "signature": {
+      "parameters": [
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Prints formatted text to the server log.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/printf",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:acos",
+    "kind": "native",
+    "name": "acos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the arc cosine in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/acos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:asin",
+    "kind": "native",
+    "name": "asin",
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the arc sine in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/asin",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:atan",
+    "kind": "native",
+    "name": "atan",
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the arc tangent in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/atan",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:atan2",
+    "kind": "native",
+    "name": "atan2",
+    "signature": {
+      "parameters": [
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the angle of a vector in degrees.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/atan2",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:format",
+    "kind": "native",
+    "name": "format",
+    "signature": {
+      "parameters": [
+        {
+          "name": "output",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (output)"
+        },
+        {
+          "name": "format",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "{Float, _}",
+          "variadic": true
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Formats text into an array.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/format",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "tag:CP_TYPE",
     "kind": "tag",
     "name": "CP_TYPE",
@@ -16174,6 +20208,26 @@
     "confidence": "high"
   },
   {
+    "id": "tag:PLAYER_MARKERS_MODE",
+    "kind": "tag",
+    "name": "PLAYER_MARKERS_MODE",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags player marker display modes.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "tag:PlayerText3D",
     "kind": "tag",
     "name": "PlayerText3D",
@@ -16245,6 +20299,26 @@
     "confidence": "high"
   },
   {
+    "id": "tag:VARTYPE",
+    "kind": "tag",
+    "name": "VARTYPE",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags variable value types.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_variable.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "tag:WEAPON",
     "kind": "tag",
     "name": "WEAPON",
@@ -16263,6 +20337,26 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:WEAPON_SLOT",
+    "kind": "tag",
+    "name": "WEAPON_SLOT",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tags weapon inventory slots.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_core.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },

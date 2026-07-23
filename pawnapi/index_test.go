@@ -450,3 +450,30 @@ func TestLoad_TextLabelAPI(t *testing.T) {
 		t.Fatalf("INVALID_3DTEXT_ID = %+v", invalid)
 	}
 }
+
+func TestLoad_CoreAndVariableAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	format, ok := index.ByID("native:format")
+	if !ok || format.Signature == nil || format.Signature.Parameters[1].Default == nil || format.Signature.Parameters[1].Default.String() != "sizeof (output)" || !format.Signature.Parameters[len(format.Signature.Parameters)-1].Variadic {
+		t.Fatalf("format = %+v", format)
+	}
+	timer, ok := index.ByID("native:SetTimerEx")
+	if !ok || len(timer.Availability) != 2 || timer.Signature == nil || !timer.Signature.Parameters[len(timer.Signature.Parameters)-1].Variadic {
+		t.Fatalf("SetTimerEx = %+v", timer)
+	}
+	variable, ok := index.ByID("native:GetPVarString")
+	if !ok || len(variable.Availability) != 2 || variable.Signature == nil || variable.Signature.Parameters[3].Default == nil {
+		t.Fatalf("GetPVarString = %+v", variable)
+	}
+	canonical, ok := index.ByID("native:CountRunningTimers")
+	if !ok || len(canonical.Availability) != 1 || canonical.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("CountRunningTimers = %+v", canonical)
+	}
+	legacy, ok := index.ByID("native:GetRunningTimers")
+	if !ok || legacy.Deprecated == nil || legacy.Deprecated.Replacement != canonical.ID {
+		t.Fatalf("GetRunningTimers = %+v", legacy)
+	}
+}

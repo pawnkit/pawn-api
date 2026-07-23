@@ -69,18 +69,19 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 304 | `SetPlayerPos`, `Create3DTextLabel`, `HTTP` |
-| `callback` | 45 | `OnPlayerConnect`, `OnPlayerEnterGangZone`, `OnPlayerClickGangZone` |
-| `function` | 1 | `SetTeamCount` |
+| `native` | 410 | `SetTimerEx`, `Create3DTextLabel`, `GetPVarString` |
+| `callback` | 47 | `OnPlayerConnect`, `OnScriptLoadPlayer`, `OnPlayerClickGangZone` |
+| `function` | 3 | `SetTeamCount`, `EnableTirePopping` |
 | `constant` | 63 | `INVALID_3DTEXT_ID`, `HTTP_GET`, `HTTP_ERROR_BAD_HOST` |
-| `tag` | 14 | `Float`, `Text3D`, `HTTP_METHOD`, `HTTP_ERROR` |
+| `define` | 1 | `INVALID_TIMER` |
+| `tag` | 17 | `Float`, `VARTYPE`, `WEAPON_SLOT`, `HTTP_METHOD` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
 
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 352 of the 1,061 declarations extracted from
+- At the pinned omp-stdlib commit, 466 of the 1,061 declarations extracted from
   `omp_*.inc` have matching entries. The dataset also contains 75 core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import

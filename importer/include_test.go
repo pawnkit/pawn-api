@@ -36,3 +36,23 @@ func TestIncludeRequiresProvenance(t *testing.T) {
 		t.Fatal("missing provenance accepted")
 	}
 }
+
+func TestIncludeExtractsDefaultsAndVariadicParameters(t *testing.T) {
+	text := []byte(`native format(output[], len = sizeof (output), const format[], {Float, _}:...);
+native SetTimerEx(const functionName[], interval, bool:repeating, const specifiers[] = "", OPEN_MP_TAGS:...);`)
+	entries, err := Include(text, Options{Repository: "example/repo", Path: "api.inc", Commit: "1234567", License: "MIT"})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(entries) != 2 {
+		t.Fatalf("entries = %+v", entries)
+	}
+	format := entries[0].Signature.Parameters
+	if format[1].Default == nil || format[1].Default.String() != "sizeof (output)" || !format[len(format)-1].Variadic {
+		t.Fatalf("format parameters = %+v", format)
+	}
+	timer := entries[1].Signature.Parameters
+	if timer[3].Default == nil || timer[3].Default.String() != "" || !timer[len(timer)-1].Variadic || timer[len(timer)-1].Tag != "OPEN_MP_TAGS" {
+		t.Fatalf("SetTimerEx parameters = %+v", timer)
+	}
+}

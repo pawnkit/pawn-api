@@ -3,6 +3,17 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.16.0 - 2026-07-23
+
+### Added
+
+- Added 114 reviewed core, timer, console, and variable entries.
+- Recorded callable defaults, variadic arguments, and compatibility aliases.
+
+### Fixed
+
+- Preserved defaults and variadic tags when importing include declarations.
+
 ## 0.15.0 - 2026-07-23
 
 ### Added
