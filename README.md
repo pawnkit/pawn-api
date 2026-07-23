@@ -7,7 +7,7 @@ Tools use this data to answer questions such as whether `SetPlayerPos` exists fo
 ## Status
 
 This is a pre-1.0 dataset, not a complete copy of omp-stdlib. It currently has
-330 reviewed entries: 231 natives, 39 callbacks, one function, 49 constants,
+373 reviewed entries: 267 natives, 45 callbacks, one function, 50 constants,
 and ten tags.
 
 ## Install
@@ -69,10 +69,10 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 231 | `SetPlayerPos`, `CreatePickup`, `CreatePlayerPickup` |
-| `callback` | 39 | `OnPlayerConnect`, `OnPlayerPickUpPickup`, `OnPickupStreamIn` |
+| `native` | 267 | `SetPlayerPos`, `GangZoneCreate`, `CreatePlayerGangZone` |
+| `callback` | 45 | `OnPlayerConnect`, `OnPlayerEnterGangZone`, `OnPlayerClickGangZone` |
 | `function` | 1 | `SetTeamCount` |
-| `constant` | 49 | `INVALID_OBJECT_ID`, `INVALID_PICKUP`, `MAX_PLAYER_ATTACHED_OBJECTS` |
+| `constant` | 50 | `INVALID_OBJECT_ID`, `INVALID_PICKUP`, `INVALID_GANG_ZONE` |
 | `tag` | 10 | `Float`, `Menu`, `SELECT_OBJECT`, `OBJECT_MATERIAL_SIZE` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
@@ -80,8 +80,8 @@ Each entry records its upstream repository, file, commit, licence, and confidenc
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 275 of the 1,061 declarations extracted from
-  `omp_*.inc` have matching entries. The dataset also contains 55 core
+- At the pinned omp-stdlib commit, 317 of the 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. The dataset also contains 56 core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.

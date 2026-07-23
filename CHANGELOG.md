@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.13.0 - 2026-07-23
+
+### Added
+
+- Added 43 reviewed global and per-player gang-zone entries.
+- Recorded visibility checks, callbacks, and colour-name aliases.
+
 ## 0.12.0 - 2026-07-23
 
 ### Added

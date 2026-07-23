@@ -315,6 +315,62 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPickupStreamOut"
     },
     {
+      "id": "callback:OnPlayerClickGangZone",
+      "kind": "callback",
+      "name": "OnPlayerClickGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickGangZone"
+    },
+    {
+      "id": "callback:OnPlayerClickPlayerGangZone",
+      "kind": "callback",
+      "name": "OnPlayerClickPlayerGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerClickPlayerGangZone"
+    },
+    {
       "id": "callback:OnPlayerCommandText",
       "kind": "callback",
       "name": "OnPlayerCommandText",
@@ -614,6 +670,62 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterCheckpoint"
     },
     {
+      "id": "callback:OnPlayerEnterGangZone",
+      "kind": "callback",
+      "name": "OnPlayerEnterGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterGangZone"
+    },
+    {
+      "id": "callback:OnPlayerEnterPlayerGangZone",
+      "kind": "callback",
+      "name": "OnPlayerEnterPlayerGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterPlayerGangZone"
+    },
+    {
       "id": "callback:OnPlayerEnterRaceCheckpoint",
       "kind": "callback",
       "name": "OnPlayerEnterRaceCheckpoint",
@@ -811,6 +923,62 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveCheckpoint"
+    },
+    {
+      "id": "callback:OnPlayerLeaveGangZone",
+      "kind": "callback",
+      "name": "OnPlayerLeaveGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveGangZone"
+    },
+    {
+      "id": "callback:OnPlayerLeavePlayerGangZone",
+      "kind": "callback",
+      "name": "OnPlayerLeavePlayerGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeavePlayerGangZone"
     },
     {
       "id": "callback:OnPlayerLeaveRaceCheckpoint",
@@ -1520,6 +1688,29 @@
         "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
         "license": "MPL-2.0"
       }
+    },
+    {
+      "id": "constant:INVALID_GANG_ZONE",
+      "kind": "constant",
+      "name": "INVALID_GANG_ZONE",
+      "value": -1,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
     },
     {
       "id": "constant:INVALID_MENU",
@@ -3546,6 +3737,47 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePickup"
     },
     {
+      "id": "native:CreatePlayerGangZone",
+      "kind": "native",
+      "name": "CreatePlayerGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "minx",
+            "tag": "Float"
+          },
+          {
+            "name": "miny",
+            "tag": "Float"
+          },
+          {
+            "name": "maxx",
+            "tag": "Float"
+          },
+          {
+            "name": "maxy",
+            "tag": "Float"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerGangZone"
+    },
+    {
       "id": "native:CreatePlayerObject",
       "kind": "native",
       "name": "CreatePlayerObject",
@@ -4353,6 +4585,506 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/ForceClassSelection"
+    },
+    {
+      "id": "native:GangZoneCreate",
+      "kind": "native",
+      "name": "GangZoneCreate",
+      "signature": {
+        "parameters": [
+          {
+            "name": "minX",
+            "tag": "Float"
+          },
+          {
+            "name": "minY",
+            "tag": "Float"
+          },
+          {
+            "name": "maxX",
+            "tag": "Float"
+          },
+          {
+            "name": "maxY",
+            "tag": "Float"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneCreate"
+    },
+    {
+      "id": "native:GangZoneDestroy",
+      "kind": "native",
+      "name": "GangZoneDestroy",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneDestroy"
+    },
+    {
+      "id": "native:GangZoneFlashForAll",
+      "kind": "native",
+      "name": "GangZoneFlashForAll",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "flashColour"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneFlashForAll"
+    },
+    {
+      "id": "native:GangZoneFlashForPlayer",
+      "kind": "native",
+      "name": "GangZoneFlashForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "flashColour"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneFlashForPlayer"
+    },
+    {
+      "id": "native:GangZoneGetColorForPlayer",
+      "kind": "native",
+      "name": "GangZoneGetColorForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:GangZoneGetColourForPlayer",
+        "reason": "Use the British English spelling."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetColourForPlayer"
+    },
+    {
+      "id": "native:GangZoneGetColourForPlayer",
+      "kind": "native",
+      "name": "GangZoneGetColourForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetColourForPlayer"
+    },
+    {
+      "id": "native:GangZoneGetFlashColorForPlayer",
+      "kind": "native",
+      "name": "GangZoneGetFlashColorForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:GangZoneGetFlashColourForPlayer",
+        "reason": "Use the British English spelling."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetFlashColourForPlayer"
+    },
+    {
+      "id": "native:GangZoneGetFlashColourForPlayer",
+      "kind": "native",
+      "name": "GangZoneGetFlashColourForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetFlashColourForPlayer"
+    },
+    {
+      "id": "native:GangZoneGetPos",
+      "kind": "native",
+      "name": "GangZoneGetPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "minX",
+            "tag": "Float"
+          },
+          {
+            "name": "minY",
+            "tag": "Float"
+          },
+          {
+            "name": "maxX",
+            "tag": "Float"
+          },
+          {
+            "name": "maxY",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneGetPos"
+    },
+    {
+      "id": "native:GangZoneHideForAll",
+      "kind": "native",
+      "name": "GangZoneHideForAll",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneHideForAll"
+    },
+    {
+      "id": "native:GangZoneHideForPlayer",
+      "kind": "native",
+      "name": "GangZoneHideForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneHideForPlayer"
+    },
+    {
+      "id": "native:GangZoneShowForAll",
+      "kind": "native",
+      "name": "GangZoneShowForAll",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "colour"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneShowForAll"
+    },
+    {
+      "id": "native:GangZoneShowForPlayer",
+      "kind": "native",
+      "name": "GangZoneShowForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "colour"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneShowForPlayer"
+    },
+    {
+      "id": "native:GangZoneStopFlashForAll",
+      "kind": "native",
+      "name": "GangZoneStopFlashForAll",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneStopFlashForAll"
+    },
+    {
+      "id": "native:GangZoneStopFlashForPlayer",
+      "kind": "native",
+      "name": "GangZoneStopFlashForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GangZoneStopFlashForPlayer"
     },
     {
       "id": "native:GetActorAnimation",
@@ -7709,6 +8441,64 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsActorStreamedIn"
     },
     {
+      "id": "native:IsGangZoneFlashingForPlayer",
+      "kind": "native",
+      "name": "IsGangZoneFlashingForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsGangZoneFlashingForPlayer"
+    },
+    {
+      "id": "native:IsGangZoneVisibleForPlayer",
+      "kind": "native",
+      "name": "IsGangZoneVisibleForPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsGangZoneVisibleForPlayer"
+    },
+    {
       "id": "native:IsMenuDisabled",
       "kind": "native",
       "name": "IsMenuDisabled",
@@ -8000,6 +8790,64 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerConnected"
     },
     {
+      "id": "native:IsPlayerGangZoneFlashing",
+      "kind": "native",
+      "name": "IsPlayerGangZoneFlashing",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerGangZoneFlashing"
+    },
+    {
+      "id": "native:IsPlayerGangZoneVisible",
+      "kind": "native",
+      "name": "IsPlayerGangZoneVisible",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerGangZoneVisible"
+    },
+    {
       "id": "native:IsPlayerInAnyVehicle",
       "kind": "native",
       "name": "IsPlayerInAnyVehicle",
@@ -8058,6 +8906,64 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInCheckpoint"
+    },
+    {
+      "id": "native:IsPlayerInGangZone",
+      "kind": "native",
+      "name": "IsPlayerInGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInGangZone"
+    },
+    {
+      "id": "native:IsPlayerInPlayerGangZone",
+      "kind": "native",
+      "name": "IsPlayerInPlayerGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInPlayerGangZone"
     },
     {
       "id": "native:IsPlayerInRaceCheckpoint",
@@ -8330,6 +9236,32 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidCustomModel"
     },
     {
+      "id": "native:IsValidGangZone",
+      "kind": "native",
+      "name": "IsValidGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidGangZone"
+    },
+    {
       "id": "native:IsValidMenu",
       "kind": "native",
       "name": "IsValidMenu",
@@ -8415,6 +9347,35 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPickup"
+    },
+    {
+      "id": "native:IsValidPlayerGangZone",
+      "kind": "native",
+      "name": "IsValidPlayerGangZone",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerGangZone"
     },
     {
       "id": "native:IsValidPlayerObject",
@@ -8632,6 +9593,324 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/MovePlayerObject"
+    },
+    {
+      "id": "native:PlayerGangZoneDestroy",
+      "kind": "native",
+      "name": "PlayerGangZoneDestroy",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneDestroy"
+    },
+    {
+      "id": "native:PlayerGangZoneFlash",
+      "kind": "native",
+      "name": "PlayerGangZoneFlash",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "flashColour"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneFlash"
+    },
+    {
+      "id": "native:PlayerGangZoneGetColor",
+      "kind": "native",
+      "name": "PlayerGangZoneGetColor",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:PlayerGangZoneGetColour",
+        "reason": "Use the British English spelling."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetColour"
+    },
+    {
+      "id": "native:PlayerGangZoneGetColour",
+      "kind": "native",
+      "name": "PlayerGangZoneGetColour",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetColour"
+    },
+    {
+      "id": "native:PlayerGangZoneGetFlashColor",
+      "kind": "native",
+      "name": "PlayerGangZoneGetFlashColor",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:PlayerGangZoneGetFlashColour",
+        "reason": "Use the British English spelling."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetFlashColour"
+    },
+    {
+      "id": "native:PlayerGangZoneGetFlashColour",
+      "kind": "native",
+      "name": "PlayerGangZoneGetFlashColour",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetFlashColour"
+    },
+    {
+      "id": "native:PlayerGangZoneGetPos",
+      "kind": "native",
+      "name": "PlayerGangZoneGetPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "minX",
+            "tag": "Float"
+          },
+          {
+            "name": "minY",
+            "tag": "Float"
+          },
+          {
+            "name": "maxX",
+            "tag": "Float"
+          },
+          {
+            "name": "maxY",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneGetPos"
+    },
+    {
+      "id": "native:PlayerGangZoneHide",
+      "kind": "native",
+      "name": "PlayerGangZoneHide",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneHide"
+    },
+    {
+      "id": "native:PlayerGangZoneShow",
+      "kind": "native",
+      "name": "PlayerGangZoneShow",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "colour"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneShow"
+    },
+    {
+      "id": "native:PlayerGangZoneStopFlash",
+      "kind": "native",
+      "name": "PlayerGangZoneStopFlash",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/PlayerGangZoneStopFlash"
     },
     {
       "id": "native:PutPlayerInVehicle",
@@ -11223,6 +12502,69 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerControllable"
+    },
+    {
+      "id": "native:UseGangZoneCheck",
+      "kind": "native",
+      "name": "UseGangZoneCheck",
+      "signature": {
+        "parameters": [
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "enable",
+            "tag": "bool"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/UseGangZoneCheck"
+    },
+    {
+      "id": "native:UsePlayerGangZoneCheck",
+      "kind": "native",
+      "name": "UsePlayerGangZoneCheck",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "zoneid"
+          },
+          {
+            "name": "enable",
+            "tag": "bool"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_gangzone.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/UsePlayerGangZoneCheck"
     },
     {
       "id": "tag:CP_TYPE",

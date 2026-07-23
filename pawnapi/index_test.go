@@ -377,3 +377,26 @@ func TestLoad_PickupAPI(t *testing.T) {
 		t.Fatalf("INVALID_PICKUP = %+v", invalid)
 	}
 }
+
+func TestLoad_GangZoneAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	create, ok := index.ByID("native:GangZoneCreate")
+	if !ok || len(create.Availability) != 2 {
+		t.Fatalf("GangZoneCreate = %+v", create)
+	}
+	playerZone, ok := index.ByID("native:CreatePlayerGangZone")
+	if !ok || len(playerZone.Availability) != 1 || playerZone.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("CreatePlayerGangZone = %+v", playerZone)
+	}
+	color, ok := index.ByID("native:GangZoneGetColorForPlayer")
+	if !ok || color.Deprecated == nil || color.Deprecated.Replacement != "native:GangZoneGetColourForPlayer" {
+		t.Fatalf("GangZoneGetColorForPlayer = %+v", color)
+	}
+	callback, ok := index.ByID("callback:OnPlayerEnterGangZone")
+	if !ok || len(callback.Availability) != 1 || callback.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("OnPlayerEnterGangZone = %+v", callback)
+	}
+}
