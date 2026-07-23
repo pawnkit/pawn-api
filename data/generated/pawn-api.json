@@ -1668,6 +1668,213 @@
       "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
     },
     {
+      "id": "constant:HTTP_ERROR_BAD_HOST",
+      "kind": "constant",
+      "name": "HTTP_ERROR_BAD_HOST",
+      "value": 1,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:HTTP_ERROR_CANT_CONNECT",
+      "kind": "constant",
+      "name": "HTTP_ERROR_CANT_CONNECT",
+      "value": 3,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:HTTP_ERROR_CANT_WRITE",
+      "kind": "constant",
+      "name": "HTTP_ERROR_CANT_WRITE",
+      "value": 4,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:HTTP_ERROR_CONTENT_TOO_BIG",
+      "kind": "constant",
+      "name": "HTTP_ERROR_CONTENT_TOO_BIG",
+      "value": 5,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:HTTP_ERROR_MALFORMED_RESPONSE",
+      "kind": "constant",
+      "name": "HTTP_ERROR_MALFORMED_RESPONSE",
+      "value": 6,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:HTTP_ERROR_NO_SOCKET",
+      "kind": "constant",
+      "name": "HTTP_ERROR_NO_SOCKET",
+      "value": 2,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:HTTP_GET",
+      "kind": "constant",
+      "name": "HTTP_GET",
+      "value": 1,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
+    },
+    {
+      "id": "constant:HTTP_HEAD",
+      "kind": "constant",
+      "name": "HTTP_HEAD",
+      "value": 3,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
+    },
+    {
+      "id": "constant:HTTP_POST",
+      "kind": "constant",
+      "name": "HTTP_POST",
+      "value": 2,
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
+    },
+    {
       "id": "constant:INVALID_ACTOR_ID",
       "kind": "constant",
       "name": "INVALID_ACTOR_ID",
@@ -2497,6 +2704,44 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/resources/objecteditionresponsetypes"
+    },
+    {
+      "id": "constant:UNKNOWN_HTTP_ERROR",
+      "kind": "constant",
+      "name": "UNKNOWN_HTTP_ERROR",
+      "value": -1,
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "constant:UNKNOWN_HTTP_METHOD",
+      "kind": "constant",
+      "name": "UNKNOWN_HTTP_METHOD",
+      "value": -1,
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
     },
     {
       "id": "constant:UNKNOWN_OBJECT_MATERIAL_SIZE",
@@ -8289,6 +8534,48 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/GivePlayerWeapon"
     },
     {
+      "id": "native:HTTP",
+      "kind": "native",
+      "name": "HTTP",
+      "signature": {
+        "parameters": [
+          {
+            "name": "index"
+          },
+          {
+            "name": "method",
+            "tag": "HTTP_METHOD"
+          },
+          {
+            "name": "url"
+          },
+          {
+            "name": "data"
+          },
+          {
+            "name": "callback"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/HTTP"
+    },
+    {
       "id": "native:HideMenuForPlayer",
       "kind": "native",
       "name": "HideMenuForPlayer",
@@ -12638,6 +12925,42 @@
         "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
         "license": "MPL-2.0"
       }
+    },
+    {
+      "id": "tag:HTTP_ERROR",
+      "kind": "tag",
+      "name": "HTTP_ERROR",
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-error-response-codes"
+    },
+    {
+      "id": "tag:HTTP_METHOD",
+      "kind": "tag",
+      "name": "HTTP_METHOD",
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_http.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/resources/http-request-methods"
     },
     {
       "id": "tag:Menu",

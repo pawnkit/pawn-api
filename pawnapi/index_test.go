@@ -400,3 +400,22 @@ func TestLoad_GangZoneAPI(t *testing.T) {
 		t.Fatalf("OnPlayerEnterGangZone = %+v", callback)
 	}
 }
+
+func TestLoad_HTTPAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	http, ok := index.ByID("native:HTTP")
+	if !ok || len(http.Availability) != 2 || http.Signature == nil || http.Signature.Parameters[1].Tag != "HTTP_METHOD" || len(http.Constraints) == 0 {
+		t.Fatalf("HTTP = %+v", http)
+	}
+	method, ok := index.ByID("tag:HTTP_METHOD")
+	if !ok || len(method.Availability) != 1 || method.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("HTTP_METHOD = %+v", method)
+	}
+	errorCode, ok := index.ByID("constant:HTTP_ERROR_MALFORMED_RESPONSE")
+	if !ok || errorCode.Value == nil || errorCode.Value.String() != "6" || len(errorCode.Availability) != 2 {
+		t.Fatalf("HTTP_ERROR_MALFORMED_RESPONSE = %+v", errorCode)
+	}
+}

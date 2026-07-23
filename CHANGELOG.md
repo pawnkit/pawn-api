@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.14.0 - 2026-07-23
+
+### Added
+
+- Added 14 reviewed HTTP native, tag, and constant entries.
+- Recorded the response callback shape and HTTP error codes.
+
 ## 0.13.0 - 2026-07-23
 
 ### Added
