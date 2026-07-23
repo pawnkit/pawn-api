@@ -2438,6 +2438,35 @@
     "confidence": "high"
   },
   {
+    "id": "function:SetTeamCount",
+    "kind": "function",
+    "name": "SetTeamCount",
+    "signature": {
+      "parameters": [
+        {
+          "name": "count"
+        }
+      ],
+      "returnTag": "void"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets the number of teams used by class selection.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetTeamCount",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:AddCharModel",
     "kind": "native",
     "name": "AddCharModel",
@@ -2532,6 +2561,159 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_menu.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AddPlayerClass",
+    "kind": "native",
+    "name": "AddPlayerClass",
+    "signature": {
+      "parameters": [
+        {
+          "name": "skin"
+        },
+        {
+          "name": "spawnX",
+          "tag": "Float"
+        },
+        {
+          "name": "spawnY",
+          "tag": "Float"
+        },
+        {
+          "name": "spawnZ",
+          "tag": "Float"
+        },
+        {
+          "name": "angle",
+          "tag": "Float"
+        },
+        {
+          "name": "weapon1",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo1",
+          "default": 0
+        },
+        {
+          "name": "weapon2",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo2",
+          "default": 0
+        },
+        {
+          "name": "weapon3",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo3",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Adds a class to the class-selection screen.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AddPlayerClass",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AddPlayerClassEx",
+    "kind": "native",
+    "name": "AddPlayerClassEx",
+    "signature": {
+      "parameters": [
+        {
+          "name": "team"
+        },
+        {
+          "name": "skin"
+        },
+        {
+          "name": "spawnX",
+          "tag": "Float"
+        },
+        {
+          "name": "spawnY",
+          "tag": "Float"
+        },
+        {
+          "name": "spawnZ",
+          "tag": "Float"
+        },
+        {
+          "name": "angle",
+          "tag": "Float"
+        },
+        {
+          "name": "weapon1",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo1",
+          "default": 0
+        },
+        {
+          "name": "weapon2",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo2",
+          "default": 0
+        },
+        {
+          "name": "weapon3",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo3",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Adds a team class to the class-selection screen.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AddPlayerClassEx",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -3982,6 +4164,84 @@
     "confidence": "high"
   },
   {
+    "id": "native:EditPlayerClass",
+    "kind": "native",
+    "name": "EditPlayerClass",
+    "signature": {
+      "parameters": [
+        {
+          "name": "classid"
+        },
+        {
+          "name": "team"
+        },
+        {
+          "name": "skin"
+        },
+        {
+          "name": "spawnX",
+          "tag": "Float"
+        },
+        {
+          "name": "spawnY",
+          "tag": "Float"
+        },
+        {
+          "name": "spawnZ",
+          "tag": "Float"
+        },
+        {
+          "name": "angle",
+          "tag": "Float"
+        },
+        {
+          "name": "weapon1",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo1",
+          "default": 0
+        },
+        {
+          "name": "weapon2",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo2",
+          "default": 0
+        },
+        {
+          "name": "weapon3",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST"
+        },
+        {
+          "name": "ammo3",
+          "default": 0
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Changes an existing player class.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EditPlayerClass",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:EditPlayerObject",
     "kind": "native",
     "name": "EditPlayerObject",
@@ -4128,6 +4388,39 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:ForceClassSelection",
+    "kind": "native",
+    "name": "ForceClassSelection",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player to the class-selection screen.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/ForceClassSelection",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -4484,6 +4777,28 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_actor.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetAvailableClasses",
+    "kind": "native",
+    "name": "GetAvailableClasses",
+    "signature": {},
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the number of available player classes.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetAvailableClasses",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5660,6 +5975,101 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerClass",
+    "kind": "native",
+    "name": "GetPlayerClass",
+    "signature": {
+      "parameters": [
+        {
+          "name": "classid"
+        },
+        {
+          "name": "team",
+          "reference": true
+        },
+        {
+          "name": "skin",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "spawnX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "spawnY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "spawnZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "angle",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "weapon1",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST",
+          "reference": true
+        },
+        {
+          "name": "ammo1",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "weapon2",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST",
+          "reference": true
+        },
+        {
+          "name": "ammo2",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "weapon3",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST",
+          "reference": true
+        },
+        {
+          "name": "ammo3",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets an available player class.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerClass",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -7061,6 +7471,101 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetSpawnInfo",
+    "kind": "native",
+    "name": "GetSpawnInfo",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "team",
+          "reference": true
+        },
+        {
+          "name": "skin",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "spawnX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "spawnY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "spawnZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "angle",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "weapon1",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST",
+          "reference": true
+        },
+        {
+          "name": "ammo1",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "weapon2",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST",
+          "reference": true
+        },
+        {
+          "name": "ammo2",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "weapon3",
+          "tag": "WEAPON",
+          "default": "WEAPON_FIST",
+          "reference": true
+        },
+        {
+          "name": "ammo3",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player's spawn settings.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetSpawnInfo",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_class.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },

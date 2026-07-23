@@ -335,3 +335,22 @@ func TestLoad_ObjectQueriesAttachmentsDLAPI(t *testing.T) {
 		t.Fatalf("OnPlayerEditAttachedObject = %+v", callback)
 	}
 }
+
+func TestLoad_ClassAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	class, ok := index.ByID("native:AddPlayerClass")
+	if !ok || len(class.Availability) != 2 || class.Signature == nil || class.Signature.Parameters[5].Default == nil || class.Signature.Parameters[5].Default.String() != "WEAPON_FIST" {
+		t.Fatalf("AddPlayerClass = %+v", class)
+	}
+	get, ok := index.ByID("native:GetPlayerClass")
+	if !ok || len(get.Availability) != 1 || get.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("GetPlayerClass = %+v", get)
+	}
+	teamCount, ok := index.ByID("function:SetTeamCount")
+	if !ok || teamCount.Kind != KindFunction {
+		t.Fatalf("SetTeamCount = %+v", teamCount)
+	}
+}

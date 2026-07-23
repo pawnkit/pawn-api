@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "entryCount": 287,
+  "entryCount": 295,
   "countsByKind": {
     "callback": 33,
     "constant": 48,
-    "native": 196,
+    "function": 1,
+    "native": 203,
     "tag": 10
   },
-  "fullHash": "sha256:ec607e81871b938a116909c72da0f00740188b5c7d4dc695997f5f4ed8eba907",
-  "interchangeHash": "sha256:806057481d7527d20db48455ceb51ff6a5f1831bd9cf36235dc137ad29e61a53"
+  "fullHash": "sha256:58d85aed6738970f7d8fb3342ec85a6ca91dbdf6cc786e8c5db3d80f9b7f3385",
+  "interchangeHash": "sha256:ff48d4ff281ce6c38d55126df66e26102eade4e8a25bbb84a92af1fc752ba929"
 }

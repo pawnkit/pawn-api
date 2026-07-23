@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.11.0 - 2026-07-23
+
+### Added
+
+- Added eight reviewed player-class functions.
+- Recorded open.mp class queries and weapon defaults.
+
 ## 0.10.0 - 2026-07-23
 
 ### Added
