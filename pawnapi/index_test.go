@@ -419,3 +419,34 @@ func TestLoad_HTTPAPI(t *testing.T) {
 		t.Fatalf("HTTP_ERROR_MALFORMED_RESPONSE = %+v", errorCode)
 	}
 }
+
+func TestLoad_TextLabelAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	create, ok := index.ByID("native:Create3DTextLabel")
+	if !ok || len(create.Availability) != 2 || create.Signature == nil {
+		t.Fatalf("Create3DTextLabel = %+v", create)
+	}
+	parameters := create.Signature.Parameters
+	if parameters[7].Default == nil || parameters[7].Default.String() != "false" || !parameters[len(parameters)-1].Variadic {
+		t.Fatalf("Create3DTextLabel parameters = %+v", parameters)
+	}
+	playerCreate, ok := index.ByID("native:CreatePlayer3DTextLabel")
+	if !ok || playerCreate.Signature == nil || playerCreate.Signature.Parameters[7].Default == nil || playerCreate.Signature.Parameters[7].Default.String() != "INVALID_PLAYER_ID" {
+		t.Fatalf("CreatePlayer3DTextLabel = %+v", playerCreate)
+	}
+	query, ok := index.ByID("native:Get3DTextLabelText")
+	if !ok || len(query.Availability) != 1 || query.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("Get3DTextLabelText = %+v", query)
+	}
+	legacy, ok := index.ByID("native:GetPlayer3DTextLabelDrawDist")
+	if !ok || legacy.Deprecated == nil || legacy.Deprecated.Replacement != "native:GetPlayer3DTextLabelDrawDistance" {
+		t.Fatalf("GetPlayer3DTextLabelDrawDist = %+v", legacy)
+	}
+	invalid, ok := index.ByID("constant:INVALID_3DTEXT_ID")
+	if !ok || invalid.Value == nil || invalid.Value.String() != "65535" {
+		t.Fatalf("INVALID_3DTEXT_ID = %+v", invalid)
+	}
+}

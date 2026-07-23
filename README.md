@@ -69,23 +69,23 @@ includes. It exits with status 1 when declarations are missing.
 
 | Kind | Count | Examples |
 |---|---:|---|
-| `native` | 268 | `SetPlayerPos`, `GangZoneCreate`, `HTTP` |
+| `native` | 304 | `SetPlayerPos`, `Create3DTextLabel`, `HTTP` |
 | `callback` | 45 | `OnPlayerConnect`, `OnPlayerEnterGangZone`, `OnPlayerClickGangZone` |
 | `function` | 1 | `SetTeamCount` |
-| `constant` | 61 | `INVALID_PICKUP`, `HTTP_GET`, `HTTP_ERROR_BAD_HOST` |
-| `tag` | 12 | `Float`, `Menu`, `HTTP_METHOD`, `HTTP_ERROR` |
+| `constant` | 63 | `INVALID_3DTEXT_ID`, `HTTP_GET`, `HTTP_ERROR_BAD_HOST` |
+| `tag` | 14 | `Float`, `Text3D`, `HTTP_METHOD`, `HTTP_ERROR` |
 
 Each entry records its upstream repository, file, commit, licence, and confidence. [docs/licence-report.md](docs/licence-report.md) explains how that provenance is collected.
 
 ## Limits
 
 - Coverage is concentrated on player and vehicle functions and core lifecycle callbacks. Many omp-stdlib include files are not imported yet.
-- At the pinned omp-stdlib commit, 320 of the 1,061 declarations extracted from
-  `omp_*.inc` have matching entries. The dataset also contains 67 core
+- At the pinned omp-stdlib commit, 352 of the 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. The dataset also contains 75 core
   constants and tags represented differently in the includes.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.
-- SA-MP 0.3.7 availability was not imported from a pinned legacy include source. Those entries carry the corresponding provenance and confidence.
+- SA-MP availability is reviewed against a pinned 0.3.7 include source.
 - Schema version 1 does not contain every field used by the Go model. The gap is listed in [docs/compatibility.md](docs/compatibility.md).
 
 Third-party library APIs are not bundled here. PawnKit reads them from the

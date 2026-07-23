@@ -1,0 +1,1540 @@
+[
+  {
+    "id": "constant:INVALID_3DTEXT_ID",
+    "kind": "constant",
+    "name": "INVALID_3DTEXT_ID",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Invalid global 3D text label identifier.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
+  },
+  {
+    "id": "constant:INVALID_PLAYER_3DTEXT_ID",
+    "kind": "constant",
+    "name": "INVALID_PLAYER_3DTEXT_ID",
+    "value": 65535,
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Invalid player 3D text label identifier.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
+  },
+  {
+    "id": "native:Attach3DTextLabelToPlayer",
+    "kind": "native",
+    "name": "Attach3DTextLabelToPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Attaches a global 3D text label to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Attach3DTextLabelToPlayer"
+  },
+  {
+    "id": "native:Attach3DTextLabelToVehicle",
+    "kind": "native",
+    "name": "Attach3DTextLabelToVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Attaches a global 3D text label to a vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Attach3DTextLabelToVehicle"
+  },
+  {
+    "id": "native:Create3DTextLabel",
+    "kind": "native",
+    "name": "Create3DTextLabel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "colour"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float"
+        },
+        {
+          "name": "virtualWorld"
+        },
+        {
+          "name": "testLOS",
+          "tag": "bool",
+          "default": false
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "Text3D"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Creates a global 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Create3DTextLabel",
+    "constraints": [
+      "Formatting arguments are available in open.mp."
+    ]
+  },
+  {
+    "id": "native:CreatePlayer3DTextLabel",
+    "kind": "native",
+    "name": "CreatePlayer3DTextLabel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "colour"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float"
+        },
+        {
+          "name": "parentPlayerid",
+          "default": "INVALID_PLAYER_ID"
+        },
+        {
+          "name": "parentVehicleid",
+          "default": "INVALID_VEHICLE_ID"
+        },
+        {
+          "name": "testLOS",
+          "tag": "bool",
+          "default": false
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "PlayerText3D"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Creates a 3D text label for one player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayer3DTextLabel",
+    "constraints": [
+      "Formatting arguments are available in open.mp."
+    ]
+  },
+  {
+    "id": "native:Delete3DTextLabel",
+    "kind": "native",
+    "name": "Delete3DTextLabel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Deletes a global 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Delete3DTextLabel"
+  },
+  {
+    "id": "native:DeletePlayer3DTextLabel",
+    "kind": "native",
+    "name": "DeletePlayer3DTextLabel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Deletes a player's 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DeletePlayer3DTextLabel"
+  },
+  {
+    "id": "native:Get3DTextLabelAttachedData",
+    "kind": "native",
+    "name": "Get3DTextLabelAttachedData",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "parentPlayerid",
+          "reference": true
+        },
+        {
+          "name": "parentVehicleid",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the player or vehicle attached to a global 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelAttachedData"
+  },
+  {
+    "id": "native:Get3DTextLabelColor",
+    "kind": "native",
+    "name": "Get3DTextLabelColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a global 3D text label's colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelColor",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:Get3DTextLabelColour",
+      "reason": "Use the canonical spelling."
+    }
+  },
+  {
+    "id": "native:Get3DTextLabelColour",
+    "kind": "native",
+    "name": "Get3DTextLabelColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a global 3D text label's colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelColour"
+  },
+  {
+    "id": "native:Get3DTextLabelDrawDistance",
+    "kind": "native",
+    "name": "Get3DTextLabelDrawDistance",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a global 3D text label's draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelDrawDistance"
+  },
+  {
+    "id": "native:Get3DTextLabelLOS",
+    "kind": "native",
+    "name": "Get3DTextLabelLOS",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a global 3D text label tests line of sight.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelLOS"
+  },
+  {
+    "id": "native:Get3DTextLabelPos",
+    "kind": "native",
+    "name": "Get3DTextLabelPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a global 3D text label's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelPos"
+  },
+  {
+    "id": "native:Get3DTextLabelText",
+    "kind": "native",
+    "name": "Get3DTextLabelText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "text",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (text)"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Copies a global 3D text label's text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelText"
+  },
+  {
+    "id": "native:Get3DTextLabelVirtualWorld",
+    "kind": "native",
+    "name": "Get3DTextLabelVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a global 3D text label's virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Get3DTextLabelVirtualWorld"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelAttached",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelAttached",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "parentPlayerid",
+          "reference": true
+        },
+        {
+          "name": "parentVehicleid",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns what a player's 3D text label is attached to.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelAttached",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayer3DTextLabelAttachedData",
+      "reason": "Use the canonical spelling."
+    }
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelAttachedData",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelAttachedData",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "parentPlayerid",
+          "reference": true
+        },
+        {
+          "name": "parentVehicleid",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns the player or vehicle attached to a player's 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelAttachedData"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelColor",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelColor",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelColor",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayer3DTextLabelColour",
+      "reason": "Use the canonical spelling."
+    }
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelColour",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelColour",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label colour.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelColour"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelDrawDist",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelDrawDist",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDist",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayer3DTextLabelDrawDistance",
+      "reason": "Use the canonical spelling."
+    }
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelDrawDistance",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelDrawDistance",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDistance"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelLOS",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelLOS",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a player's 3D text label tests line of sight.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelLOS"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelPos",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelPos"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelText",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "text",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "len",
+          "default": "sizeof (text)"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Copies a player's 3D text label text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelText"
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelVirtualW",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelVirtualW",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelVirtualWorld",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayer3DTextLabelVirtualWorld",
+      "reason": "Use the canonical spelling."
+    }
+  },
+  {
+    "id": "native:GetPlayer3DTextLabelVirtualWorld",
+    "kind": "native",
+    "name": "GetPlayer3DTextLabelVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Returns a player's 3D text label virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelVirtualWorld"
+  },
+  {
+    "id": "native:Is3DTextLabelStreamedIn",
+    "kind": "native",
+    "name": "Is3DTextLabelStreamedIn",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a global 3D text label is streamed in for a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Is3DTextLabelStreamedIn"
+  },
+  {
+    "id": "native:IsValid3DTextLabel",
+    "kind": "native",
+    "name": "IsValid3DTextLabel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a global 3D text label exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValid3DTextLabel"
+  },
+  {
+    "id": "native:IsValidPlayer3DTextLabel",
+    "kind": "native",
+    "name": "IsValidPlayer3DTextLabel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Reports whether a player's 3D text label exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayer3DTextLabel"
+  },
+  {
+    "id": "native:Set3DTextLabelDrawDistance",
+    "kind": "native",
+    "name": "Set3DTextLabelDrawDistance",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Sets a global 3D text label's draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Set3DTextLabelDrawDistance"
+  },
+  {
+    "id": "native:Set3DTextLabelLOS",
+    "kind": "native",
+    "name": "Set3DTextLabelLOS",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Sets whether a global 3D text label tests line of sight.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Set3DTextLabelLOS"
+  },
+  {
+    "id": "native:Set3DTextLabelVirtualWorld",
+    "kind": "native",
+    "name": "Set3DTextLabelVirtualWorld",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "virtualWorld"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Moves a global 3D text label to a virtual world.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Set3DTextLabelVirtualWorld"
+  },
+  {
+    "id": "native:SetPlayer3DTextLabelDrawDist",
+    "kind": "native",
+    "name": "SetPlayer3DTextLabelDrawDist",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Sets a player's 3D text label draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDistance",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SetPlayer3DTextLabelDrawDistance",
+      "reason": "Use the canonical spelling."
+    }
+  },
+  {
+    "id": "native:SetPlayer3DTextLabelDrawDistance",
+    "kind": "native",
+    "name": "SetPlayer3DTextLabelDrawDistance",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Sets a player's 3D text label draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelDrawDistance"
+  },
+  {
+    "id": "native:SetPlayer3DTextLabelLOS",
+    "kind": "native",
+    "name": "SetPlayer3DTextLabelLOS",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "enable",
+          "tag": "bool"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Sets whether a player's 3D text label tests line of sight.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayer3DTextLabelLOS"
+  },
+  {
+    "id": "native:Update3DTextLabelText",
+    "kind": "native",
+    "name": "Update3DTextLabelText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "textid",
+          "tag": "Text3D"
+        },
+        {
+          "name": "colour"
+        },
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Updates a global 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/Update3DTextLabelText",
+    "constraints": [
+      "Formatting arguments are available in open.mp."
+    ]
+  },
+  {
+    "id": "native:UpdatePlayer3DTextLabelText",
+    "kind": "native",
+    "name": "UpdatePlayer3DTextLabelText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "textid",
+          "tag": "PlayerText3D"
+        },
+        {
+          "name": "colour"
+        },
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Updates a player's 3D text label.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/UpdatePlayer3DTextLabelText",
+    "constraints": [
+      "Formatting arguments are available in open.mp."
+    ]
+  },
+  {
+    "id": "tag:PlayerText3D",
+    "kind": "tag",
+    "name": "PlayerText3D",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tags player 3D text label identifiers.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
+  },
+  {
+    "id": "tag:Text3D",
+    "kind": "tag",
+    "name": "Text3D",
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_textlabel.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high",
+    "documentationSummary": "Tags global 3D text label identifiers.",
+    "documentationUrl": "https://open.mp/docs/scripting/resources/limits"
+  }
+]

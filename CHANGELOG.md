@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.15.0 - 2026-07-23
+
+### Added
+
+- Added 40 reviewed global and per-player 3D text-label entries.
+- Recorded legacy aliases, defaults, tags, and invalid identifiers.
+
 ## 0.14.0 - 2026-07-23
 
 ### Added
