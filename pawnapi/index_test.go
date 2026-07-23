@@ -199,3 +199,18 @@ func TestLoad_ActorAPI(t *testing.T) {
 		t.Fatalf("GetActorAnimation = %+v", animation)
 	}
 }
+
+func TestLoad_CheckpointAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	race, ok := index.ByID("native:SetPlayerRaceCheckpoint")
+	if !ok || len(race.Availability) != 2 || race.Signature == nil || len(race.Signature.Parameters) != 9 {
+		t.Fatalf("SetPlayerRaceCheckpoint = %+v", race)
+	}
+	active, ok := index.ByID("native:IsPlayerCheckpointActive")
+	if !ok || len(active.Availability) != 1 || active.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("IsPlayerCheckpointActive = %+v", active)
+	}
+}

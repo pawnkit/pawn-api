@@ -360,6 +360,70 @@
     "confidence": "high"
   },
   {
+    "id": "callback:OnPlayerEnterCheckpoint",
+    "kind": "callback",
+    "name": "OnPlayerEnterCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player enters their checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerEnterRaceCheckpoint",
+    "kind": "callback",
+    "name": "OnPlayerEnterRaceCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player enters their race checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterRaceCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "callback:OnPlayerEnterVehicle",
     "kind": "callback",
     "name": "OnPlayerEnterVehicle",
@@ -476,6 +540,70 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_actor.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerLeaveCheckpoint",
+    "kind": "callback",
+    "name": "OnPlayerLeaveCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player leaves their checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "callback:OnPlayerLeaveRaceCheckpoint",
+    "kind": "callback",
+    "name": "OnPlayerLeaveRaceCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player leaves their race checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveRaceCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -1191,6 +1319,72 @@
     "confidence": "high"
   },
   {
+    "id": "native:DisablePlayerCheckpoint",
+    "kind": "native",
+    "name": "DisablePlayerCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides a player's checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DisablePlayerCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:DisablePlayerRaceCheckpoint",
+    "kind": "native",
+    "name": "DisablePlayerRaceCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Hides a player's race checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DisablePlayerRaceCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetActorAnimation",
     "kind": "native",
     "name": "GetActorAnimation",
@@ -1586,6 +1780,59 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetPlayerCheckpoint",
+    "kind": "native",
+    "name": "GetPlayerCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "centreX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "centreY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "centreZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "radius",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's checkpoint position and radius.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetPlayerColor",
     "kind": "native",
     "name": "GetPlayerColor",
@@ -1854,6 +2101,77 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerRaceCheckpoint",
+    "kind": "native",
+    "name": "GetPlayerRaceCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "centreX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "centreY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "centreZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "nextX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "nextY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "nextZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "radius",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player's race checkpoint data.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerRaceCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -2436,6 +2754,35 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsPlayerCheckpointActive",
+    "kind": "native",
+    "name": "IsPlayerCheckpointActive",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player has an active checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerCheckpointActive",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsPlayerConnected",
     "kind": "native",
     "name": "IsPlayerConnected",
@@ -2504,6 +2851,72 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsPlayerInCheckpoint",
+    "kind": "native",
+    "name": "IsPlayerInCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player is inside their checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerInRaceCheckpoint",
+    "kind": "native",
+    "name": "IsPlayerInRaceCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player is inside their race checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInRaceCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsPlayerInVehicle",
     "kind": "native",
     "name": "IsPlayerInVehicle",
@@ -2535,6 +2948,35 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerRaceCheckpointActive",
+    "kind": "native",
+    "name": "IsPlayerRaceCheckpointActive",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Reports whether a player has an active race checkpoint.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerRaceCheckpointActive",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -3070,6 +3512,55 @@
     "confidence": "high"
   },
   {
+    "id": "native:SetPlayerCheckpoint",
+    "kind": "native",
+    "name": "SetPlayerCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "centreX",
+          "tag": "Float"
+        },
+        {
+          "name": "centreY",
+          "tag": "Float"
+        },
+        {
+          "name": "centreZ",
+          "tag": "Float"
+        },
+        {
+          "name": "radius",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows a checkpoint to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:SetPlayerColor",
     "kind": "native",
     "name": "SetPlayerColor",
@@ -3309,6 +3800,71 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerRaceCheckpoint",
+    "kind": "native",
+    "name": "SetPlayerRaceCheckpoint",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "type",
+          "tag": "CP_TYPE"
+        },
+        {
+          "name": "centreX",
+          "tag": "Float"
+        },
+        {
+          "name": "centreY",
+          "tag": "Float"
+        },
+        {
+          "name": "centreZ",
+          "tag": "Float"
+        },
+        {
+          "name": "nextX",
+          "tag": "Float"
+        },
+        {
+          "name": "nextY",
+          "tag": "Float"
+        },
+        {
+          "name": "nextZ",
+          "tag": "Float"
+        },
+        {
+          "name": "radius",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Shows a race checkpoint to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerRaceCheckpoint",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -3874,6 +4430,26 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "tag:CP_TYPE",
+    "kind": "tag",
+    "name": "CP_TYPE",
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Tag used for race checkpoint types.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_checkpoint.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },

@@ -318,6 +318,64 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerDisconnect"
     },
     {
+      "id": "callback:OnPlayerEnterCheckpoint",
+      "kind": "callback",
+      "name": "OnPlayerEnterCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterCheckpoint"
+    },
+    {
+      "id": "callback:OnPlayerEnterRaceCheckpoint",
+      "kind": "callback",
+      "name": "OnPlayerEnterRaceCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerEnterRaceCheckpoint"
+    },
+    {
       "id": "callback:OnPlayerEnterVehicle",
       "kind": "callback",
       "name": "OnPlayerEnterVehicle",
@@ -428,6 +486,64 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerGiveDamageActor"
+    },
+    {
+      "id": "callback:OnPlayerLeaveCheckpoint",
+      "kind": "callback",
+      "name": "OnPlayerLeaveCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveCheckpoint"
+    },
+    {
+      "id": "callback:OnPlayerLeaveRaceCheckpoint",
+      "kind": "callback",
+      "name": "OnPlayerLeaveRaceCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveRaceCheckpoint"
     },
     {
       "id": "callback:OnPlayerRequestClass",
@@ -1060,6 +1176,66 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyVehicle"
     },
     {
+      "id": "native:DisablePlayerCheckpoint",
+      "kind": "native",
+      "name": "DisablePlayerCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/DisablePlayerCheckpoint"
+    },
+    {
+      "id": "native:DisablePlayerRaceCheckpoint",
+      "kind": "native",
+      "name": "DisablePlayerRaceCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/DisablePlayerRaceCheckpoint"
+    },
+    {
       "id": "native:GetActorAnimation",
       "kind": "native",
       "name": "GetActorAnimation",
@@ -1401,6 +1577,52 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerArmour"
     },
     {
+      "id": "native:GetPlayerCheckpoint",
+      "kind": "native",
+      "name": "GetPlayerCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "centreX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "centreY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "centreZ",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "radius",
+            "tag": "Float",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCheckpoint"
+    },
+    {
       "id": "native:GetPlayerColor",
       "kind": "native",
       "name": "GetPlayerColor",
@@ -1631,6 +1853,67 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerPos"
+    },
+    {
+      "id": "native:GetPlayerRaceCheckpoint",
+      "kind": "native",
+      "name": "GetPlayerRaceCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "centreX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "centreY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "centreZ",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "nextX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "nextY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "nextZ",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "radius",
+            "tag": "Float",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerRaceCheckpoint"
     },
     {
       "id": "native:GetPlayerScore",
@@ -2134,6 +2417,32 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsActorStreamedIn"
     },
     {
+      "id": "native:IsPlayerCheckpointActive",
+      "kind": "native",
+      "name": "IsPlayerCheckpointActive",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerCheckpointActive"
+    },
+    {
       "id": "native:IsPlayerConnected",
       "kind": "native",
       "name": "IsPlayerConnected",
@@ -2194,6 +2503,66 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInAnyVehicle"
     },
     {
+      "id": "native:IsPlayerInCheckpoint",
+      "kind": "native",
+      "name": "IsPlayerInCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInCheckpoint"
+    },
+    {
+      "id": "native:IsPlayerInRaceCheckpoint",
+      "kind": "native",
+      "name": "IsPlayerInRaceCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInRaceCheckpoint"
+    },
+    {
       "id": "native:IsPlayerInVehicle",
       "kind": "native",
       "name": "IsPlayerInVehicle",
@@ -2225,6 +2594,32 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInVehicle"
+    },
+    {
+      "id": "native:IsPlayerRaceCheckpointActive",
+      "kind": "native",
+      "name": "IsPlayerRaceCheckpointActive",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerRaceCheckpointActive"
     },
     {
       "id": "native:IsValidActor",
@@ -2694,6 +3089,52 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerArmour"
     },
     {
+      "id": "native:SetPlayerCheckpoint",
+      "kind": "native",
+      "name": "SetPlayerCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "centreX",
+            "tag": "Float"
+          },
+          {
+            "name": "centreY",
+            "tag": "Float"
+          },
+          {
+            "name": "centreZ",
+            "tag": "Float"
+          },
+          {
+            "name": "radius",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerCheckpoint"
+    },
+    {
       "id": "native:SetPlayerColor",
       "kind": "native",
       "name": "SetPlayerColor",
@@ -2900,6 +3341,68 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerPos"
+    },
+    {
+      "id": "native:SetPlayerRaceCheckpoint",
+      "kind": "native",
+      "name": "SetPlayerRaceCheckpoint",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "type",
+            "tag": "CP_TYPE"
+          },
+          {
+            "name": "centreX",
+            "tag": "Float"
+          },
+          {
+            "name": "centreY",
+            "tag": "Float"
+          },
+          {
+            "name": "centreZ",
+            "tag": "Float"
+          },
+          {
+            "name": "nextX",
+            "tag": "Float"
+          },
+          {
+            "name": "nextY",
+            "tag": "Float"
+          },
+          {
+            "name": "nextZ",
+            "tag": "Float"
+          },
+          {
+            "name": "radius",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerRaceCheckpoint"
     },
     {
       "id": "native:SetPlayerScore",
@@ -3397,6 +3900,23 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/TogglePlayerControllable"
+    },
+    {
+      "id": "tag:CP_TYPE",
+      "kind": "tag",
+      "name": "CP_TYPE",
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_checkpoint.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      }
     },
     {
       "id": "tag:Float",

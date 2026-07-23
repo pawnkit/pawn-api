@@ -3,6 +3,13 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.4.0 - 2026-07-23
+
+### Added
+
+- Added 15 reviewed checkpoint natives, callbacks, and tags.
+- Recorded SA-MP and open.mp availability for the checkpoint API.
+
 ## 0.3.0 - 2026-07-23
 
 ### Added
