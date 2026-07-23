@@ -649,7 +649,12 @@
     },
     "confidence": "high",
     "documentationSummary": "Disables camera collision for a global object.",
-    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCol"
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCol",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SetObjectNoCameraCollision",
+      "reason": "Use the full camera-collision name."
+    }
   },
   {
     "id": "native:IsValidObject",

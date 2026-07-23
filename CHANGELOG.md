@@ -3,6 +3,17 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.9.0 - 2026-07-23
+
+### Added
+
+- Added 37 reviewed per-player object natives and callbacks.
+- Recorded open.mp query functions, defaults, and compatibility names.
+
+### Fixed
+
+- Marked the legacy object editing and camera-collision names as deprecated.
+
 ## 0.8.0 - 2026-07-23
 
 ### Added

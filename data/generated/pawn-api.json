@@ -708,6 +708,38 @@
       "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerLeaveRaceCheckpoint"
     },
     {
+      "id": "callback:OnPlayerObjectMoved",
+      "kind": "callback",
+      "name": "OnPlayerObjectMoved",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerObjectMoved"
+    },
+    {
       "id": "callback:OnPlayerRequestClass",
       "kind": "callback",
       "name": "OnPlayerRequestClass",
@@ -2349,6 +2381,187 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/AttachObjectToVehicle"
     },
     {
+      "id": "native:AttachPlayerObjectToObject",
+      "kind": "native",
+      "name": "AttachPlayerObjectToObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "parentid"
+          },
+          {
+            "name": "offsetX",
+            "tag": "Float"
+          },
+          {
+            "name": "offsetY",
+            "tag": "Float"
+          },
+          {
+            "name": "offsetZ",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          },
+          {
+            "name": "syncRotation",
+            "tag": "bool",
+            "default": true
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToObject"
+    },
+    {
+      "id": "native:AttachPlayerObjectToPlayer",
+      "kind": "native",
+      "name": "AttachPlayerObjectToPlayer",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "parentid"
+          },
+          {
+            "name": "offsetX",
+            "tag": "Float"
+          },
+          {
+            "name": "offsetY",
+            "tag": "Float"
+          },
+          {
+            "name": "offsetZ",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToPlayer"
+    },
+    {
+      "id": "native:AttachPlayerObjectToVehicle",
+      "kind": "native",
+      "name": "AttachPlayerObjectToVehicle",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "parentid"
+          },
+          {
+            "name": "offsetX",
+            "tag": "Float"
+          },
+          {
+            "name": "offsetY",
+            "tag": "Float"
+          },
+          {
+            "name": "offsetZ",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToVehicle"
+    },
+    {
       "id": "native:BeginObjectEditing",
       "kind": "native",
       "name": "BeginObjectEditing",
@@ -2404,6 +2617,35 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/BeginObjectSelecting"
     },
     {
+      "id": "native:BeginPlayerObjectEditing",
+      "kind": "native",
+      "name": "BeginPlayerObjectEditing",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/BeginPlayerObjectEditing"
+    },
+    {
       "id": "native:CancelEdit",
       "kind": "native",
       "name": "CancelEdit",
@@ -2425,6 +2667,11 @@
           "since": "1.0.0"
         }
       ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:EndObjectEditing",
+        "reason": "Use the explicit end-editing name."
+      },
       "source": {
         "repository": "openmultiplayer/omp-stdlib",
         "path": "omp_object.inc",
@@ -2621,6 +2868,67 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/CreateObject"
     },
     {
+      "id": "native:CreatePlayerObject",
+      "kind": "native",
+      "name": "CreatePlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "modelid"
+          },
+          {
+            "name": "x",
+            "tag": "Float"
+          },
+          {
+            "name": "y",
+            "tag": "Float"
+          },
+          {
+            "name": "z",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          },
+          {
+            "name": "drawDistance",
+            "tag": "Float",
+            "default": 0
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerObject"
+    },
+    {
       "id": "native:CreateVehicle",
       "kind": "native",
       "name": "CreateVehicle",
@@ -2769,6 +3077,39 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyObject"
+    },
+    {
+      "id": "native:DestroyPlayerObject",
+      "kind": "native",
+      "name": "DestroyPlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPlayerObject"
     },
     {
       "id": "native:DestroyVehicle",
@@ -2950,6 +3291,11 @@
           "since": "1.0.0"
         }
       ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:BeginObjectEditing",
+        "reason": "Use the explicit begin-editing name."
+      },
       "source": {
         "repository": "openmultiplayer/omp-stdlib",
         "path": "omp_object.inc",
@@ -2957,6 +3303,44 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/EditObject"
+    },
+    {
+      "id": "native:EditPlayerObject",
+      "kind": "native",
+      "name": "EditPlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:BeginPlayerObjectEditing",
+        "reason": "Use the explicit begin-editing name."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/EditPlayerObject"
     },
     {
       "id": "native:EndObjectEditing",
@@ -3668,6 +4052,61 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerArmour"
     },
     {
+      "id": "native:GetPlayerCameraTargetPlayerObj",
+      "kind": "native",
+      "name": "GetPlayerCameraTargetPlayerObj",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:GetPlayerCameraTargetPlayerObject",
+        "reason": "Use the full player-object name."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayerObject"
+    },
+    {
+      "id": "native:GetPlayerCameraTargetPlayerObject",
+      "kind": "native",
+      "name": "GetPlayerCameraTargetPlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayerObject"
+    },
+    {
       "id": "native:GetPlayerCheckpoint",
       "kind": "native",
       "name": "GetPlayerCheckpoint",
@@ -4043,6 +4482,570 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerName"
     },
     {
+      "id": "native:GetPlayerObjectAttachedData",
+      "kind": "native",
+      "name": "GetPlayerObjectAttachedData",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "parentVehicle"
+          },
+          {
+            "name": "parentObject",
+            "default": 0
+          },
+          {
+            "name": "parentPlayer",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectAttachedData"
+    },
+    {
+      "id": "native:GetPlayerObjectAttachedOffset",
+      "kind": "native",
+      "name": "GetPlayerObjectAttachedOffset",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "offsetX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "offsetY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "offsetZ",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectAttachedOffset"
+    },
+    {
+      "id": "native:GetPlayerObjectDrawDistance",
+      "kind": "native",
+      "name": "GetPlayerObjectDrawDistance",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "Float"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectDrawDistance"
+    },
+    {
+      "id": "native:GetPlayerObjectMaterial",
+      "kind": "native",
+      "name": "GetPlayerObjectMaterial",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "materialIndex"
+          },
+          {
+            "name": "modelid"
+          },
+          {
+            "name": "textureLibrary"
+          },
+          {
+            "name": "textureLibrarySize",
+            "default": "sizeof (textureLibrary)"
+          },
+          {
+            "name": "textureName"
+          },
+          {
+            "name": "textureNameSize",
+            "default": "sizeof (textureName)"
+          },
+          {
+            "name": "materialColour",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMaterial"
+    },
+    {
+      "id": "native:GetPlayerObjectMaterialText",
+      "kind": "native",
+      "name": "GetPlayerObjectMaterialText",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "materialIndex"
+          },
+          {
+            "name": "text"
+          },
+          {
+            "name": "textSize",
+            "default": "sizeof (text)"
+          },
+          {
+            "name": "materialSize",
+            "tag": "OBJECT_MATERIAL_SIZE"
+          },
+          {
+            "name": "fontFace"
+          },
+          {
+            "name": "fontFaceSize",
+            "default": "sizeof (fontFace)"
+          },
+          {
+            "name": "fontSize",
+            "default": 0
+          },
+          {
+            "name": "bold",
+            "tag": "bool",
+            "default": true
+          },
+          {
+            "name": "fontColour",
+            "default": 4294967295
+          },
+          {
+            "name": "backgroundColour",
+            "default": 0
+          },
+          {
+            "name": "textAlignment",
+            "tag": "OBJECT_MATERIAL_TEXT_ALIGN",
+            "default": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMaterialText"
+    },
+    {
+      "id": "native:GetPlayerObjectModel",
+      "kind": "native",
+      "name": "GetPlayerObjectModel",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectModel"
+    },
+    {
+      "id": "native:GetPlayerObjectMoveSpeed",
+      "kind": "native",
+      "name": "GetPlayerObjectMoveSpeed",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "Float"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMoveSpeed"
+    },
+    {
+      "id": "native:GetPlayerObjectMovingTargetPos",
+      "kind": "native",
+      "name": "GetPlayerObjectMovingTargetPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "targetX",
+            "tag": "Float"
+          },
+          {
+            "name": "targetY",
+            "tag": "Float"
+          },
+          {
+            "name": "targetZ",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetPos"
+    },
+    {
+      "id": "native:GetPlayerObjectMovingTargetRot",
+      "kind": "native",
+      "name": "GetPlayerObjectMovingTargetRot",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetRot"
+    },
+    {
+      "id": "native:GetPlayerObjectPos",
+      "kind": "native",
+      "name": "GetPlayerObjectPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "x",
+            "tag": "Float"
+          },
+          {
+            "name": "y",
+            "tag": "Float"
+          },
+          {
+            "name": "z",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectPos"
+    },
+    {
+      "id": "native:GetPlayerObjectRot",
+      "kind": "native",
+      "name": "GetPlayerObjectRot",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectRot"
+    },
+    {
+      "id": "native:GetPlayerObjectSyncRotation",
+      "kind": "native",
+      "name": "GetPlayerObjectSyncRotation",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectSyncRotation"
+    },
+    {
+      "id": "native:GetPlayerObjectTarget",
+      "kind": "native",
+      "name": "GetPlayerObjectTarget",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "targetX",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "targetY",
+            "tag": "Float",
+            "default": 0
+          },
+          {
+            "name": "targetZ",
+            "tag": "Float",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:GetPlayerObjectMovingTargetPos",
+        "reason": "Use the explicit moving-target name."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetPos"
+    },
+    {
       "id": "native:GetPlayerPos",
       "kind": "native",
       "name": "GetPlayerPos",
@@ -4202,6 +5205,31 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSkin"
+    },
+    {
+      "id": "native:GetPlayerSurfingPlayerObjectID",
+      "kind": "native",
+      "name": "GetPlayerSurfingPlayerObjectID",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSurfingPlayerObjectID"
     },
     {
       "id": "native:GetPlayerTeam",
@@ -4973,6 +6001,102 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerInVehicle"
     },
     {
+      "id": "native:IsPlayerObjectMaterialSlotUsed",
+      "kind": "native",
+      "name": "IsPlayerObjectMaterialSlotUsed",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "materialIndex"
+          }
+        ]
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerObjectMaterialSlotUsed"
+    },
+    {
+      "id": "native:IsPlayerObjectMoving",
+      "kind": "native",
+      "name": "IsPlayerObjectMoving",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerObjectMoving"
+    },
+    {
+      "id": "native:IsPlayerObjectNoCameraCol",
+      "kind": "native",
+      "name": "IsPlayerObjectNoCameraCol",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "reason": "Deprecated by open.mp; the pinned include has no replacement declaration."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      }
+    },
+    {
       "id": "native:IsPlayerRaceCheckpointActive",
       "kind": "native",
       "name": "IsPlayerRaceCheckpointActive",
@@ -5090,6 +6214,39 @@
       "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidObject"
     },
     {
+      "id": "native:IsValidPlayerObject",
+      "kind": "native",
+      "name": "IsValidPlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerObject"
+    },
+    {
       "id": "native:IsValidVehicle",
       "kind": "native",
       "name": "IsValidVehicle",
@@ -5179,6 +6336,70 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/MoveObject"
+    },
+    {
+      "id": "native:MovePlayerObject",
+      "kind": "native",
+      "name": "MovePlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "targetX",
+            "tag": "Float"
+          },
+          {
+            "name": "targetY",
+            "tag": "Float"
+          },
+          {
+            "name": "targetZ",
+            "tag": "Float"
+          },
+          {
+            "name": "speed",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float",
+            "default": -1000
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float",
+            "default": -1000
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float",
+            "default": -1000
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/MovePlayerObject"
     },
     {
       "id": "native:PutPlayerInVehicle",
@@ -5332,6 +6553,11 @@
           "since": "1.0.0"
         }
       ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:BeginObjectSelecting",
+        "reason": "Use the explicit begin-selecting name."
+      },
       "source": {
         "repository": "openmultiplayer/omp-stdlib",
         "path": "omp_object.inc",
@@ -5764,6 +6990,11 @@
           "since": "1.0.0"
         }
       ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:SetObjectNoCameraCollision",
+        "reason": "Use the full camera-collision name."
+      },
       "source": {
         "repository": "openmultiplayer/omp-stdlib",
         "path": "omp_object.inc",
@@ -6190,6 +7421,320 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerName"
+    },
+    {
+      "id": "native:SetPlayerObjectMaterial",
+      "kind": "native",
+      "name": "SetPlayerObjectMaterial",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "materialIndex"
+          },
+          {
+            "name": "modelid"
+          },
+          {
+            "name": "textureLibrary"
+          },
+          {
+            "name": "textureName"
+          },
+          {
+            "name": "materialColour",
+            "default": 0
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMaterial"
+    },
+    {
+      "id": "native:SetPlayerObjectMaterialText",
+      "kind": "native",
+      "name": "SetPlayerObjectMaterialText",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "text"
+          },
+          {
+            "name": "materialIndex",
+            "default": 0
+          },
+          {
+            "name": "materialSize",
+            "tag": "OBJECT_MATERIAL_SIZE",
+            "default": "OBJECT_MATERIAL_SIZE_256x128"
+          },
+          {
+            "name": "fontFace",
+            "default": "Arial"
+          },
+          {
+            "name": "fontSize",
+            "default": 24
+          },
+          {
+            "name": "bold",
+            "tag": "bool",
+            "default": true
+          },
+          {
+            "name": "fontColour",
+            "default": 4294967295
+          },
+          {
+            "name": "backgroundColour",
+            "default": 0
+          },
+          {
+            "name": "textAlignment",
+            "tag": "OBJECT_MATERIAL_TEXT_ALIGN",
+            "default": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT"
+          },
+          {
+            "name": "arguments",
+            "tag": "OPEN_MP_TAGS"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMaterialText"
+    },
+    {
+      "id": "native:SetPlayerObjectMoveSpeed",
+      "kind": "native",
+      "name": "SetPlayerObjectMoveSpeed",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "speed",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMoveSpeed"
+    },
+    {
+      "id": "native:SetPlayerObjectNoCameraCol",
+      "kind": "native",
+      "name": "SetPlayerObjectNoCameraCol",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "deprecated": {
+        "since": "1.0.0",
+        "replacement": "native:SetPlayerObjectNoCameraCollision",
+        "reason": "Use the full camera-collision name."
+      },
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectNoCameraCol"
+    },
+    {
+      "id": "native:SetPlayerObjectNoCameraCollision",
+      "kind": "native",
+      "name": "SetPlayerObjectNoCameraCollision",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectNoCameraCollision"
+    },
+    {
+      "id": "native:SetPlayerObjectPos",
+      "kind": "native",
+      "name": "SetPlayerObjectPos",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "x",
+            "tag": "Float"
+          },
+          {
+            "name": "y",
+            "tag": "Float"
+          },
+          {
+            "name": "z",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectPos"
+    },
+    {
+      "id": "native:SetPlayerObjectRot",
+      "kind": "native",
+      "name": "SetPlayerObjectRot",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          },
+          {
+            "name": "rotationX",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationY",
+            "tag": "Float"
+          },
+          {
+            "name": "rotationZ",
+            "tag": "Float"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectRot"
     },
     {
       "id": "native:SetPlayerPos",
@@ -6873,6 +8418,39 @@
         "license": "MPL-2.0"
       },
       "documentationUrl": "https://open.mp/docs/scripting/functions/StopObject"
+    },
+    {
+      "id": "native:StopPlayerObject",
+      "kind": "native",
+      "name": "StopPlayerObject",
+      "signature": {
+        "parameters": [
+          {
+            "name": "playerid"
+          },
+          {
+            "name": "objectid"
+          }
+        ],
+        "returnTag": "bool"
+      },
+      "availability": [
+        {
+          "profile": "samp-037",
+          "since": "0.3.7"
+        },
+        {
+          "profile": "openmp",
+          "since": "1.0.0"
+        }
+      ],
+      "source": {
+        "repository": "openmultiplayer/omp-stdlib",
+        "path": "omp_object.inc",
+        "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+        "license": "MPL-2.0"
+      },
+      "documentationUrl": "https://open.mp/docs/scripting/functions/StopPlayerObject"
     },
     {
       "id": "native:TogglePlayerControllable",

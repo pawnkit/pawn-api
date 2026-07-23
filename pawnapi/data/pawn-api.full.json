@@ -787,6 +787,41 @@
     "confidence": "high"
   },
   {
+    "id": "callback:OnPlayerObjectMoved",
+    "kind": "callback",
+    "name": "OnPlayerObjectMoved",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Called when a player object finishes moving.",
+    "documentationUrl": "https://open.mp/docs/scripting/callbacks/OnPlayerObjectMoved",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "callback:OnPlayerRequestClass",
     "kind": "callback",
     "name": "OnPlayerRequestClass",
@@ -2639,6 +2674,196 @@
     "confidence": "high"
   },
   {
+    "id": "native:AttachPlayerObjectToObject",
+    "kind": "native",
+    "name": "AttachPlayerObjectToObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        },
+        {
+          "name": "syncRotation",
+          "tag": "bool",
+          "default": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Attaches one player object to another.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AttachPlayerObjectToPlayer",
+    "kind": "native",
+    "name": "AttachPlayerObjectToPlayer",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Attaches a player object to a player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToPlayer",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:AttachPlayerObjectToVehicle",
+    "kind": "native",
+    "name": "AttachPlayerObjectToVehicle",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float"
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Attaches a player object to a vehicle.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/AttachPlayerObjectToVehicle",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:BeginObjectEditing",
     "kind": "native",
     "name": "BeginObjectEditing",
@@ -2700,6 +2925,38 @@
     "confidence": "high"
   },
   {
+    "id": "native:BeginPlayerObjectEditing",
+    "kind": "native",
+    "name": "BeginPlayerObjectEditing",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Lets a player edit a player object's position and rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/BeginPlayerObjectEditing",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:CancelEdit",
     "kind": "native",
     "name": "CancelEdit",
@@ -2721,6 +2978,11 @@
         "since": "1.0.0"
       }
     ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:EndObjectEditing",
+      "reason": "Use the explicit end-editing name."
+    },
     "owningInclude": "open.mp",
     "documentationSummary": "Ends object editing or selection for a player.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/CancelEdit",
@@ -2940,6 +3202,70 @@
     "confidence": "high"
   },
   {
+    "id": "native:CreatePlayerObject",
+    "kind": "native",
+    "name": "CreatePlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "modelid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        },
+        {
+          "name": "drawDistance",
+          "tag": "Float",
+          "default": 0
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Creates an object for one player.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CreatePlayerObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:CreateVehicle",
     "kind": "native",
     "name": "CreateVehicle",
@@ -3097,6 +3423,42 @@
     "owningInclude": "open.mp",
     "documentationSummary": "Destroys a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:DestroyPlayerObject",
+    "kind": "native",
+    "name": "DestroyPlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Destroys a player object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/DestroyPlayerObject",
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
@@ -3301,9 +3663,55 @@
         "since": "1.0.0"
       }
     ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:BeginObjectEditing",
+      "reason": "Use the explicit begin-editing name."
+    },
     "owningInclude": "open.mp",
     "documentationSummary": "Lets a player edit a global object's position and rotation.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/EditObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:EditPlayerObject",
+    "kind": "native",
+    "name": "EditPlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:BeginPlayerObjectEditing",
+      "reason": "Use the explicit begin-editing name."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Lets a player edit a player object's position and rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EditPlayerObject",
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
@@ -4125,6 +4533,67 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetPlayerCameraTargetPlayerObj",
+    "kind": "native",
+    "name": "GetPlayerCameraTargetPlayerObj",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayerCameraTargetPlayerObject",
+      "reason": "Use the full player-object name."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the player object targeted by a player's camera.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayerObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerCameraTargetPlayerObject",
+    "kind": "native",
+    "name": "GetPlayerCameraTargetPlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the player object targeted by a player's camera.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerCameraTargetPlayerObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetPlayerCheckpoint",
     "kind": "native",
     "name": "GetPlayerCheckpoint",
@@ -4567,6 +5036,653 @@
     "confidence": "high"
   },
   {
+    "id": "native:GetPlayerObjectAttachedData",
+    "kind": "native",
+    "name": "GetPlayerObjectAttachedData",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "parentVehicle",
+          "reference": true
+        },
+        {
+          "name": "parentObject",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "parentPlayer",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets the entities attached to a player object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectAttachedData",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectAttachedOffset",
+    "kind": "native",
+    "name": "GetPlayerObjectAttachedOffset",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "offsetX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "offsetY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "offsetZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's attachment offset.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectAttachedOffset",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectDrawDistance",
+    "kind": "native",
+    "name": "GetPlayerObjectDrawDistance",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player object's draw distance.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectDrawDistance",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectMaterial",
+    "kind": "native",
+    "name": "GetPlayerObjectMaterial",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "materialIndex"
+        },
+        {
+          "name": "modelid",
+          "reference": true
+        },
+        {
+          "name": "textureLibrary",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "textureLibrarySize",
+          "default": "sizeof (textureLibrary)"
+        },
+        {
+          "name": "textureName",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "textureNameSize",
+          "default": "sizeof (textureName)"
+        },
+        {
+          "name": "materialColour",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's material.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMaterial",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectMaterialText",
+    "kind": "native",
+    "name": "GetPlayerObjectMaterialText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "materialIndex"
+        },
+        {
+          "name": "text",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "textSize",
+          "default": "sizeof (text)"
+        },
+        {
+          "name": "materialSize",
+          "tag": "OBJECT_MATERIAL_SIZE",
+          "reference": true
+        },
+        {
+          "name": "fontFace",
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "fontFaceSize",
+          "default": "sizeof (fontFace)"
+        },
+        {
+          "name": "fontSize",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "bold",
+          "tag": "bool",
+          "default": true,
+          "reference": true
+        },
+        {
+          "name": "fontColour",
+          "default": 4294967295,
+          "reference": true
+        },
+        {
+          "name": "backgroundColour",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "textAlignment",
+          "tag": "OBJECT_MATERIAL_TEXT_ALIGN",
+          "default": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's material text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMaterialText",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectModel",
+    "kind": "native",
+    "name": "GetPlayerObjectModel",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player object's model ID.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectModel",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectMoveSpeed",
+    "kind": "native",
+    "name": "GetPlayerObjectMoveSpeed",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "Float"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns a player object's movement speed.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMoveSpeed",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectMovingTargetPos",
+    "kind": "native",
+    "name": "GetPlayerObjectMovingTargetPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "targetX",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "targetY",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "targetZ",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's movement target position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectMovingTargetRot",
+    "kind": "native",
+    "name": "GetPlayerObjectMovingTargetRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's movement target rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectPos",
+    "kind": "native",
+    "name": "GetPlayerObjectPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "x",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "y",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "z",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectRot",
+    "kind": "native",
+    "name": "GetPlayerObjectRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "reference": true
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectSyncRotation",
+    "kind": "native",
+    "name": "GetPlayerObjectSyncRotation",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether an attached player object inherits rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectSyncRotation",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerObjectTarget",
+    "kind": "native",
+    "name": "GetPlayerObjectTarget",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "targetX",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "targetY",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        },
+        {
+          "name": "targetZ",
+          "tag": "Float",
+          "default": 0,
+          "reference": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:GetPlayerObjectMovingTargetPos",
+      "reason": "Use the explicit moving-target name."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Gets a player object's movement target.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerObjectMovingTargetPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:GetPlayerPos",
     "kind": "native",
     "name": "GetPlayerPos",
@@ -4747,6 +5863,34 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:GetPlayerSurfingPlayerObjectID",
+    "kind": "native",
+    "name": "GetPlayerSurfingPlayerObjectID",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns the player object a player is surfing.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/GetPlayerSurfingPlayerObjectID",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -5625,6 +6769,111 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsPlayerObjectMaterialSlotUsed",
+    "kind": "native",
+    "name": "IsPlayerObjectMaterialSlotUsed",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "materialIndex"
+        }
+      ]
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Returns how a player-object material slot is used.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerObjectMaterialSlotUsed",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerObjectMoving",
+    "kind": "native",
+    "name": "IsPlayerObjectMoving",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a player object is moving.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsPlayerObjectMoving",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:IsPlayerObjectNoCameraCol",
+    "kind": "native",
+    "name": "IsPlayerObjectNoCameraCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "reason": "Deprecated by open.mp; the pinned include has no replacement declaration."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether camera collision is disabled for a player object.",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsPlayerRaceCheckpointActive",
     "kind": "native",
     "name": "IsPlayerRaceCheckpointActive",
@@ -5754,6 +7003,42 @@
     "confidence": "high"
   },
   {
+    "id": "native:IsValidPlayerObject",
+    "kind": "native",
+    "name": "IsValidPlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Checks whether a player object exists.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/IsValidPlayerObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
     "id": "native:IsValidVehicle",
     "kind": "native",
     "name": "IsValidVehicle",
@@ -5843,6 +7128,73 @@
     "owningInclude": "open.mp",
     "documentationSummary": "Moves a global object towards a position.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/MoveObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:MovePlayerObject",
+    "kind": "native",
+    "name": "MovePlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "targetX",
+          "tag": "Float"
+        },
+        {
+          "name": "targetY",
+          "tag": "Float"
+        },
+        {
+          "name": "targetZ",
+          "tag": "Float"
+        },
+        {
+          "name": "speed",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float",
+          "default": -1000
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float",
+          "default": -1000
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float",
+          "default": -1000
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Moves a player object towards a position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/MovePlayerObject",
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",
@@ -6025,6 +7377,11 @@
         "since": "1.0.0"
       }
     ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:BeginObjectSelecting",
+      "reason": "Use the explicit begin-selecting name."
+    },
     "owningInclude": "open.mp",
     "documentationSummary": "Lets a player select an object with the cursor.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SelectObject",
@@ -6526,6 +7883,11 @@
         "since": "1.0.0"
       }
     ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SetObjectNoCameraCollision",
+      "reason": "Use the full camera-collision name."
+    },
     "owningInclude": "open.mp",
     "documentationSummary": "Disables camera collision for a global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/SetObjectNoCameraCol",
@@ -7003,6 +8365,361 @@
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_player.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectMaterial",
+    "kind": "native",
+    "name": "SetPlayerObjectMaterial",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "materialIndex"
+        },
+        {
+          "name": "modelid"
+        },
+        {
+          "name": "textureLibrary",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "textureName",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "materialColour",
+          "default": 0
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Replaces a player object's material.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMaterial",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectMaterialText",
+    "kind": "native",
+    "name": "SetPlayerObjectMaterialText",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "text",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "materialIndex",
+          "default": 0
+        },
+        {
+          "name": "materialSize",
+          "tag": "OBJECT_MATERIAL_SIZE",
+          "default": "OBJECT_MATERIAL_SIZE_256x128"
+        },
+        {
+          "name": "fontFace",
+          "default": "Arial",
+          "const": true,
+          "arrayDimensions": [
+            0
+          ]
+        },
+        {
+          "name": "fontSize",
+          "default": 24
+        },
+        {
+          "name": "bold",
+          "tag": "bool",
+          "default": true
+        },
+        {
+          "name": "fontColour",
+          "default": 4294967295
+        },
+        {
+          "name": "backgroundColour",
+          "default": 0
+        },
+        {
+          "name": "textAlignment",
+          "tag": "OBJECT_MATERIAL_TEXT_ALIGN",
+          "default": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT"
+        },
+        {
+          "name": "arguments",
+          "tag": "OPEN_MP_TAGS",
+          "variadic": true
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "constraints": [
+      "Formatting arguments are available in open.mp."
+    ],
+    "documentationSummary": "Replaces a player object's material with text.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMaterialText",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectMoveSpeed",
+    "kind": "native",
+    "name": "SetPlayerObjectMoveSpeed",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "speed",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player object's movement speed.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectMoveSpeed",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectNoCameraCol",
+    "kind": "native",
+    "name": "SetPlayerObjectNoCameraCol",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:SetPlayerObjectNoCameraCollision",
+      "reason": "Use the full camera-collision name."
+    },
+    "owningInclude": "open.mp",
+    "documentationSummary": "Disables camera collision for a player object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectNoCameraCol",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectNoCameraCollision",
+    "kind": "native",
+    "name": "SetPlayerObjectNoCameraCollision",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Disables camera collision for a player object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectNoCameraCollision",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectPos",
+    "kind": "native",
+    "name": "SetPlayerObjectPos",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "x",
+          "tag": "Float"
+        },
+        {
+          "name": "y",
+          "tag": "Float"
+        },
+        {
+          "name": "z",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player object's position.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectPos",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:SetPlayerObjectRot",
+    "kind": "native",
+    "name": "SetPlayerObjectRot",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        },
+        {
+          "name": "rotationX",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationY",
+          "tag": "Float"
+        },
+        {
+          "name": "rotationZ",
+          "tag": "Float"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Sets a player object's rotation.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SetPlayerObjectRot",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
       "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
       "license": "MPL-2.0"
     },
@@ -7786,6 +9503,42 @@
     "owningInclude": "open.mp",
     "documentationSummary": "Stops a moving global object.",
     "documentationUrl": "https://open.mp/docs/scripting/functions/StopObject",
+    "source": {
+      "repository": "openmultiplayer/omp-stdlib",
+      "path": "omp_object.inc",
+      "commit": "689c824f6cc558b1ca1b36cfd1aae7f1cda16d65",
+      "license": "MPL-2.0"
+    },
+    "confidence": "high"
+  },
+  {
+    "id": "native:StopPlayerObject",
+    "kind": "native",
+    "name": "StopPlayerObject",
+    "signature": {
+      "parameters": [
+        {
+          "name": "playerid"
+        },
+        {
+          "name": "objectid"
+        }
+      ],
+      "returnTag": "bool"
+    },
+    "availability": [
+      {
+        "profile": "samp-037",
+        "since": "0.3.7"
+      },
+      {
+        "profile": "openmp",
+        "since": "1.0.0"
+      }
+    ],
+    "owningInclude": "open.mp",
+    "documentationSummary": "Stops a moving player object.",
+    "documentationUrl": "https://open.mp/docs/scripting/functions/StopPlayerObject",
     "source": {
       "repository": "openmultiplayer/omp-stdlib",
       "path": "omp_object.inc",

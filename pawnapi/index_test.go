@@ -289,3 +289,26 @@ func TestLoad_ObjectMaterialEditingAPI(t *testing.T) {
 		t.Fatalf("EDIT_RESPONSE_UPDATE = %+v", response)
 	}
 }
+
+func TestLoad_PlayerObjectAPI(t *testing.T) {
+	index, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	materialText, ok := index.ByID("native:SetPlayerObjectMaterialText")
+	if !ok || materialText.Signature == nil || !materialText.Signature.Parameters[len(materialText.Signature.Parameters)-1].Variadic {
+		t.Fatalf("SetPlayerObjectMaterialText = %+v", materialText)
+	}
+	canonical, ok := index.ByID("native:SetPlayerObjectNoCameraCollision")
+	if !ok || len(canonical.Availability) != 1 || canonical.Availability[0].Profile != ProfileOpenMP {
+		t.Fatalf("SetPlayerObjectNoCameraCollision = %+v", canonical)
+	}
+	legacy, ok := index.ByID("native:SetPlayerObjectNoCameraCol")
+	if !ok || legacy.Deprecated == nil || legacy.Deprecated.Replacement != canonical.ID {
+		t.Fatalf("SetPlayerObjectNoCameraCol = %+v", legacy)
+	}
+	moved, ok := index.ByID("callback:OnPlayerObjectMoved")
+	if !ok || len(moved.Availability) != 2 {
+		t.Fatalf("OnPlayerObjectMoved = %+v", moved)
+	}
+}

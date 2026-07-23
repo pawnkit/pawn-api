@@ -209,7 +209,12 @@
     },
     "confidence": "high",
     "documentationSummary": "Lets a player edit a global object's position and rotation.",
-    "documentationUrl": "https://open.mp/docs/scripting/functions/EditObject"
+    "documentationUrl": "https://open.mp/docs/scripting/functions/EditObject",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:BeginObjectEditing",
+      "reason": "Use the explicit begin-editing name."
+    }
   },
   {
     "id": "native:BeginObjectSelecting",
@@ -271,7 +276,12 @@
     },
     "confidence": "high",
     "documentationSummary": "Lets a player select an object with the cursor.",
-    "documentationUrl": "https://open.mp/docs/scripting/functions/SelectObject"
+    "documentationUrl": "https://open.mp/docs/scripting/functions/SelectObject",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:BeginObjectSelecting",
+      "reason": "Use the explicit begin-selecting name."
+    }
   },
   {
     "id": "native:EndObjectEditing",
@@ -333,7 +343,12 @@
     },
     "confidence": "high",
     "documentationSummary": "Ends object editing or selection for a player.",
-    "documentationUrl": "https://open.mp/docs/scripting/functions/CancelEdit"
+    "documentationUrl": "https://open.mp/docs/scripting/functions/CancelEdit",
+    "deprecated": {
+      "since": "1.0.0",
+      "replacement": "native:EndObjectEditing",
+      "reason": "Use the explicit end-editing name."
+    }
   },
   {
     "id": "callback:OnPlayerSelectObject",
