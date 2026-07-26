@@ -3,6 +3,12 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.19.1 - 2026-07-25
+
+### Changed
+
+- Added the repository support record with CI validation.
+
 ## 0.19.0 - 2026-07-23
 
 ### Added

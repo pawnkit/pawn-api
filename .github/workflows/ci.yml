@@ -108,3 +108,12 @@ jobs:
 
       - name: Compare vendored schema with pawnkit-spec
         run: cmp internal/schema/pawn-api.schema.json pawnkit-spec/schemas/pawn-api.schema.json
+
+  support:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - uses: pawnkit/pawn-actions/support-check@v1.6.1
+        with:
+          repository: pawnkit/pawn-api
+          targets: linux-amd64

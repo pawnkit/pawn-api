@@ -1,5 +1,7 @@
 # pawn-api
 
+[![Maturity: preview](https://img.shields.io/badge/maturity-preview-blue)](.pawnkit/support.json)
+
 `pawn-api` is PawnKit's versioned database of SA-MP and open.mp natives, callbacks, constants, and tags. It includes a Go package for querying the data and a CLI for maintaining it.
 
 Tools use this data to answer questions such as whether `SetPlayerPos` exists for a profile, which parameters it accepts, and whether it is deprecated.
