@@ -98,6 +98,11 @@ func compareCoverage(dataset []pawnapi.Entry, imported map[string]coverageItem) 
 	known := make(map[string]bool, len(dataset))
 	for _, entry := range dataset {
 		known[entry.ID] = true
+		// Include importers represent typed constants as defines. Keep the
+		// dataset's richer constant kind without reporting a false gap.
+		if entry.Kind == pawnapi.KindConstant {
+			known[string(pawnapi.KindDefine)+":"+entry.Name] = true
+		}
 	}
 	report := coverageReport{Total: len(imported)}
 	for id, item := range imported {

@@ -84,9 +84,9 @@ how that provenance is collected.
 ## Limits
 
 - The reviewed dataset covers every public omp-stdlib subsystem.
-- At the pinned omp-stdlib commit, 1,055 of the 1,061 declarations extracted
-  from `omp_*.inc` have matching entries. The other six are typed constants
-  represented as `define` declarations by the importer.
+- At the pinned omp-stdlib commit, all 1,061 declarations extracted from
+  `omp_*.inc` have matching entries. Typed constants are stored as `constant`
+  entries even when an include importer reports them as `define` declarations.
 - `pawnapi snapshot` accepts full-model JSON or a Pawn include. Include import
   covers natives, forwards/callbacks, named tags, and literal defines.
 - SA-MP availability is reviewed against a pinned 0.3.7 include source.

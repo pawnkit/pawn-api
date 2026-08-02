@@ -3,6 +3,12 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.19.4 - 2026-08-02
+
+### Fixed
+
+- Treat typed constants imported as defines as covered by their reviewed API entries.
+
 ## 0.19.3 - 2026-08-02
 
 ### Changed

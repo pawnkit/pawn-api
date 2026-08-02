@@ -120,13 +120,17 @@ func TestRun_SnapshotInclude(t *testing.T) {
 }
 
 func TestCompareCoverage(t *testing.T) {
-	dataset := []pawnapi.Entry{{ID: "native:GetValue"}}
+	dataset := []pawnapi.Entry{
+		{ID: "native:GetValue"},
+		{ID: "constant:INVALID_PLAYER_ID", Kind: pawnapi.KindConstant, Name: "INVALID_PLAYER_ID"},
+	}
 	imported := map[string]coverageItem{
-		"native:GetValue": {ID: "native:GetValue", Path: "core.inc"},
-		"native:SetValue": {ID: "native:SetValue", Path: "core.inc"},
+		"native:GetValue":          {ID: "native:GetValue", Path: "core.inc"},
+		"native:SetValue":          {ID: "native:SetValue", Path: "core.inc"},
+		"define:INVALID_PLAYER_ID": {ID: "define:INVALID_PLAYER_ID", Path: "player.inc"},
 	}
 	report := compareCoverage(dataset, imported)
-	if report.Covered != 1 || report.Total != 2 || len(report.Missing) != 1 || report.Missing[0].ID != "native:SetValue" {
+	if report.Covered != 2 || report.Total != 3 || len(report.Missing) != 1 || report.Missing[0].ID != "native:SetValue" {
 		t.Fatalf("report = %+v", report)
 	}
 }
