@@ -4,7 +4,7 @@ go 1.26.5
 
 require (
 	github.com/pawnkit/pawn-parser v1.5.8
-	github.com/pawnkit/pawnkit-core v0.1.0
+	github.com/pawnkit/pawnkit-core v0.5.0
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1
 )
 

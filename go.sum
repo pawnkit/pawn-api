@@ -6,8 +6,8 @@ github.com/google/renameio v0.1.0 h1:GOZbcHa3HfsPKPlmyPyN2KEohoMXOhdMbHrvbpl2QaA
 github.com/google/renameio v0.1.0/go.mod h1:KWCgfxg9yswjAJkECMjeO8J8rahYeXnNhOm40UhjYkI=
 github.com/pawnkit/pawn-parser v1.5.8 h1:PqUv8Z8P/d32hFcS3Gjd6M4NErwGdMJ+wx+5p1vYgEY=
 github.com/pawnkit/pawn-parser v1.5.8/go.mod h1:6iG1RfoTtroAadrF5A60QZc/zwalxBwn2gbgCQ/QO8Y=
-github.com/pawnkit/pawnkit-core v0.1.0 h1:clhoN/nr+JyNMAcFTlubStPd3q4VeCNf44MJgYmFaDM=
-github.com/pawnkit/pawnkit-core v0.1.0/go.mod h1:jGhXHEEzr8juezaRhh/AkGzX6S4eGQnprB83vrI1peU=
+github.com/pawnkit/pawnkit-core v0.5.0 h1:faEI2LGaP9czSDaKxtw4qvGUNuft88qeR/MdW0jLmlg=
+github.com/pawnkit/pawnkit-core v0.5.0/go.mod h1:jGhXHEEzr8juezaRhh/AkGzX6S4eGQnprB83vrI1peU=
 github.com/santhosh-tekuri/jsonschema/v5 v5.3.1 h1:lZUw3E0/J3roVtGQ+SCrUrg3ON6NgVqpn3+iol9aGu4=
 github.com/santhosh-tekuri/jsonschema/v5 v5.3.1/go.mod h1:uToXkOrWAZ6/Oc07xWQrPOhJotwFIyu2bBVN41fcDUY=
 golang.org/x/mod v0.38.0 h1:MECBjubtXD7yj4HrhIUcywNaGeNVUdfVnxmPajOk4yk=

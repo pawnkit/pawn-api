@@ -3,6 +3,12 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.19.3 - 2026-08-02
+
+### Changed
+
+- Use pawnkit-core 0.5.0.
+
 ## 0.19.2 - 2026-08-02
 
 ### Changed
