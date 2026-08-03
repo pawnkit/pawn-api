@@ -3,6 +3,12 @@
 Notable changes are recorded here. Breaking pre-1.0 changes are called out
 explicitly.
 
+## 0.19.6 - 2026-08-03
+
+### Changed
+
+- Use pawn-parser v1.5.10 for include declaration parsing.
+
 ## 0.19.5 - 2026-08-02
 
 ### Changed
