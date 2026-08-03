@@ -3,7 +3,7 @@ module github.com/pawnkit/pawn-api
 go 1.26.5
 
 require (
-	github.com/pawnkit/pawn-parser v1.5.10
+	github.com/pawnkit/pawn-parser v1.5.11
 	github.com/pawnkit/pawnkit-core v0.5.0
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1
 )
